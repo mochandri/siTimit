@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/smarthome"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/nav_kalkulator"
+        android:icon="@drawable/calculator"
+        android:title="Kalkulator"
+        />
+    <item
+        android:id="@+id/nav_produk"
+        android:icon="@drawable/product"
+        android:title="Produk"
+        />
+    <item
+        android:id="@+id/nav_tentangKami"
+        android:icon="@drawable/i"
+        android:title="Tentang Kami"
+        />
+
+</menu>
