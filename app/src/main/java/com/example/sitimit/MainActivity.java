@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -80,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+    public void Hitung(View view){
+        Intent intent = new Intent(MainActivity.this, KalkulatorBata.class);
+        startActivity(intent);
+
     }
 //    public void backHome(){
 //        Intent intent =new Intent(this, MainActivity.class);
