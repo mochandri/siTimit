@@ -34,16 +34,14 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <include
-        android:id="@+id/llBanner"
-        layout="@layout/layout_Banner" />
-
-    <include
-        layout="layout/ nm"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/llBanner"
-        android:layout_marginTop="20dp" />
-
+        android:layout_height="324dp"
+        android:layout_centerInParent="true">
+    </androidx.viewpager.widget.ViewPager>
 
 </RelativeLayout>
+
+
+
