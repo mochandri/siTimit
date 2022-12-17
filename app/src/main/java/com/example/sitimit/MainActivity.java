@@ -19,43 +19,13 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
-    ViewPager viewPager;
-    int images[] = {R.drawable.kantor, R.drawable.kantor, R.drawable.kantor};
-    int currentPageCunter = 0;
+
 
     BottomNavigationView bottomNavigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        viewPager = findViewById(R.id.viewpager);
-        viewPager.setAdapter(new SliderAdapter(images, MainActivity.this));
-
-        final Handler handler = new Handler();
-        final Runnable update = new Runnable() {
-            @Override
-            public void run() {
-                if (currentPageCunter == images.length) {
-                    currentPageCunter = -0;
-
-                }
-                viewPager.setCurrentItem(currentPageCunter++, true);
-
-            }
-            };
-
-
-           Timer timer = new Timer();
-           timer.schedule(new TimerTask() {
-               @Override
-               public void run() {
-                   handler.post(update);
-               }
-
-           },2500,2500);
-
-
 
         bottomNavigation = findViewById(R.id.bottom_navigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
