@@ -58,13 +58,13 @@
         android:layout_marginEnd="25dp"
         android:background="#EAFCEC">
 
-        <Button
+        <ImageButton
             android:id="@+id/button1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="128dp"
-            android:layout_marginBottom="52dp"
-            android:background="#4AA85F"
+            android:layout_width="221dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btntigamitra"
             android:gravity="center"
             android:onClick="tigamitrasby"
             android:text="PT. TIGA MITRA SURABAYA"
@@ -77,7 +77,7 @@
         <ImageView
             android:layout_width="114dp"
             android:layout_height="104dp"
-            android:layout_marginEnd="9dp"
+            android:layout_marginEnd="28dp"
             android:background="@drawable/kantorsurabaya"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button1"
@@ -97,13 +97,13 @@
         android:background="#EAFCEC">
 
 
-        <Button
+        <ImageButton
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="124dp"
-            android:layout_marginBottom="52dp"
-            android:background="#4AA85F"
+            android:layout_width="227dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="136dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btntigamitramalang"
             android:gravity="center"
             android:onClick="tigamitramalang"
             android:text="PT. TIGA MITRA SURABAYA"
@@ -116,7 +116,7 @@
         <ImageView
             android:layout_width="114dp"
             android:layout_height="104dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/kantorsurabaya"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button2"
@@ -136,13 +136,13 @@
         android:background="#EAFCEC">
 
 
-        <Button
+        <ImageButton
             android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="128dp"
-            android:layout_marginBottom="52dp"
-            android:background="#4AA85F"
+            android:layout_width="221dp"
+            android:layout_height="99dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/faq"
             android:gravity="center"
             android:onClick="faq"
             android:text="PT. TIGA MITRA SURABAYA"
@@ -155,7 +155,7 @@
         <ImageView
             android:layout_width="114dp"
             android:layout_height="104dp"
-            android:layout_marginEnd="7dp"
+            android:layout_marginEnd="24dp"
             android:background="@drawable/kantorsurabaya"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button"
