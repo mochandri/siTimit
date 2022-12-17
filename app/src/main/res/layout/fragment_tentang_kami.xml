@@ -3,14 +3,158 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".TentangKamiFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tentang Kami"
-        android:layout_centerInParent="true"/>
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:id="@+id/atas"
+       android:layout_width="match_parent"
+       android:layout_height="116dp"
+       android:background="@color/hijau">
+
+     <TextView
+           android:layout_width="121dp"
+           android:layout_height="57dp"
+           android:layout_marginTop="16dp"
+           android:text="Tentang Kami"
+           android:textSize="16dp"
+           android:textStyle="bold"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.541"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"/>
+       <TextView
+           android:layout_width="57dp"
+           android:layout_height="23dp"
+           android:layout_marginTop="92dp"
+           android:text="Hai Sobat !"
+           android:textColor="@color/white"
+           android:textSize="10dp"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.985"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+       <ImageView
+           android:layout_width="64dp"
+           android:layout_height="43dp"
+           android:layout_marginTop="52dp"
+           android:layout_marginEnd="5dp"
+           android:src="@drawable/sitimit"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="parent" />
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tigamitra"
+        android:layout_width="365dp"
+        android:layout_height="158dp"
+        android:layout_below="@+id/atas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="25dp"
+        android:background="#EAFCEC">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginBottom="64dp"
+            android:background="#4AA85F"
+            android:gravity="center"
+            android:onClick="tigamitrasurabaya"
+            android:text="PT. TIGA MITRA SURABAYA"
+
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+       <ImageView
+            android:layout_width="114dp"
+            android:layout_height="104dp"
+            android:background="@drawable/kantorsurabaya"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="27dp"/>
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tigamitramalang"
+        android:layout_width="365dp"
+        android:layout_height="158dp"
+        android:layout_below="@+id/tigamitra"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="#EAFCEC">
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginBottom="64dp"
+            android:background="#4AA85F"
+            android:gravity="center"
+            android:onClick="tigamitrasurabaya"
+            android:text="PT. TIGA MITRA SURABAYA"
+
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="104dp"
+            android:background="@drawable/kantorsurabaya"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="27dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/faq"
+        android:layout_width="365dp"
+        android:layout_height="158dp"
+        android:layout_below="@+id/tigamitramalang"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="#EAFCEC">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginBottom="64dp"
+            android:background="#4AA85F"
+            android:gravity="center"
+            android:onClick="tigamitrasurabaya"
+            android:text="PT. TIGA MITRA SURABAYA"
+
+
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="104dp"
+            android:background="@drawable/kantorsurabaya"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="27dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </RelativeLayout>
