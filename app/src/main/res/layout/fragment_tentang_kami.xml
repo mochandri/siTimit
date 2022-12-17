@@ -65,7 +65,7 @@
             android:layout_marginBottom="64dp"
             android:background="#4AA85F"
             android:gravity="center"
-            android:onClick="tigamitrasurabaya"
+            android:onClick="tigamitrasby"
             android:text="PT. TIGA MITRA SURABAYA"
 
 
@@ -102,7 +102,7 @@
             android:layout_marginBottom="64dp"
             android:background="#4AA85F"
             android:gravity="center"
-            android:onClick="tigamitrasurabaya"
+            android:onClick="tigamitramalang"
             android:text="PT. TIGA MITRA SURABAYA"
 
 
@@ -139,7 +139,7 @@
             android:layout_marginBottom="64dp"
             android:background="#4AA85F"
             android:gravity="center"
-            android:onClick="tigamitrasurabaya"
+            android:onClick="faq"
             android:text="PT. TIGA MITRA SURABAYA"
 
 
