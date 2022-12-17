@@ -57,12 +57,13 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="25dp"
         android:background="#EAFCEC">
+
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="124dp"
-            android:layout_marginBottom="64dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginBottom="52dp"
             android:background="#4AA85F"
             android:gravity="center"
             android:onClick="tigamitrasby"
@@ -73,7 +74,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-       <ImageView
+        <ImageView
             android:layout_width="114dp"
             android:layout_height="104dp"
             android:background="@drawable/kantorsurabaya"
@@ -99,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="124dp"
-            android:layout_marginBottom="64dp"
+            android:layout_marginBottom="52dp"
             android:background="#4AA85F"
             android:gravity="center"
             android:onClick="tigamitramalang"
@@ -135,8 +136,8 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="124dp"
-            android:layout_marginBottom="64dp"
+            android:layout_marginStart="128dp"
+            android:layout_marginBottom="52dp"
             android:background="#4AA85F"
             android:gravity="center"
             android:onClick="faq"
