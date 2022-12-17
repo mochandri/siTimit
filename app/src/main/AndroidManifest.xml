@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SiTimit">
         <activity
+            android:name=".BataRingan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".tigamitrasurabaya"
             android:exported="false" />
         <activity
