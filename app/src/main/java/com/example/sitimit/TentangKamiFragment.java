@@ -1,5 +1,6 @@
 package com.example.sitimit;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -61,4 +62,5 @@ public class TentangKamiFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_tentang_kami, container, false);
     }
+
 }
