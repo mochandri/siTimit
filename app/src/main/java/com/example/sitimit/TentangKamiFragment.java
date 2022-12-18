@@ -65,5 +65,8 @@ public class TentangKamiFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_tentang_kami, container, false);
     }
-
+    public void  tigamitrasurabaya(View view){
+        Intent intent = new Intent(TentangKamiFragment.this,tigamitrasurabaya.class);
+        startActivity(intent);
+    }
 }
