@@ -1,5 +1,6 @@
 package com.example.sitimit;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,6 +15,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class TentangKamiFragment extends Fragment {
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -53,6 +56,7 @@ public class TentangKamiFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
@@ -60,5 +64,9 @@ public class TentangKamiFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_tentang_kami, container, false);
+    }
+    public void  tigamitrasurabaya(View view){
+        Intent intent = new Intent(TentangKamiFragment.this,tigamitrasurabaya.class);
+        startActivity(intent);
     }
 }
