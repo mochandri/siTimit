@@ -61,7 +61,7 @@
             android:src="@drawable/kantor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />/>
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.viewpager.widget.ViewPager>
 

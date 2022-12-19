@@ -6,12 +6,8 @@
     <ImageView
         android:id="@+id/img_slider"
         android:layout_width="match_parent"
-app/src/main/res/layout/fragment_banner_slider.xml
         android:layout_height="200dp"
-
-        android:layout_height="251dp"
         android:scaleType="fitXY"
-app/src/main/res/layout/item_slider.xml
         android:src="@drawable/kantor" />
 
 </RelativeLayout>
