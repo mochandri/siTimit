@@ -80,7 +80,7 @@ public class TentangKamiFragment extends Fragment {
                 Intent intent = new Intent(getActivity(), tigamitrasurabaya.class);
                 startActivity(intent);
             }
-            
+
         });
         return view;
     }
