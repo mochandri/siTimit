@@ -1,22 +1,17 @@
 package com.example.sitimit;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
-
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ViewFlipper;
+
 
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 
 import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
+
 
 
 public class HomeFragment extends Fragment {
@@ -39,6 +34,18 @@ public class HomeFragment extends Fragment {
 
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.fragment_home);
+
+
+            }
+
+    private void setContentView(int fragment_home) {
+    }
+
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -47,16 +54,19 @@ public class HomeFragment extends Fragment {
 
         ArrayList<SlideModel> imageList = new ArrayList<>();
         imageList.add(new SlideModel(R.drawable.kantor, null));
-        imageList.add(new SlideModel(R.drawable.timit, null));
-        imageList.add(new SlideModel(R.drawable.mortar, null));
-        imageList.add(new SlideModel(R.drawable.bata, null));
+        imageList.add(new SlideModel(R.drawable.no2, null));
+        imageList.add(new SlideModel(R.drawable.no3, null));
+        imageList.add(new SlideModel(R.drawable.no4, null));
+        imageList.add(new SlideModel(R.drawable.no5, null));
 
         imageSlider.setImageList(imageList);
         return view;
 
     }
+        };
 
 
 
 
-    }
+
+
