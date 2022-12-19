@@ -60,79 +60,7 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:rowCount="3"
-        android:columnCount="2"
-        android:columnOrderPreserved="false"
-        android:aligmentMode="alignMargins">
 
-        <androidx.cardview.widget.CardView
-
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            app:cardElevation="6dp"
-            app:cardCornerRadius="12dp"
-            android:layout_margin="12dp">
-
-        </androidx.cardview.widget.CardView>
-
-    </GridLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="224dp"
-        android:layout_below="@+id/csatas"
-        android:layout_marginTop="35dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:background="#EAFCEC">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/bata" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:gravity="center"
-            android:text="CITICON"
-            android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
-
-        <TextView
-            android:layout_width="125dp"
-            android:layout_height="37dp"
-            android:layout_marginTop="12dp"
-            android:gravity="center"
-            android:text="Rp. 685.000 /M3 "
-            android:textColor="@color/black" />
-
-        <Button
-            android:id="@+id/buttonbeli"
-            android:layout_width="117dp"
-            android:layout_height="58dp"
-            android:layout_marginStart="52dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="16dp"
-            android:gravity="center"
-            android:onClick="Beli"
-            android:text="Beli"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </LinearLayout>
 
 
 </RelativeLayout>

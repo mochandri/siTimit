@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,6 +17,7 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class TentangKamiFragment extends Fragment {
+
 
 
 
@@ -30,6 +33,7 @@ public class TentangKamiFragment extends Fragment {
     public TentangKamiFragment() {
         // Required empty public constructor
     }
+
 
     /**
      * Use this factory method to create a new instance of
@@ -62,11 +66,24 @@ public class TentangKamiFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tentang_kami, container, false);
+        View view = inflater.inflate(R.layout.fragment_tentang_kami, container, false);
+        Button button = (Button) view.findViewById(R.id.buttonsby);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonsby();
+            }
+
+            private void buttonsby() {
+                Intent intent = new Intent(getActivity(), tigamitrasurabaya.class);
+                startActivity(intent);
+            }
+            
+        });
+        return view;
     }
-    public void  tigamitrasurabaya(View view){
-        Intent intent = new Intent(TentangKamiFragment.this,tigamitrasurabaya.class);
-        startActivity(intent);
-    }
+
+
 }
