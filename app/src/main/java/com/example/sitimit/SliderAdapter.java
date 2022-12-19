@@ -20,7 +20,7 @@ public class SliderAdapter extends PagerAdapter {
     //alt + ins to create cons
 
 
-    public SliderAdapter(int[] images, Context context) {
+    public SliderAdapter(int[] images, MainActivity context) {
         this.images = images;
         this.layoutInflater = LayoutInflater.from(context);
         this.context = context;
