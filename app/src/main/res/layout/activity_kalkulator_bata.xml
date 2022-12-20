@@ -76,8 +76,30 @@
         android:layout_marginEnd="47dp"
         android:background="#EAFCEC" >
 
-        <Re
 
+        <TextView
+            android:id="@+id/panjang"
+            android:layout_width="82dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Panjang (m)"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.067"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:layout_width="81dp"
+            android:layout_height="14dp"
+            android:layout_constraintLeft_toLeftOf="parent"
+            android:layout_constraintRight_toRightOf="parent"
+            android:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="108dp"
+            android:background="@drawable/custom_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
