@@ -65,23 +65,29 @@
             app:layout_constraintVertical_bias="0.726" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="316dp"
+        android:layout_height="162dp"
+        android:layout_below="@+id/consAtas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="47dp"
+        android:background="#EAFCEC" >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+        < />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+        <TextView
+            android:id="@+id/panjang"
+            android:layout_width="87dp"
+            android:layout_height="26dp"
+            android:gravity="center"
+            android:text="Panjang (m)"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="10dp" />
 
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </RelativeLayout>
