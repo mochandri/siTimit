@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".KalkulatorBata">
@@ -67,15 +67,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="316dp"
-        android:layout_height="162dp"
+        android:layout_width="wrap_content"
+        android:layout_height="201dp"
         android:layout_below="@+id/consAtas"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="47dp"
         android:layout_marginTop="62dp"
         android:layout_marginEnd="47dp"
-        android:background="#EAFCEC" >
+        android:background="#EAFCEC">
 
         <View
             android:id="@+id/line_4"
@@ -84,9 +84,9 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:background="@drawable/line_4"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="33dp"
-            tools:ignore="MissingConstraints" />
+            tools:layout_editor_absoluteY="33dp" />
 
         <TextView
             android:id="@+id/panjang"
@@ -101,21 +101,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:layout_width="81dp"
-            android:layout_height="14dp"
-            android:layout_constraintLeft_toLeftOf="parent"
-            android:layout_constraintRight_toRightOf="parent"
-            android:layout_constraintTop_toTopOf="parent"
-            android:layout_marginBottom="108dp"
-            android:background="@drawable/custom_shape"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="16dp" />
+        <View
+            android:id="@+id/rectangle_1"
+            android:layout_width="82dp"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_1"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="15dp"
+            tools:layout_editor_absoluteY="33dp" />
+
+        <TextView
+            android:id="@+id/meter"
+            android:layout_width="82dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Meter"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/rectangle_2"
+            android:layout_width="82dp"
+            android:layout_height="19dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="118dp"
+            tools:layout_editor_absoluteY="33dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 </RelativeLayout>
