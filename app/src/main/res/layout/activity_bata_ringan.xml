@@ -64,4 +64,18 @@
             app:layout_constraintVertical_bias="0.726" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="208dp"
+        android:layout_below="@+id/consAtas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="46dp"
+        android:background="#EAFCEC">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </RelativeLayout>
