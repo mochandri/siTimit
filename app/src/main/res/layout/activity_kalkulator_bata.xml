@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".KalkulatorBata">
@@ -76,6 +77,14 @@
         android:layout_marginEnd="47dp"
         android:background="#EAFCEC" >
 
+        <View
+            android:id="@+id/line_4"
+            android:layout_width="212dp"
+            android:layout_height="98dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/Line_4"
+            tools:layout_editor_absoluteX="68dp" />
 
         <TextView
             android:id="@+id/panjang"
@@ -103,6 +112,8 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 
 </RelativeLayout>
