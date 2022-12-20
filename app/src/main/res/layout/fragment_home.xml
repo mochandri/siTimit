@@ -37,6 +37,7 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
 <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
 <!--        android:layout_width="316dp"-->
 <!--        android:layout_height="162dp"-->
@@ -58,6 +59,132 @@
         app:iss_period="1000"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"/>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/csKategori"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="57dp"
+            android:layout_height="52dp"
+            android:src="@drawable/kategori"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="256dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="64dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Pilih Kategori Produk"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tampilkan produk berdasarkan kategori"
+            android:textColor="@color/hijau"
+
+            app:layout_constraintHorizontal_bias="0.291"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <Button
+            android:id="@+id/btnkategori"
+            android:onClick="kategori"
+            android:layout_width="82dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/hijau"
+            android:bufferType="normal"
+            android:text="Pilih Kategori"
+            android:textSize="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.071" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/csArtikel"
+        android:layout_width="match_parent"
+        android:layout_height="195dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/gmbrartikel"
+            android:layout_width="57dp"
+            android:layout_height="52dp"
+            android:src="@drawable/artikel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textartikel"
+            android:layout_width="258dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="64dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Pilih Artikel Kami"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="202dp"
+            android:layout_height="23dp"
+
+            android:text="Tampilkan artikel terbaru kami"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textartikel" />
+
+        <Button
+            android:id="@+id/btnkartikel"
+            android:layout_width="82dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="@color/hijau"
+            android:bufferType="normal"
+            android:onClick="kategori"
+            android:text="Pilih Kategori"
+            android:textSize="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.071" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </LinearLayout>
 

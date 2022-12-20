@@ -20,7 +20,6 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity {
 
 
-
     BottomNavigationView bottomNavigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
