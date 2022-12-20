@@ -76,16 +76,9 @@
         android:layout_marginEnd="47dp"
         android:background="#EAFCEC" >
 
-        < />
+        <Re
 
-        <TextView
-            android:id="@+id/panjang"
-            android:layout_width="87dp"
-            android:layout_height="26dp"
-            android:gravity="center"
-            android:text="Panjang (m)"
-            tools:layout_editor_absoluteX="12dp"
-            tools:layout_editor_absoluteY="10dp" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
