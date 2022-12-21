@@ -75,7 +75,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Fragment produk = new ProdukFragment();
                 FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.csKategori,produk).commit();
+                fm.replace(R.id.kategori,produk).commit();
             }
         });
         return view;
