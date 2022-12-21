@@ -49,7 +49,7 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
                     String outputt = String.valueOf(hv);
                     String output = String.valueOf(hs);
                     luas.setText(output.toString());
-                    volume.setText(output.toString());
+                    volume.setText(outputt.toString());
 
                 }
             }
@@ -64,7 +64,7 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
         return (p*l);
     }
     public double volumePanel (double p, double l) {
-        return (p * l) / (8);
+        return (p*l)/8;
     }
 
 }
