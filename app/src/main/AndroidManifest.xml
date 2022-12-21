@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SiTimit">
         <activity
+            android:name=".KalkulatorPanelLantai"
+            android:exported="false" />
             android:name=".faq"
             android:exported="false">
             <meta-data
