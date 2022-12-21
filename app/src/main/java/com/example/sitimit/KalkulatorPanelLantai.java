@@ -1,18 +1,28 @@
 package com.example.sitimit;
 
-import androidx.appcompat.app.AppCompatActivity;
+import static android.app.PendingIntent.getActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.sitimit.databinding.FragmentHomeBinding;
 
 public class KalkulatorPanelLantai extends AppCompatActivity {
     EditText p,l;
     TextView volume, luas;
     Button hasil;
+    ImageButton back;
+    FragmentHomeBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +33,7 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
         volume =(TextView) findViewById(R.id.twvolume);
         luas = (TextView) findViewById(R.id.twluas);
         hasil = (Button) findViewById(R.id.hasil);
+        back = (ImageButton) findViewById(R.id.iback);
 
         hasil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,11 +60,21 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
                     String outputt = String.valueOf(hv);
                     String output = String.valueOf(hs);
                     luas.setText(output.toString());
-                    volume.setText(output.toString());
+                    volume.setText(outputt.toString());
 
                 }
             }
         });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new Fragment();
+                FragmentTransaction fm = getSupportFragmentManager().beginTransaction();
+                fm.replace(R.id.container,fragment).commit();
+            }
+
+            });
+
 
 
         
@@ -64,7 +85,8 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
         return (p*l);
     }
     public double volumePanel (double p, double l) {
-        return (p * l) / (8);
+        return (p*l)/8;
     }
+
 
 }
