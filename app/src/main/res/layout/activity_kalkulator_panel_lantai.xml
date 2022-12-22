@@ -162,7 +162,7 @@
             android:layout_height="20dp"
             android:layout_marginTop="81dp"
             android:layout_marginBottom="56dp"
-            android:text="Luas Lantai (M2)"
+            android:text="Jumlah Lantai (M2)"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"

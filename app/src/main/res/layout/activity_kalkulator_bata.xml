@@ -67,152 +67,266 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="316dp"-->
-<!--        android:layout_height="162dp"-->
-<!--        android:layout_below="@+id/consAtas"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_marginStart="47dp"-->
-<!--        android:layout_marginTop="62dp"-->
-<!--        android:layout_marginEnd="47dp"-->
-<!--        android:background="#EAFCEC" >-->
 
-<!--        <View-->
-<!--            android:id="@+id/line_4"-->
-<!--            android:layout_width="318dp"-->
-<!--            android:layout_height="92dp"-->
-<!--            android:layout_alignParentLeft="true"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:background="@drawable/line_4"-->
-<!--            tools:layout_editor_absoluteX="0dp"-->
-<!--            tools:layout_editor_absoluteY="33dp"-->
-<!--            tools:ignore="MissingConstraints" />-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="337dp"
+        android:layout_below="@+id/consAtas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="14dp"
+        android:background="#EAFCEC">
 
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="201dp"-->
-<!--        android:layout_below="@+id/consAtas"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_marginStart="47dp"-->
-<!--        android:layout_marginTop="62dp"-->
-<!--        android:layout_marginEnd="47dp"-->
-<!--        android:background="#EAFCEC">-->
+        <EditText
+            android:id="@+id/lebar"
+            android:layout_width="112dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:hint="Masukkan Lebar"
+            android:inputType="textPersonName"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/panjang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteX="16dp" />
 
-<!--        <View-->
-<!--            android:id="@+id/line_4"-->
-<!--            android:layout_width="318dp"-->
-<!--            android:layout_height="92dp"-->
-<!--            android:layout_alignParentLeft="true"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:background="@drawable/line_4"-->
-<!--            tools:ignore="MissingConstraints"-->
-<!--            tools:layout_editor_absoluteX="0dp"-->
-<!--            tools:layout_editor_absoluteY="33dp" />-->
+        <EditText
+            android:id="@+id/panjang"
+            android:layout_width="91dp"
+            android:layout_height="32dp"
+            android:ems="10"
+            android:hint="Masukkan Panjang"
+            android:inputType="textPersonName"
+            android:textSize="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.229" />
 
-
-<!--        <TextView-->
-<!--            android:id="@+id/panjang"-->
-<!--            android:layout_width="82dp"-->
-<!--            android:layout_height="17dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="Panjang (m)"-->
-<!--            android:textSize="10dp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.067"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <EditText
+            android:id="@+id/tinggi"
+            android:layout_width="91dp"
+            android:layout_height="32dp"
+            android:ems="10"
+            android:hint="Masukkan Tinggi"
+            android:inputType="textPersonName"
+            android:textSize="9dp"
+            app:layout_constraintBottom_toBottomOf="@+id/panjang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--        <Button-->
-<!--            android:layout_width="81dp"-->
-<!--            android:layout_height="14dp"-->
-<!--            android:layout_constraintLeft_toLeftOf="parent"-->
-<!--            android:layout_constraintRight_toRightOf="parent"-->
-<!--            android:layout_constraintTop_toTopOf="parent"-->
-<!--            android:layout_marginBottom="108dp"-->
-<!--            android:background="@drawable/custom_shape"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            tools:layout_editor_absoluteX="16dp" />-->
+        <EditText
+            android:id="@+id/panjangbata"
+            android:layout_width="104dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:gravity="center"
+            android:text="60 cm"
+            android:hint="Panjang Bata"
+            android:inputType="textPersonName"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.089"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498" />
 
-<!--        <View-->
-<!--            android:id="@+id/rectangle_1"-->
-<!--            android:layout_width="82dp"-->
-<!--            android:layout_height="19dp"-->
-<!--            android:layout_alignParentLeft="true"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:background="@drawable/rectangle_1"-->
-<!--            tools:ignore="MissingConstraints"-->
-<!--            tools:layout_editor_absoluteX="15dp"-->
-<!--            tools:layout_editor_absoluteY="33dp" />-->
+        <EditText
+            android:id="@+id/lebarbata"
+            android:layout_width="92dp"
+            android:layout_height="31dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Lebar Bata"
+            android:inputType="textPersonName"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/meter"-->
-<!--            android:layout_width="82dp"-->
-<!--            android:layout_height="17dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="Meter"-->
-<!--            android:textSize="10dp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <EditText
+            android:id="@+id/tebalbata"
+            android:layout_width="92dp"
+            android:layout_height="31dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Tebal Bata"
+            android:inputType="textPersonName"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-<!--        <View-->
-<!--            android:id="@+id/rectangle_2"-->
-<!--            android:layout_width="82dp"-->
-<!--            android:layout_height="19dp"-->
-<!--            android:layout_alignParentLeft="true"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:background="@drawable/rectangle_2"-->
-<!--            tools:ignore="MissingConstraints"-->
-<!--            tools:layout_editor_absoluteX="118dp"-->
-<!--            tools:layout_editor_absoluteY="33dp" />-->
+        <TextView
+            android:id="@+id/jumlahbata"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.175"
+            app:layout_constraintStart_toStartOf="parent" />
 
-<!--        <TextView-->
-<!--            android:id="@+id/tinggi"-->
-<!--            android:layout_width="82dp"-->
-<!--            android:layout_height="17dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="Tinggi (M)"-->
-<!--            android:textSize="10dp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.932"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
+        <TextView
+            android:id="@+id/jumlahkebutuhan"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="12dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.85"
+            app:layout_constraintStart_toStartOf="parent" />
 
-<!--        <View-->
-<!--            android:id="@+id/rectangle_3"-->
-<!--            android:layout_width="82dp"-->
-<!--            android:layout_height="19dp"-->
-<!--            android:layout_alignParentLeft="true"-->
-<!--            android:layout_alignParentTop="true"-->
-<!--            android:background="@drawable/rectangle_3"-->
-<!--            tools:ignore="MissingConstraints"-->
-<!--            tools:layout_editor_absoluteX="220dp"-->
-<!--            tools:layout_editor_absoluteY="33dp" />-->
+        <TextView
+            android:id="@+id/txt_lebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/lebar"
+            android:layout_marginBottom="12dp"
+            android:text="Lebar Lantai (m)"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/lebar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent" />
 
-<!--        <AutoCompleteTextView-->
-<!--            android:id="@+id/dropdown_menu"-->
-<!--            android:layout_width="88dp"-->
-<!--            android:layout_height="28dp"-->
-<!--            android:inputType="none"-->
-<!--            tools:ignore="MissingConstraints"-->
-<!--            tools:layout_editor_absoluteX="13dp"-->
-<!--            tools:layout_editor_absoluteY="98dp" />-->
+        <TextView
+            android:id="@+id/txt_panjang"
+            android:layout_width="91dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="Panjang Lantai (m)"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/panjang"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/txt_tinggi"
+            android:layout_width="91dp"
+            android:layout_height="17dp"
+            android:text="Tinggi (m)"
+            android:gravity="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tinggi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.803" />
+
+        <TextView
+            android:id="@+id/txt_panjangbata"
+            android:layout_width="91dp"
+            android:layout_height="17dp"
+            android:layout_marginTop="124dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:text="Panjang (Bata)"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/panjangbata"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.085"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.666" />
+
+        <TextView
+            android:id="@+id/txt_lebarbata"
+            android:layout_width="91dp"
+            android:layout_height="17dp"
+            android:gravity="center"
+            android:text="Lebar Bata"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/lebarbata"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.941" />
+
+        <TextView
+            android:id="@+id/txt_tebalbata"
+            android:layout_width="91dp"
+            android:layout_height="17dp"
+            android:gravity="center"
+            android:text="Tebal Bata"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tebalbata"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.941" />
+
+        <Button
+            android:id="@+id/hasil"
+            android:layout_width="72dp"
+            android:layout_height="32dp"
+            android:text="Total"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/jumlahbata"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833" />
 
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="141dp"
+            android:layout_height="17dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Jumlah Bata (pcs)"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/jumlahbata"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.103"
+            app:layout_constraintStart_toStartOf="parent" />
 
-<!--&lt;!&ndash;    </androidx.constraintlayout.widget.ConstraintLayout>&ndash;&gt;-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="141dp"
+            android:layout_height="17dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:text="Kebutuhan (M3)"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/jumlahkebutuhan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.942"
+            app:layout_constraintStart_toStartOf="parent" />
 
-<!--    <com.google.android.material.textfield.TextInputLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:hint=""-->
-<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
 </RelativeLayout>
