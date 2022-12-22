@@ -22,7 +22,6 @@ import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
     ImageSlider imageSlider;
-    Button btnkategori;
     FragmentHomeBinding binding;
 
 
@@ -73,8 +72,8 @@ public class HomeFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment produk = new ProdukFragment();
-                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
+                Fragment produk = new Fragment();
+                FragmentTransaction fm = getSupportFragmentManager().beginTransaction();
                 fm.replace(R.id.kategori,produk).commit();
             }
         });
