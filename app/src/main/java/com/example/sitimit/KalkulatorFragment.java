@@ -78,5 +78,7 @@ public class KalkulatorFragment extends Fragment {
             }
         });
         return view;
+
     }
+
 }
