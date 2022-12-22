@@ -69,9 +69,9 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment fragment = new Fragment();
+                Fragment fragment = new KalkulatorFragment();
                 FragmentTransaction fm = getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.container,fragment).commit();
+                fm.replace(R.id.kalkulatorpanel,fragment).commit();
             }
 
             });

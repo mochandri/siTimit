@@ -19,12 +19,15 @@ import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    ViewPager pager;
     BottomNavigationView bottomNavigation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//
+//        MyPagerAdapter pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
+//        pager = (ViewPager)findViewById()
 
         bottomNavigation = findViewById(R.id.bottom_navigation);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();

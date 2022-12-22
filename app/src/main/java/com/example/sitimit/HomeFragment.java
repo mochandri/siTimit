@@ -1,6 +1,5 @@
 package com.example.sitimit;
 
-import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -23,32 +22,7 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
     ImageSlider imageSlider;
     FragmentHomeBinding binding;
-
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public HomeFragment() {
-        // Required empty public constructor
-    }
-
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_home);
-
-
-    }
-
-    private void setContentView(int fragment_home) {
-    }
+    Button back;
 
 
     @Override
@@ -56,7 +30,18 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        back = view.findViewById(R.id.btnkategori);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment kategori = new ProdukFragment();
+                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
+                fm.replace(R.id.kategori,kategori).commit();
+            }
+        });
+
         imageSlider = view.findViewById(R.id.image_slider);
+
 
 
         ArrayList<SlideModel> imageList = new ArrayList<>();
@@ -68,15 +53,20 @@ public class HomeFragment extends Fragment {
         imageSlider.setImageList(imageList);
 
 
-        Button button = (Button) view.findViewById(R.id.btnkategori);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment produk = new Fragment();
-                FragmentTransaction fm = getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.kategori,produk).commit();
-            }
-        });
+//        Button button = (Button) view.findViewById(R.id.btnkategori);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                Fragment fragment = new Fragment();
+////                FragmentTransaction fm = getParentFragmentManager().beginTransaction();
+////                fm.replace(R.id.kategori,fragment).commit();
+//                FragmentManager fm = getFragmentManager();
+//                FragmentTransaction ft = fm.beginTransaction();
+//                FragmentGreen llf = new FragmentGreen();
+//                ft.replace(R.id.listFragment, llf);
+//                ft.commit();
+//            }
+//        });
         return view;
 
     
