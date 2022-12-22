@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class KalkulatorBata extends AppCompatActivity {
     Spinner spinner;
-    String[] tebalbata = {"7,5", "10", "12,5", "15", "17,5"};
+    String[] tebalbata = {"7,5", "10"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
