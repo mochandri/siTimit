@@ -120,39 +120,6 @@
             app:layout_constraintHorizontal_bias="0.897"
             app:layout_constraintStart_toStartOf="parent" />
 
-
-        <EditText
-            android:id="@+id/panjangbata"
-            android:layout_width="104dp"
-            android:layout_height="30dp"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="Panjang Bata"
-            android:inputType="textPersonName"
-            android:text="60 cm"
-            android:textSize="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.089"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.498" />
-
-        <EditText
-            android:id="@+id/lebarbata"
-            android:layout_width="92dp"
-            android:layout_height="31dp"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="Lebar Bata"
-            android:inputType="textPersonName"
-            android:textSize="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
         <TextView
             android:id="@+id/jumlahbata"
             android:layout_width="75dp"
@@ -224,37 +191,6 @@
             app:layout_constraintVertical_bias="0.803" />
 
         <TextView
-            android:id="@+id/txt_panjangbata"
-            android:layout_width="91dp"
-            android:layout_height="17dp"
-            android:layout_marginTop="124dp"
-            android:layout_marginBottom="6dp"
-            android:gravity="center"
-            android:text="Panjang (Bata)"
-            android:textColor="@android:color/holo_blue_dark"
-            android:textSize="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/panjangbata"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.085"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.666" />
-
-        <TextView
-            android:id="@+id/txt_lebarbata"
-            android:layout_width="91dp"
-            android:layout_height="17dp"
-            android:gravity="center"
-            android:text="Lebar Bata"
-            android:textColor="@android:color/holo_blue_dark"
-            android:textSize="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/lebarbata"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.941" />
-
-        <TextView
             android:id="@+id/txt_tebalbata"
             android:layout_width="91dp"
             android:layout_height="17dp"
@@ -264,23 +200,22 @@
             android:textSize="10dp"
             app:layout_constraintBottom_toTopOf="@+id/spiner"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.897"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.927" />
+            app:layout_constraintVertical_bias="0.913" />
 
         <Spinner
             android:id="@+id/spiner"
-            android:layout_width="70dp"
-            android:layout_height="28dp"
+            android:layout_width="185dp"
+            android:layout_height="35dp"
             android:layout_below="@+id/txt_tebalbata"
             android:background="@android:drawable/btn_dropdown"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.878"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.501" />
+            app:layout_constraintVertical_bias="0.498" />
 
         <Button
             android:id="@+id/hasil"
