@@ -127,9 +127,9 @@
             android:layout_height="30dp"
             android:ems="10"
             android:gravity="center"
-            android:text="60 cm"
             android:hint="Panjang Bata"
             android:inputType="textPersonName"
+            android:text="60 cm"
             android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -152,20 +152,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/tebalbata"
-            android:layout_width="92dp"
-            android:layout_height="31dp"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="Tebal Bata"
-            android:inputType="textPersonName"
-            android:textSize="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.9"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/jumlahbata"
@@ -226,8 +212,8 @@
             android:id="@+id/txt_tinggi"
             android:layout_width="91dp"
             android:layout_height="17dp"
-            android:text="Tinggi (m)"
             android:gravity="center"
+            android:text="Tinggi (m)"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="10dp"
             app:layout_constraintBottom_toTopOf="@+id/tinggi"
@@ -276,12 +262,25 @@
             android:text="Tebal Bata"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="10dp"
-            app:layout_constraintBottom_toTopOf="@+id/tebalbata"
+            app:layout_constraintBottom_toTopOf="@+id/spiner"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintHorizontal_bias="0.897"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.941" />
+            app:layout_constraintVertical_bias="0.927" />
+
+        <Spinner
+            android:id="@+id/spiner"
+            android:layout_width="70dp"
+            android:layout_height="28dp"
+            android:layout_below="@+id/txt_tebalbata"
+            android:background="@android:drawable/btn_dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.878"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.501" />
 
         <Button
             android:id="@+id/hasil"

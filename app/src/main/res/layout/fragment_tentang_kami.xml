@@ -115,7 +115,7 @@
             android:layout_width="114dp"
             android:layout_height="104dp"
             android:layout_marginEnd="40dp"
-            android:background="@drawable/kantorsurabaya"
+            android:background="@drawable/kantormalang"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -135,8 +135,8 @@
 
         <Button
             android:id="@+id/buttonfag"
-            android:layout_width="221dp"
-            android:layout_height="99dp"
+            android:layout_width="217dp"
+            android:layout_height="65dp"
             android:layout_marginStart="140dp"
             android:gravity="center"
             android:onClick="faq"
