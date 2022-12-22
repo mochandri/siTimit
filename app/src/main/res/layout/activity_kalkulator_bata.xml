@@ -127,6 +127,7 @@
             android:layout_height="30dp"
             android:ems="10"
             android:gravity="center"
+            android:text="60 cm"
             android:hint="Panjang Bata"
             android:inputType="textPersonName"
             android:textSize="10dp"
