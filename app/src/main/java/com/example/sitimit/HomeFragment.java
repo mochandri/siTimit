@@ -35,8 +35,10 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Fragment kategori = new ProdukFragment();
-                FragmentTransaction fm = getActivity().getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.kategori,kategori).commit();
+                FragmentTransaction fm = getFragmentManager().beginTransaction();
+                fm.replace(R.id.kategori,kategori);
+                fm.addToBackStack(null);
+                fm.remove(kategori).commit();
             }
         });
 

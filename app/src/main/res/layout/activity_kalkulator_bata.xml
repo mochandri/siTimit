@@ -81,8 +81,8 @@
 
         <EditText
             android:id="@+id/lebar"
-            android:layout_width="112dp"
-            android:layout_height="30dp"
+            android:layout_width="111dp"
+            android:layout_height="35dp"
             android:ems="10"
             android:hint="Masukkan Lebar"
             android:inputType="textPersonName"
@@ -90,8 +90,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/panjang"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.093"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteX="16dp" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
             android:id="@+id/panjang"

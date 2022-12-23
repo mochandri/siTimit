@@ -72,15 +72,10 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
                 Fragment fragment = new KalkulatorFragment();
                 FragmentTransaction fm = getSupportFragmentManager().beginTransaction();
                 fm.replace(R.id.kalkulatorpanel,fragment).commit();
+
             }
 
             });
-
-
-
-        
-
-
     }
     public double luasPanel (double p, double l){
         return (p*l);
