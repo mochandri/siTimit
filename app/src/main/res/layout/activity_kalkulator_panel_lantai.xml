@@ -10,13 +10,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/atas"
         android:layout_width="match_parent"
-        android:layout_height="116dp"
+        android:layout_height="135dp"
         android:background="@color/hijau">
 
         <TextView
             android:layout_width="57dp"
             android:layout_height="23dp"
-            android:layout_marginTop="92dp"
+            android:layout_marginTop="104dp"
             android:text="Hai Sobat !"
             android:textColor="@color/white"
             android:textSize="10dp"
@@ -28,24 +28,36 @@
         <ImageView
             android:layout_width="64dp"
             android:layout_height="43dp"
-            android:layout_marginTop="52dp"
-            android:layout_marginEnd="5dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="4dp"
             android:src="@drawable/sitimit"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="168dp"
+            android:layout_width="223dp"
             android:layout_height="58dp"
-            android:layout_marginBottom="40dp"
+            android:layout_marginBottom="60dp"
             android:text="Kalkulator Panel Lantai"
-            android:textSize="16dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="232dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="60dp"
+            android:text="Hitung Kebutuhan Bata Ringanmu Disini !!"
+            android:textColor="@color/white"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.179"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
             android:id="@+id/iback"
@@ -54,10 +66,10 @@
             android:backgroundTint="@color/hijau"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/textView5"
-            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintHorizontal_bias="0.138"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.011"
+            app:layout_constraintVertical_bias="0.155"
             app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -68,7 +80,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="13dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="25dp"
         android:background="#EAFCEC">
 
@@ -79,6 +91,7 @@
             android:ems="10"
             android:hint="Masukkan Lebar"
             android:inputType="textPersonName"
+            android:textSize="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.098"
@@ -88,17 +101,18 @@
 
         <EditText
             android:id="@+id/panjang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="115dp"
+            android:layout_height="34dp"
             android:ems="10"
             android:hint="Masukkan Panjang"
             android:inputType="textPersonName"
+            android:textSize="12dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.104"
+            app:layout_constraintHorizontal_bias="0.062"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.134" />
+            app:layout_constraintVertical_bias="0.132" />
 
         <TextView
             android:id="@+id/txt_lebar"
@@ -147,7 +161,7 @@
             android:layout_height="17dp"
             android:layout_marginTop="81dp"
             android:layout_marginBottom="60dp"
-            android:text="Total Volume (M3)"
+            android:text="Total Kebutuhan (M3)"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -163,7 +177,7 @@
             android:layout_height="20dp"
             android:layout_marginTop="81dp"
             android:layout_marginBottom="56dp"
-            android:text="Jumlah Lantai (M2)"
+            android:text="Luas Lantai (M2)"
             android:textColor="@color/black"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
