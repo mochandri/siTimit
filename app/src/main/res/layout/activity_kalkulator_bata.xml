@@ -74,9 +74,9 @@
         android:layout_below="@+id/consAtas"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="14dp"
+        android:layout_marginStart="9dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginEnd="19dp"
         android:background="#EAFCEC">
 
         <EditText
@@ -260,4 +260,40 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="116dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="Butuh bantuan? Hubungi kami."
+            android:textColor="#ffff"
+            android:textSize="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.691"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="32dp"
+            android:src="@drawable/wa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.834" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </RelativeLayout>
