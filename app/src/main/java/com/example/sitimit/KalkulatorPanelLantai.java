@@ -16,8 +16,6 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.sitimit.databinding.FragmentHomeBinding;
-
 
 public class KalkulatorPanelLantai extends AppCompatActivity {
     EditText p,l;
@@ -25,7 +23,7 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
     Button hasil;
     ImageButton back;
     Button button2;
-    FragmentHomeBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
