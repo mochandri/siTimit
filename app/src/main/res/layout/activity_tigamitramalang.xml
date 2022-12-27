@@ -8,8 +8,9 @@
     android:orientation="vertical">
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/consAtas">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/consAtas"
@@ -103,8 +104,5 @@
             android:gravity="center_vertical"
             android:textStyle="bold"/>
 
-        <TextView
-            android:layout_width=""
-            android:layout_height=""/>
     </RelativeLayout>
 </ScrollView>
