@@ -2,6 +2,8 @@ package com.example.sitimit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,6 +20,7 @@ public class KalkulatorBata extends AppCompatActivity {
     EditText panjang, lebar, tinggi;
     Button hasil;
     TextView jumlah, luass;
+    Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,6 +95,7 @@ public class KalkulatorBata extends AppCompatActivity {
 
 
                 }
+
 //                if(spinner.getSelectedItem().toString().equals("7,5")){
 //                    String isiPanjang = panjang.getText().toString();
 //                    String isiLebar = lebar.getText().toString();
@@ -106,6 +110,17 @@ public class KalkulatorBata extends AppCompatActivity {
                 }
 
             });
+
+        button1=findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String wpurl="https://api.whatsapp.com/send?phone=6281231313222&text=Halo%20Bu%20Rida%20Tiga%20Mitra%20Surabaya..%20Ada%20Yang%20Ingin%20Saya%20Tanyakan..";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(wpurl));
+                startActivity(intent);
+            }
+        });
         }
     }
 
