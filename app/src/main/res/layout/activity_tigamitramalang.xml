@@ -89,16 +89,11 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                <de.hdodenhof.circleimageview.CircleImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
 
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/Paktaufik"
-                    app:civ_border="true"
-                    app:civ_border_color="@color/grey_10"
-                    app:civ_border_width="2dp"
-                    app:civ_shadow="true"
-                    app:civ_shadow_radius="0" />
+                        android:layout_width="59dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/taufik" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -128,25 +123,20 @@
 
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/Paktaufik"
-                        app:civ_border="true"
-                        app:civ_border_color="@color/grey_10"
-                        app:civ_border_width="2dp"
-                        app:civ_shadow="true"
-                        app:civ_shadow_radius="0" />
+                        android:src="@drawable/dini" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Pak Taufik"
+                        android:text="Mbak Dini"
                         android:textColor="@color/grey_90"
                         android:fontFamily="sans-serif-medium"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Surveyor"
+                        android:text="Customer Service"
                         android:textColor="@color/black"
                         android:fontFamily="sans-serif-light"/>
 
@@ -163,29 +153,62 @@
 
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/Paktaufik"
-                        app:civ_border="true"
-                        app:civ_border_color="@color/grey_10"
-                        app:civ_border_width="2dp"
-                        app:civ_shadow="true"
-                        app:civ_shadow_radius="0" />
+                        android:src="@drawable/fajar"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
-                        android:text="Pak Taufik"
+                        android:text="Fajar"
                         android:textColor="@color/grey_90"
                         android:fontFamily="sans-serif-medium"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Surveyor"
+                        android:text="Digital Marketing"
                         android:textColor="@color/black"
                         android:fontFamily="sans-serif-light"/>
 
                 </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Tentang Kami"
+                    android:textColor="@color/colorPrimary"
+                    android:fontFamily="sans-serif-medium"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/article_text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
 
             </LinearLayout>
 
