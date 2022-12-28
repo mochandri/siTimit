@@ -15,7 +15,6 @@
         android:layout_height="135dp"
         android:background="@color/hijau">
 
-
         <TextView
             android:layout_width="223dp"
             android:layout_height="31dp"
@@ -268,30 +267,30 @@
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:layout_marginBottom="116dp"
+            android:layout_width="221dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="84dp"
+            android:backgroundTint="@color/hijau"
             android:gravity="center"
             android:orientation="vertical"
             android:text="Butuh bantuan? Hubungi kami."
             android:textColor="#ffff"
             android:textSize="9dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.691"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.951"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="16dp"
             android:src="@drawable/wa"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.834" />
-
+            app:layout_constraintVertical_bias="0.875" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -9,26 +9,22 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
-        android:layout_height="291dp"
+        android:layout_height="250dp"
         android:layout_gravity="start"
-        android:src="@drawable/sitimit" />
+        android:src="@drawable/icon_aplikasi" />
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25sp"
-        android:gravity="center"
-        android:text="Si TIMIT"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        android:textStyle="bold|normal" />
-
-
-
-
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="25sp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Si TIMIT "-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="35dp"-->
+<!--        android:textStyle="bold|normal" />-->
 
 </LinearLayout>
