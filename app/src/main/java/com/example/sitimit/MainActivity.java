@@ -3,6 +3,8 @@ package com.example.sitimit;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -25,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        replaceFragment(new HomeFragment());
+
+
+
+
 //
 //        MyPagerAdapter pagerAdapter = new MyPagerAdapter(getSupportFragmentManager());
 //        pager = (ViewPager)findViewById()
@@ -53,6 +60,14 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    private  void replaceFragment(Fragment fragment){
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.frame_layout, fragment);
+        fragmentTransaction.commit();
+
     }
     public void Hitung(View view){
         Intent intent = new Intent(MainActivity.this, KalkulatorBata.class);

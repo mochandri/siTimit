@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".tigamitramalang"
     android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/consAtas">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/consAtas"
@@ -19,6 +24,7 @@
             android:layout_marginTop="16dp"
             android:text="Tentang Kami"
             android:textSize="20dp"
+            android:gravity="center"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.563"
@@ -63,19 +69,40 @@
             app:layout_constraintVertical_bias="0.726" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/pt_tiga_mitra_cab_malang"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="162dp"
-        android:layout_marginRight="112dp"
-        android:layout_marginBottom="164dp"
-        android:gravity="top"
-        android:text="PT.Tiga Mitra Surabaya Cab Malang" />
+        <TextView
+            android:id="@+id/pt_tiga_mitra_cab_malang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="112dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginRight="112dp"
+            android:layout_marginBottom="164dp"
+            android:gravity="center"
+            android:text="PT.Tiga Mitra Surabaya Cab Malang"
+            android:textStyle="bold"/>
 
-    
+        <ImageView
+            android:id="@+id/kantormalang"
+            android:layout_width="304dp"
+            android:layout_height="146dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/kantormalang" />
 
-</RelativeLayout>
+        <TextView
+            android:layout_width="341dp"
+            android:layout_height="216dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="376dp"
+            android:text="@string/article_text"
+            android:gravity="center_vertical"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</ScrollView>
