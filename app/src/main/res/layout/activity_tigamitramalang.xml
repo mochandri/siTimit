@@ -82,6 +82,7 @@
                 android:gravity="center_horizontal"
                 android:orientation="horizontal">
 
+<<<<<<< Updated upstream
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -94,6 +95,17 @@
                         android:layout_width="59dp"
                         android:layout_height="50dp"
                         android:src="@drawable/taufik" />
+=======
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/Paktaufik"
+                    app:civ_border="true"
+                    app:civ_border_color="@color/grey_10"
+                    app:civ_border_width="2dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="0"/>
+>>>>>>> Stashed changes
 
                 <TextView
                     android:layout_width="wrap_content"
