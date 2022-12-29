@@ -90,36 +90,27 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:src="@drawable/taufik" />
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/taufik" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Pak Taufik"
-                    android:textColor="@color/grey_90"
-                    android:fontFamily="sans-serif-medium"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Pak Taufik"
+                        android:textColor="@color/grey_90"
+                        android:fontFamily="sans-serif-medium"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Surveyor"
-                    android:textColor="@color/black"
-                    android:fontFamily="sans-serif-light"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Surveyor"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-light"/>
 
                 </LinearLayout>
-
-
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -157,7 +148,6 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:orientation="vertical">
-
 
                     <de.hdodenhof.circleimageview.CircleImageView
 
@@ -222,8 +212,8 @@
 
             </LinearLayout>
 
-
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>
+
