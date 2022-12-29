@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        replaceFragment(new HomeFragment());
+//        replaceFragment(new HomeFragment());
 
 
 
@@ -62,13 +62,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private  void replaceFragment(Fragment fragment){
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(com.denzcoskun.imageslider.R.id.linear_layout, fragment);
-        fragmentTransaction.commit();
-
-    }
+//    private  void replaceFragment(Fragment fragment){
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//        fragmentTransaction.replace(com.denzcoskun.imageslider.R.id.linear_layout, fragment);
+//        fragmentTransaction.commit();
+//
+//    }
     public void Hitung(View view){
         Intent intent = new Intent(MainActivity.this, KalkulatorBata.class);
         startActivity(intent);
