@@ -19,7 +19,7 @@ import android.widget.Button;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.sitimit.databinding.FragmentHomeBinding;
-import com.example.sitimit.retrofit.Myadapter;
+//import com.example.sitimit.retrofit.Myadapter;
 
 import java.util.ArrayList;
 
@@ -29,7 +29,7 @@ public class HomeFragment extends Fragment {
     ImageSlider imageSlider;
     FragmentHomeBinding binding;
     Button back;
-    private ArrayList<News> newArraylist;
+//    private ArrayList<News> newArraylist;
     private String[] newHeading;
     private int[] imageResourceID;
     private RecyclerView recyclerView;
@@ -114,46 +114,46 @@ public class HomeFragment extends Fragment {
 //    ;
 
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-        dataInitialize();
-
-        recyclerView =view.findViewById(R.id.recyclerview);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setHasFixedSize(true);
-        Myadapter myadapter = new Myadapter(getContext(),newArraylist);
-        recyclerView.setAdapter(myadapter);
-        myadapter.notifyDataSetChanged();
-    }
-
-    private void dataInitialize() {
-
-        newArraylist = new ArrayList<>();
-
-        newHeading = new String[]{
-                getString(R.string.head_1),
-                getString(R.string.head_2),
-                getString(R.string.head_3),
-
-
-
-        };
-        imageResourceID = new int[]{
-                R.drawable.a_panel,
-                R.drawable.b_mortar,
-                R.drawable.c_bata,
-
-        };
-
-
-        for (int i=0;i<newHeading.length;i++){
-
-            News news = new News(newHeading[i],imageResourceID[i]);
-            newArraylist.add(news);
-        }
-    }
+//    @Override
+//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+//        super.onViewCreated(view, savedInstanceState);
+//
+//        dataInitialize();
+//
+//        recyclerView =view.findViewById(R.id.recyclerview);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+//        recyclerView.setHasFixedSize(true);
+//        Myadapter myadapter = new Myadapter(getContext(),newArraylist);
+//        recyclerView.setAdapter(myadapter);
+//        myadapter.notifyDataSetChanged();
+//    }
+//
+//    private void dataInitialize() {
+//
+//        newArraylist = new ArrayList<>();
+//
+//        newHeading = new String[]{
+//                getString(R.string.head_1),
+//                getString(R.string.head_2),
+//                getString(R.string.head_3),
+//
+//
+//
+//        };
+//        imageResourceID = new int[]{
+//                R.drawable.a_panel,
+//                R.drawable.b_mortar,
+//                R.drawable.c_bata,
+//
+//        };
+//
+//
+//        for (int i=0;i<newHeading.length;i++){
+//
+//            News news = new News(newHeading[i],imageResourceID[i]);
+//            newArraylist.add(news);
+//        }
+//    }
 }
 
 

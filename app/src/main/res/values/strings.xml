@@ -38,10 +38,18 @@
 
     </string>
 
-
     <string name="news_a">Panel Lantai</string>
     <string name="news_b">Semen Mortar</string>
     <string name="news_c">Bata Ringan</string>
+
+<!--        <string name ="news_a">Panel Lantai</string>-->
+<!--        <string name ="news_b">Semen Mortar</string>-->
+<!--        <string name ="news_c">Bata Ringan</string>-->
+
+<!--        <string name ="head_1">panel lantai kokoh dan kuat</string>-->
+<!--        <string name ="head_2">semen mortar gampang di apklikasin</string>-->
+<!--        <string name ="head_3">bata ringan  presisi</string>-->
+
 
     <string name="head_1">panel lantai kokoh dan kuat</string>
     <string name="head_2">semen mortar gampang di apklikasin</string>
