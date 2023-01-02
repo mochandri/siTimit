@@ -20,21 +20,16 @@
         Ruko TCBD-TR1/11, Jl. Raya Klakah Rejo, Klakahrejo, Kec. Benowo, Kota SBY, Jawa Timur 60198
 
     </string>
-    <string name="isi_faq">
-        1.  Saya tidak tahu cara menghitung estimasi kebutuhannya. Apakah Tiga Mitra bisa menghitungkan?\n
-            Tentu saja CS kami akan membantu anda untuk menghitungkan estimasi kebutuhan serta merekomendasikan produk terbaik\n\n
-        2.  Apakah produk yang dijual Tiga Mitra dijamin Asli dari pabrik?\n
-            Kami menjamin semua produk yang kami jual adalah produk asli karena pengiriman kami langsung dari pabrik.\n\n
-        3.  Kalau kirim ke luar Pulau Jawa apakah gratis ongkir juga?\n
-            Untuk pengiriman keluar pulau jawa harga yang kami berikan untuk pengiriman sampai ke depo di Surabaya.\n\n
-        4.  Berapa lama Pengiriman barang ke tempat tujuan?\n
-            Untuk pengiriman barang, kami akan proses setelah pembeli melakukan pembayaran dan waktu sekitar 1 jam setelah pembayaran (tergantung seberapa jauh lokasi)\n\n
-        5.  Bagaimana cara order material bangunan di Tiga Mitra secara online?\n
-            Anda hanya perlu menghubungi CS kami melalui telfon atau chat whatsapp di nomor yang sudah tertera pada hotline kami.\n\n
-        6.  Bisakah saya menjadi reseller dari PT. Tiga Mitra Surabaya?\n
-            Sangat bisa. Dengan melakukan pembelian bata ringan minimal 10,8m3 setelahnya anda bisa mendaftarkan diri untuk menjadi reseller kami. Tentunya akan ada bonus khusus bagi anda yang menjadi reseller kami.\n\n
-        7.  Dimana kami dapat membeli produk tigamitrasurabaya?\n
-            Anda dapat membeli produk kami secara online / datang ketempat kami di jalan .... atau membuka aplikasi onlineshop dan memesan secara online 🙂\n\n
+    <string name="article_text1">
+        Perusahaan kami bergerak dalam bidang Distributor Bahan Bangunan, Supplier serta Agen Material Bahan Bangunan Modern seperti jual Bata ringan, Panel lantai, Semen mortar, Panel sandwich, Pintu PVC, Plavon PVC, Keramik lantai, Galvalum, Besi, Alumunium, Gypsum, Granit Tile, Tandon Air, Wallpaper Dinding, dll. Kami melayani pengiriman ke seluruh Indonesia.
+
+        Dan selama 8 tahun selalu berkomitmen untuk memberikan pelayanan yang terbaik dan kepuasan pelanggan adalah prioritas utama perusahaan bermotto “Pilihan Cerdas dan Berkualitas untuk bangunan Anda.”\n\n
+
+        Alamat Kami \n
+        Ruko TCBD-TR1/11, Jl. Raya Klakah Rejo, Klakahrejo, Kec. Benowo, Kota SBY, Jawa Timur 60198
+
+    </string>
+    <string name="isi_faq">1. Saya tidak tahu cara menghitung estimasi kebutuhannya. Apakah Tiga Mitra bisa menghitungkan?\nTentu saja CS kami akan membantu anda untuk menghitungkan estimasi kebutuhan serta merekomendasikan produk terbaik\n\n2. Apakah produk yang dijual Tiga Mitra dijamin Asli dari pabrik?\nKami menjamin semua produk yang kami jual adalah produk asli karena pengiriman kami langsung dari pabrik.\n\n3. Kalau kirim ke luar Pulau Jawa apakah gratis ongkir juga?\nUntuk pengiriman keluar pulau jawa harga yang kami berikan untuk pengiriman sampai ke depo di Surabaya.\n\n4. Berapa lama Pengiriman barang ke tempat tujuan?\nUntuk pengiriman barang, kami akan proses setelah pembeli melakukan pembayaran dan waktu sekitar 1 jam setelah pembayaran (tergantung seberapa jauh lokasi)\n\n5. Bagaimana cara order material bangunan di Tiga Mitra secara online?\nAnda hanya perlu menghubungi CS kami melalui telfon atau chat whatsapp di nomor yang sudah tertera pada hotline kami.\n\n6. Bisakah saya menjadi reseller dari PT. Tiga Mitra Surabaya?\nSangat bisa. Dengan melakukan pembelian bata ringan minimal 10,8m3 setelahnya anda bisa mendaftarkan diri untuk menjadi reseller kami. Tentunya akan ada bonus khusus bagi anda yang menjadi reseller kami.\n\n7. Dimana kami dapat membeli produk tigamitrasurabaya?\nAnda dapat membeli produk kami secara online / datang ketempat kami di jalan .... atau membuka aplikasi onlineshop dan memesan secara online 🙂\n\n
 
     </string>
 
@@ -55,6 +50,18 @@
     <string name="head_2">semen mortar gampang di apklikasin</string>
     <string name="head_3">bata ringan  presisi</string>
 
+
+<string name="kontakkami">
+        Telp     :(031)XXXXXX\n
+        Watshapp :0812XXXXXXX
+    </string>
+    <string name="kontakkami1">
+        Telp     :(031)XXXXXX\n
+        Watshapp :0812XXXXXXX
+    </string>
+<string name="jamoperasi">
+        Senin - jumat : Jam 08.00-16.00 WIB\nSabtu : Jam 08.00-14.00 WIB
+    </string>
 
 </resources>
 
