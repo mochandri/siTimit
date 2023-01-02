@@ -1,8 +1,13 @@
 package com.example.sitimit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,13 +45,53 @@ public class BataRingan extends AppCompatActivity
             mRecyclerview = (RecyclerView) findViewById(R.id.recyclerView);
             mRequest = Volley.newRequestQueue(getApplicationContext());
             mListItems = new ArrayList<>();
+            final int[] RecyclerViewItemPosition = new int[1];
 
             request();
-
+            ArrayList<String> ImageTitleidArrayListForClick = null;
             mManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
             mRecyclerview.setLayoutManager(mManager);
             mAdapter = new AdapterList(mListItems,BataRingan.this);
             mRecyclerview.setAdapter(mAdapter);
+
+            //fungsi klik
+            mRecyclerview.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
+              GestureDetector gestureDetector = new GestureDetector(BataRingan.this, new GestureDetector.SimpleOnGestureListener(){
+                  @Override
+                  public boolean onSingleTapUp(MotionEvent motionEvent){
+                      return true;
+                  }
+              });
+
+
+                @Override
+                public boolean onInterceptTouchEvent(RecyclerView Recyclerview, MotionEvent motionEvent) {
+
+
+                    View view = Recyclerview.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
+
+                    if(view !=null && gestureDetector.onTouchEvent(motionEvent)){
+                        RecyclerViewItemPosition[0] =Recyclerview.getChildAdapterPosition(view);
+
+                        Intent intent= new Intent(BataRingan.this,DetailActivity.class);
+                        intent.putExtra("send_id",ImageTitleidArrayListForClick.get(RecyclerViewItemPosition[0]));
+                        startActivity(intent);
+                    }
+
+
+                    return false;
+                }
+
+                @Override
+                public void onTouchEvent( RecyclerView Recyclerview, MotionEvent motionEvent) {
+
+                }
+
+                @Override
+                public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+
+                }
+            });
 
         }
         private void request(){
