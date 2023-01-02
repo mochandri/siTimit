@@ -329,7 +329,7 @@ tools:context=".tigamitrasurabaya"
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Direktor"
+                        android:text="Director"
                         android:textColor="@color/black"
                         android:fontFamily="sans-serif-light"/>
 
@@ -357,7 +357,7 @@ tools:context=".tigamitrasurabaya"
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/emilia_kurniasih" />
+                        android:src="@drawable/khorida" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -386,7 +386,7 @@ tools:context=".tigamitrasurabaya"
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/agustian" />
+                        android:src="@drawable/winda" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -416,7 +416,7 @@ tools:context=".tigamitrasurabaya"
 
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hartono"/>
+                        android:src="@drawable/dina"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -456,7 +456,7 @@ tools:context=".tigamitrasurabaya"
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/emilia_kurniasih" />
+                        android:src="@drawable/karina" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -485,7 +485,7 @@ tools:context=".tigamitrasurabaya"
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/agustian" />
+                        android:src="@drawable/mirna" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -515,7 +515,7 @@ tools:context=".tigamitrasurabaya"
 
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hartono"/>
+                        android:src="@drawable/ilmi"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -555,7 +555,7 @@ tools:context=".tigamitrasurabaya"
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/emilia_kurniasih" />
+                        android:src="@drawable/agustian" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -584,7 +584,7 @@ tools:context=".tigamitrasurabaya"
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/agustian" />
+                        android:src="@drawable/suhartono" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -614,7 +614,7 @@ tools:context=".tigamitrasurabaya"
 
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hartono"/>
+                        android:src="@drawable/anang"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -654,7 +654,7 @@ tools:context=".tigamitrasurabaya"
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/emilia_kurniasih" />
+                        android:src="@drawable/nurfauzan" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -683,7 +683,7 @@ tools:context=".tigamitrasurabaya"
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/agustian" />
+                        android:src="@drawable/edysunarto" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -713,7 +713,7 @@ tools:context=".tigamitrasurabaya"
 
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hartono"/>
+                        android:src="@drawable/sugiri"/>
 
                     <TextView
                         android:layout_width="wrap_content"
