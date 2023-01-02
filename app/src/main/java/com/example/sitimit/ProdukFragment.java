@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,6 +16,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class ProdukFragment extends Fragment {
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -60,6 +63,21 @@ public class ProdukFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_produk, container, false);
+        View view = inflater.inflate(R.layout.fragment_produk, container, false);
+
+        Button btnBata = (Button) view.findViewById(R.id.buttonBataRingan);
+        btnBata.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnBata();
+
+            }
+            public void btnBata(){
+                Intent intent = new Intent(getActivity(), BataRingan.class);
+                startActivity(intent);
+            }
+        });
+        return view;
+
     }
 }
