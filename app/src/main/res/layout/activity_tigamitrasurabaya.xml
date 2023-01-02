@@ -109,7 +109,7 @@ tools:context=".tigamitrasurabaya"
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/article_text"
+                    android:text="@string/article_text1"
                     android:textColor="@color/black"
                     android:justificationMode="inter_word"/>
 

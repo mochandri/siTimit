@@ -20,6 +20,15 @@
         Ruko TCBD-TR1/11, Jl. Raya Klakah Rejo, Klakahrejo, Kec. Benowo, Kota SBY, Jawa Timur 60198
 
     </string>
+    <string name="article_text1">
+        Perusahaan kami bergerak dalam bidang Distributor Bahan Bangunan, Supplier serta Agen Material Bahan Bangunan Modern seperti jual Bata ringan, Panel lantai, Semen mortar, Panel sandwich, Pintu PVC, Plavon PVC, Keramik lantai, Galvalum, Besi, Alumunium, Gypsum, Granit Tile, Tandon Air, Wallpaper Dinding, dll. Kami melayani pengiriman ke seluruh Indonesia.
+
+        Dan selama 8 tahun selalu berkomitmen untuk memberikan pelayanan yang terbaik dan kepuasan pelanggan adalah prioritas utama perusahaan bermotto “Pilihan Cerdas dan Berkualitas untuk bangunan Anda.”\n\n
+
+        Alamat Kami \n
+        Ruko TCBD-TR1/11, Jl. Raya Klakah Rejo, Klakahrejo, Kec. Benowo, Kota SBY, Jawa Timur 60198
+
+    </string>
     <string name="isi_faq">
         1.  Saya tidak tahu cara menghitung estimasi kebutuhannya. Apakah Tiga Mitra bisa menghitungkan?\n
             Tentu saja CS kami akan membantu anda untuk menghitungkan estimasi kebutuhan serta merekomendasikan produk terbaik\n\n
@@ -55,6 +64,14 @@
     <string name="head_2">semen mortar gampang di apklikasin</string>
     <string name="head_3">bata ringan  presisi</string>
 
+
+<string name="kontakkami">
+        Telp     :(031)XXXXXX\n
+        Watshapp :0812XXXXXXX
+    </string>
+<string name="jamoperasi">
+        Senin - jumat : Jam 08.00-16.00 WIB\nSabtu : Jam 08.00-14.00 WIB
+    </string>
 
 </resources>
 
