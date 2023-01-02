@@ -149,7 +149,7 @@
                     android:layout_marginTop="50dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
-                    android:text="SURABAYA"
+                    android:text="FAQ"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
