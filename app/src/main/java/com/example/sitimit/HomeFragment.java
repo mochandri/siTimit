@@ -2,7 +2,6 @@ package com.example.sitimit;
 
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
@@ -14,6 +13,7 @@ import android.widget.Button;
 import com.denzcoskun.imageslider.ImageSlider;
 import com.denzcoskun.imageslider.models.SlideModel;
 import com.example.sitimit.databinding.FragmentHomeBinding;
+
 
 import java.util.ArrayList;
 
