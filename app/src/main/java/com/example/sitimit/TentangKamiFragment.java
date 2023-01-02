@@ -94,11 +94,10 @@ public class TentangKamiFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         btnfag.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-               buttonfag();
-            }
+            public void onClick(View v) { buttonfag();}
             private void buttonfag(){
                 Intent intent = new Intent(getActivity(), faq.class);
                 startActivity(intent);

@@ -141,15 +141,15 @@
                     android:src="@drawable/kantorsurabaya" />
 
                 <Button
-                    android:id="@+id/buttonfaq"
-                    android:onClick="faq"
+                    android:id="@+id/buttonfag"
+                    android:onClick="fag"
                     android:layout_width="190dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="170dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
-                    android:text="SURABAYA"
+                    android:text="FAQ"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 

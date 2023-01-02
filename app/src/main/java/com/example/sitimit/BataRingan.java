@@ -35,46 +35,53 @@ public class BataRingan extends AppCompatActivity
         RequestQueue mRequest;
         List<ModelList> mListItems;
 
+        int RecyclerViewItemPosition;
+
+
+        ArrayList<String> ImageTitleidArrayListForClick;
+
         private final String url ="https://jualbahanbangunan.com/timit/json_bata.php";
 
         @Override
-        protected void onCreate(Bundle savedInstanceState){
+        protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_bata_ringan);
+
+
+            ImageTitleidArrayListForClick = new ArrayList<>();
 
             mRecyclerview = (RecyclerView) findViewById(R.id.recyclerView);
             mRequest = Volley.newRequestQueue(getApplicationContext());
             mListItems = new ArrayList<>();
-            final int[] RecyclerViewItemPosition = new int[1];
+
 
             request();
-            ArrayList<String> ImageTitleidArrayListForClick = null;
-            mManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
+            mManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
             mRecyclerview.setLayoutManager(mManager);
-            mAdapter = new AdapterList(mListItems,BataRingan.this);
+            mAdapter = new AdapterList(mListItems, BataRingan.this);
             mRecyclerview.setAdapter(mAdapter);
 
             //fungsi klik
             mRecyclerview.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {
-              GestureDetector gestureDetector = new GestureDetector(BataRingan.this, new GestureDetector.SimpleOnGestureListener(){
-                  @Override
-                  public boolean onSingleTapUp(MotionEvent motionEvent){
-                      return true;
-                  }
-              });
+                GestureDetector gestureDetector = new GestureDetector(BataRingan.this, new GestureDetector.SimpleOnGestureListener() {
+                    @Override
+                    public boolean onSingleTapUp(MotionEvent motionEvent) {
+                        return true;
+                    }
+                });
 
 
                 @Override
                 public boolean onInterceptTouchEvent(RecyclerView Recyclerview, MotionEvent motionEvent) {
 
 
-                    View view = Recyclerview.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
+                     View view = Recyclerview.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
 
-                    if(view !=null && gestureDetector.onTouchEvent(motionEvent)){
-                        RecyclerViewItemPosition[0] =Recyclerview.getChildAdapterPosition(view);
+                    if (view != null && gestureDetector.onTouchEvent(motionEvent)) {
+                        RecyclerViewItemPosition= Recyclerview.getChildAdapterPosition(view);
 
-                        Intent intent= new Intent(BataRingan.this,DetailActivity.class);
-                        intent.putExtra("send_id",ImageTitleidArrayListForClick.get(RecyclerViewItemPosition[0]));
+                        Intent intent = new Intent(BataRingan.this, DetailActivity.class);
+                        intent.putExtra("send_id", ImageTitleidArrayListForClick.get(RecyclerViewItemPosition));
                         startActivity(intent);
                     }
 
@@ -83,7 +90,7 @@ public class BataRingan extends AppCompatActivity
                 }
 
                 @Override
-                public void onTouchEvent( RecyclerView Recyclerview, MotionEvent motionEvent) {
+                public void onTouchEvent(RecyclerView Recyclerview, MotionEvent motionEvent) {
 
                 }
 
