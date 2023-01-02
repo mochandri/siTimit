@@ -12,7 +12,7 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="article_text">
-        Perusahaan kami (PT. Tiga Mitra Surabaya) bergerak dalam bidang Distributor Bahan Bangunan, Supplier serta Agen Material Bahan Bangunan Modern seperti jual Bata ringan, Panel lantai, Semen mortar, Panel sandwich, Pintu PVC, Plavon PVC, Keramik lantai, Galvalum, Besi, Alumunium, Gypsum, Granit Tile, Tandon Air, Wallpaper Dinding, dll. Kami melayani pengiriman ke seluruh Indonesia.
+        Perusahaan kami (PT. Tiga Mitra Surabaya Cab Malang) bergerak dalam bidang Distributor Bahan Bangunan, Supplier serta Agen Material Bahan Bangunan Modern seperti jual Bata ringan, Panel lantai, Semen mortar, Panel sandwich, Pintu PVC, Plavon PVC, Keramik lantai, Galvalum, Besi, Alumunium, Gypsum, Granit Tile, Tandon Air, Wallpaper Dinding, dll. Kami melayani pengiriman ke seluruh Indonesia.
 
         Dan selama 8 tahun selalu berkomitmen untuk memberikan pelayanan yang terbaik dan kepuasan pelanggan adalah prioritas utama perusahaan bermotto “Pilihan Cerdas dan Berkualitas untuk bangunan Anda.”\n\n
 
@@ -37,4 +37,24 @@
             Anda dapat membeli produk kami secara online / datang ketempat kami di jalan .... atau membuka aplikasi onlineshop dan memesan secara online 🙂\n\n
 
     </string>
+
+    <string name="news_a">Panel Lantai</string>
+    <string name="news_b">Semen Mortar</string>
+    <string name="news_c">Bata Ringan</string>
+
+<!--        <string name ="news_a">Panel Lantai</string>-->
+<!--        <string name ="news_b">Semen Mortar</string>-->
+<!--        <string name ="news_c">Bata Ringan</string>-->
+
+<!--        <string name ="head_1">panel lantai kokoh dan kuat</string>-->
+<!--        <string name ="head_2">semen mortar gampang di apklikasin</string>-->
+<!--        <string name ="head_3">bata ringan  presisi</string>-->
+
+
+    <string name="head_1">panel lantai kokoh dan kuat</string>
+    <string name="head_2">semen mortar gampang di apklikasin</string>
+    <string name="head_3">bata ringan  presisi</string>
+
+
 </resources>
+

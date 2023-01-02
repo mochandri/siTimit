@@ -12,15 +12,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/consAtas"
         android:layout_width="match_parent"
-        android:layout_height="116dp"
+        android:layout_height="135dp"
         android:background="@color/hijau">
 
-
         <TextView
-            android:layout_width="198dp"
-            android:layout_height="35dp"
+            android:layout_width="223dp"
+            android:layout_height="31dp"
             android:layout_marginTop="16dp"
-            android:text="Kalkulator Material"
+            android:text="Kalkulator Bata Ringan"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +30,7 @@
         <TextView
             android:layout_width="232dp"
             android:layout_height="57dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="68dp"
             android:text="Hitung Kebutuhan Bata Ringanmu Disini !!"
             android:textColor="@color/white"
             android:textSize="22dp"
@@ -74,22 +73,22 @@
         android:layout_below="@+id/consAtas"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="14dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="19dp"
         android:background="#EAFCEC">
 
         <EditText
             android:id="@+id/lebar"
-            android:layout_width="111dp"
-            android:layout_height="35dp"
+            android:layout_width="91dp"
+            android:layout_height="32dp"
             android:ems="10"
             android:hint="Masukkan Lebar"
             android:inputType="textPersonName"
             android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/panjang"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintHorizontal_bias="0.092"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
@@ -99,7 +98,7 @@
             android:ems="10"
             android:hint="Masukkan Panjang"
             android:inputType="textPersonName"
-            android:textSize="9dp"
+            android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +112,7 @@
             android:ems="10"
             android:hint="Masukkan Tinggi"
             android:inputType="textPersonName"
-            android:textSize="9dp"
+            android:textSize="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/panjang"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.897"
@@ -153,10 +152,10 @@
             android:layout_marginBottom="12dp"
             android:text="Lebar Lantai (m)"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="10dp"
+            android:textSize="11dp"
             app:layout_constraintBottom_toTopOf="@+id/lebar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintHorizontal_bias="0.089"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -167,7 +166,7 @@
             android:layout_marginBottom="10dp"
             android:text="Panjang Lantai (m)"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="10dp"
+            android:textSize="11dp"
             app:layout_constraintBottom_toTopOf="@+id/panjang"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -181,7 +180,7 @@
             android:gravity="center"
             android:text="Tinggi (m)"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="10dp"
+            android:textSize="11dp"
             app:layout_constraintBottom_toTopOf="@+id/tinggi"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.897"
@@ -196,7 +195,7 @@
             android:gravity="center"
             android:text="Tebal Bata"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="10dp"
+            android:textSize="11dp"
             app:layout_constraintBottom_toTopOf="@+id/spiner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -221,14 +220,14 @@
             android:layout_width="72dp"
             android:layout_height="32dp"
             android:text="Total"
-            android:textSize="10dp"
+            android:textSize="11dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/jumlahbata"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.833" />
-
 
         <TextView
             android:id="@+id/textView"
@@ -260,4 +259,40 @@
             app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="221dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="84dp"
+            android:backgroundTint="@color/hijau"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="Butuh bantuan? Hubungi kami."
+            android:textColor="#ffff"
+            android:textSize="9dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/wa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.875" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 </RelativeLayout>
