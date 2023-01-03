@@ -71,7 +71,7 @@ public class TentangKamiFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_tentang_kami, container, false);
         Button button = (Button) view.findViewById(R.id.buttonsby);
         Button btnmalang = (Button) view.findViewById(R.id.buttonmalang);
-        Button btnfag = (Button) view.findViewById(R.id.buttonfag);
+        Button btnfag = (Button) view.findViewById(R.id.buttonfaq);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

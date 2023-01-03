@@ -26,7 +26,7 @@ public class KalkulatorBata extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kalkulator_bata);
-        spinner=findViewById(R.id.spiner );
+        spinner=findViewById(R.id.spinner );
         panjang = (EditText) findViewById(R.id.panjang);
         lebar = (EditText) findViewById(R.id.lebar);
         tinggi = (EditText) findViewById(R.id.tinggi);
@@ -111,7 +111,7 @@ public class KalkulatorBata extends AppCompatActivity {
 
             });
 
-        button1=findViewById(R.id.button1);
+        button1=findViewById(R.id.button2);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

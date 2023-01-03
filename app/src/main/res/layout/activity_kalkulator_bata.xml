@@ -1,298 +1,416 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KalkulatorBata">
+    tools:context=".KalkulatorPanelLantai"
+    android:id="@+id/kalkulatorpanel">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/button2"-->
+    <!--            android:layout_width="221dp"-->
+    <!--            android:layout_height="33dp"-->
+    <!--            android:layout_marginBottom="84dp"-->
+    <!--            android:backgroundTint="@color/hijau"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:text="Butuh bantuan? Hubungi kami."-->
+    <!--            android:textColor="#ffff"-->
+    <!--            android:textSize="9dp"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toStartOf="@+id/imageView5"-->
+    <!--            app:layout_constraintHorizontal_bias="0.951"-->
+    <!--            app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/imageView5"-->
+    <!--            android:layout_width="30dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:layout_marginEnd="16dp"-->
+    <!--            android:src="@drawable/wa"-->
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            app:layout_constraintVertical_bias="0.875" />-->
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/consAtas"
+        android:id="@+id/atas"
         android:layout_width="match_parent"
         android:layout_height="135dp"
         android:background="@color/hijau">
 
         <TextView
-            android:layout_width="223dp"
-            android:layout_height="31dp"
-            android:layout_marginTop="16dp"
-            android:text="Kalkulator Bata Ringan"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.563"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="232dp"
-            android:layout_height="57dp"
-            android:layout_marginTop="68dp"
-            android:text="Hitung Kebutuhan Bata Ringanmu Disini !!"
-            android:textColor="@color/white"
-            android:textSize="22dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.089"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="53dp"
-            android:layout_height="13dp"
+            android:layout_width="57dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="104dp"
             android:text="Hai Sobat !"
             android:textColor="@color/white"
             android:textSize="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.988"
+            app:layout_constraintHorizontal_bias="0.985"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.932" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
             android:layout_width="64dp"
             android:layout_height="43dp"
+            android:layout_marginTop="60dp"
             android:layout_marginEnd="4dp"
-            android:src="@drawable/timit"
+            android:src="@drawable/sitimit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="223dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="60dp"
+            android:text="Kalkulator Bata Ringan"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.726" />
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="76dp"
+            android:text="Hitung Kebutuhan Bata Ringanmu Disini !!"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="337dp"
-        android:layout_below="@+id/consAtas"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="19dp"
-        android:background="#EAFCEC">
-
-        <EditText
-            android:id="@+id/lebar"
-            android:layout_width="91dp"
-            android:layout_height="32dp"
-            android:ems="10"
-            android:hint="Masukkan Lebar"
-            android:inputType="textPersonName"
-            android:textSize="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/panjang"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.092"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <EditText
-            android:id="@+id/panjang"
-            android:layout_width="91dp"
-            android:layout_height="32dp"
-            android:ems="10"
-            android:hint="Masukkan Panjang"
-            android:inputType="textPersonName"
-            android:textSize="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.229" />
-
-        <EditText
-            android:id="@+id/tinggi"
-            android:layout_width="91dp"
-            android:layout_height="32dp"
-            android:ems="10"
-            android:hint="Masukkan Tinggi"
-            android:inputType="textPersonName"
-            android:textSize="10dp"
-            app:layout_constraintBottom_toBottomOf="@+id/panjang"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.897"
-            app:layout_constraintStart_toStartOf="parent" />
+    <RelativeLayout
+        android:layout_width="391dp"
+        android:layout_height="386dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:background="#EAFCEC" >
 
         <TextView
-            android:id="@+id/jumlahbata"
-            android:layout_width="75dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="16dp"
-            android:text=""
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.175"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/jumlahkebutuhan"
-            android:layout_width="75dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="12dp"
-            android:text=""
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.85"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/txt_panjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="12dp"
+            android:text="Panjang Lantai (m)" />
 
         <TextView
             android:id="@+id/txt_lebar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBaseline="@+id/lebar"
-            android:layout_marginBottom="12dp"
-            android:text="Lebar Lantai (m)"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="150dp"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="11dp"
-            app:layout_constraintBottom_toTopOf="@+id/lebar"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.089"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/txt_panjang"
-            android:layout_width="91dp"
-            android:layout_height="17dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="10dp"
-            android:text="Panjang Lantai (m)"
-            android:textColor="@android:color/holo_blue_dark"
-            android:textSize="11dp"
-            app:layout_constraintBottom_toTopOf="@+id/panjang"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            android:textSize="12dp"
+            android:text="Lebar Lantai (m)" />
 
         <TextView
             android:id="@+id/txt_tinggi"
-            android:layout_width="91dp"
-            android:layout_height="17dp"
-            android:gravity="center"
-            android:text="Tinggi (m)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="280dp"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="11dp"
-            app:layout_constraintBottom_toTopOf="@+id/tinggi"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.897"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.803" />
+            android:textSize="12dp"
+            android:text="Tinggi Lantai (m)" />
+
+        <EditText
+            android:id="@+id/panjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="20dp"
+            android:text="Masukkan Panjang" />
+
+        <EditText
+            android:id="@+id/lebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="150dp"
+            android:text="Masukkan Lebar" />
+
+        <EditText
+            android:id="@+id/tinggi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textSize="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="280dp"
+            android:text="Masukkan Tinggi" />
 
         <TextView
             android:id="@+id/txt_tebalbata"
-            android:layout_width="91dp"
-            android:layout_height="17dp"
-            android:gravity="center"
-            android:text="Tebal Bata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="20dp"
             android:textColor="@android:color/holo_blue_dark"
-            android:textSize="11dp"
-            app:layout_constraintBottom_toTopOf="@+id/spiner"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.913" />
+            android:textSize="12dp"
+            android:text="Tebal Bata (cm)" />
 
         <Spinner
-            android:id="@+id/spiner"
-            android:layout_width="185dp"
+            android:id="@+id/spinner"
+            android:layout_width="150dp"
             android:layout_height="35dp"
-            android:layout_below="@+id/txt_tebalbata"
-            android:background="@android:drawable/btn_dropdown"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.498" />
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="130dp"
+            android:background="@android:drawable/btn_dropdown" />
 
         <Button
             android:id="@+id/hasil"
-            android:layout_width="72dp"
-            android:layout_height="32dp"
-            android:text="Total"
-            android:textSize="11dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/jumlahbata"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.833" />
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="185dp"
+            android:text="HITUNG"/>
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="141dp"
+            android:id="@+id/textView3"
+            android:layout_width="110dp"
             android:layout_height="17dp"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            android:text="Jumlah Bata (pcs)"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/jumlahbata"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.103"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="141dp"
-            android:layout_height="17dp"
-            android:layout_marginBottom="12dp"
-            android:gravity="center"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginBottom="60dp"
             android:text="Kebutuhan (M3)"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/jumlahkebutuhan"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.942"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:textStyle="bold"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="125dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginBottom="56dp"
+            android:layout_marginLeft="50dp"
+            android:text="Jumlah Bata (pcs)"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+        <TextView
+            android:id="@+id/jumlahbata"
+            android:layout_width="72dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="75dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/jumlahkebutuhan"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="235dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="391dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginRight="10dp">
+
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/button2"
             android:layout_width="221dp"
             android:layout_height="33dp"
             android:layout_marginBottom="84dp"
             android:backgroundTint="@color/hijau"
             android:gravity="center"
             android:orientation="vertical"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="10dp"
             android:text="Butuh bantuan? Hubungi kami."
             android:textColor="#ffff"
-            android:textSize="9dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView5"
-            app:layout_constraintHorizontal_bias="0.951"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:textSize="9dp" />
 
         <ImageView
             android:id="@+id/imageView5"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/wa"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.875" />
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/wa"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
+    </RelativeLayout>
 </RelativeLayout>
+
+
+
+    <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--            app:layout_constraintEnd_toEndOf="parent"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"/>-->
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/lebar"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:ems="10"-->
+    <!--                android:hint="Masukkan Lebar"-->
+    <!--                android:inputType="textPersonName"-->
+    <!--                android:textSize="12dp"-->
+    <!--                android:layout_marginTop="40dp"-->
+    <!--                -->
+    <!--                />-->
+    <!--&lt;!&ndash;                app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:layout_constraintHorizontal_bias="0.072"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:layout_constraintTop_toBottomOf="@+id/panjang"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:layout_constraintVertical_bias="0.205" />&ndash;&gt;-->
+
+    <!--            <EditText-->
+    <!--                android:id="@+id/panjang"-->
+    <!--                android:layout_width="148dp"-->
+    <!--                android:layout_height="35dp"-->
+    <!--                android:ems="10"-->
+    <!--                android:hint="Masukkan Panjang"-->
+    <!--                android:inputType="textPersonName"-->
+    <!--                android:textSize="12dp"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.078"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintVertical_bias="0.127" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/txt_lebar"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_alignBaseline="@+id/lebar"-->
+    <!--                android:layout_marginBottom="8dp"-->
+    <!--                android:text="Lebar Lantai (m)"-->
+    <!--                android:textColor="@android:color/holo_blue_dark"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/lebar"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.059"-->
+    <!--                app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/txt_panjang"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="16dp"-->
+    <!--                android:layout_marginBottom="10dp"-->
+    <!--                android:text="Panjang Lantai (m)"-->
+    <!--                android:textColor="@android:color/holo_blue_dark"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/panjang"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.066"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="parent"-->
+    <!--                app:layout_constraintVertical_bias="1.0" />-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/hasil"-->
+    <!--                android:layout_width="100dp"-->
+    <!--                android:layout_height="48dp"-->
+    <!--                android:layout_marginTop="24dp"-->
+    <!--                android:text="HITUNG"-->
+    <!--                app:layout_constraintBottom_toTopOf="@+id/twluas"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.489"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/lebar"-->
+    <!--                app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView3"-->
+    <!--                android:layout_width="141dp"-->
+    <!--                android:layout_height="17dp"-->
+    <!--                android:layout_marginTop="81dp"-->
+    <!--                android:layout_marginBottom="60dp"-->
+    <!--                android:text="Total Kebutuhan (M3)"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textStyle="bold"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.133"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="@+id/button"-->
+    <!--                app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/textView4"-->
+    <!--                android:layout_width="111dp"-->
+    <!--                android:layout_height="20dp"-->
+    <!--                android:layout_marginTop="81dp"-->
+    <!--                android:layout_marginBottom="56dp"-->
+    <!--                android:text="Luas Lantai (M2)"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textStyle="bold"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.866"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toTopOf="@+id/button"-->
+    <!--                app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/twluas"-->
+    <!--                android:layout_width="72dp"-->
+    <!--                android:layout_height="41dp"-->
+    <!--                android:layout_marginTop="15dp"-->
+    <!--                android:text=""-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textStyle="bold"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.813"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/textView3"-->
+    <!--                app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/twvolume"-->
+    <!--                android:layout_width="75dp"-->
+    <!--                android:layout_height="40dp"-->
+    <!--                android:layout_marginTop="15dp"-->
+    <!--                android:text=""-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textStyle="bold"-->
+    <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--                app:layout_constraintEnd_toEndOf="parent"-->
+    <!--                app:layout_constraintHorizontal_bias="0.201"-->
+    <!--                app:layout_constraintStart_toStartOf="parent"-->
+    <!--                app:layout_constraintTop_toBottomOf="@+id/textView3"-->
+    <!--                app:layout_constraintVertical_bias="0.0" />-->
+

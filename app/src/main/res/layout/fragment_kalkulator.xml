@@ -21,21 +21,22 @@
             android:text="Kalkulator Material"
             android:textSize="20dp"
             android:textStyle="bold"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.563"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_width="228dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="52dp"
+            android:layout_width="231dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="60dp"
             android:text="Hitung Kebutuhan Materialmu !!"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="18dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.087"
+            app:layout_constraintHorizontal_bias="0.088"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,7 +65,7 @@
             app:layout_constraintVertical_bias="0.726" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="316dp"
         android:layout_height="162dp"
         android:layout_below="@+id/consAtas"
@@ -80,38 +81,38 @@
             android:id="@+id/textView2"
             android:layout_width="117dp"
             android:layout_height="53dp"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="30dp"
             android:text="Kalkulator Bata Ringan"
             android:textSize="20dp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/button2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+             />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="163dp"
             android:layout_height="154dp"
+            android:layout_marginLeft="140dp"
             android:src="@drawable/img"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="52dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="30dp"
             android:onClick="Hitung"
             android:text="Hitung"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            android:textSize="12dp"
+            android:textStyle="bold" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="316dp"
         android:layout_height="162dp"
         android:layout_below="@+id/consAtas"
@@ -127,36 +128,33 @@
             android:id="@+id/textView"
             android:layout_width="117dp"
             android:layout_height="53dp"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
             android:text="Kalkulator Panel Lantai"
             android:textSize="20dp"
+            android:textColor="@color/black"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/button"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+        />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="133dp"
             android:layout_height="138dp"
-            android:layout_marginEnd="16dp"
-            android:src="@drawable/panelkal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="155dp"
+            android:src="@drawable/panelkal" />
 
         <Button
             android:id="@+id/btnpanel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="52dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="30dp"
             android:text="Hitung"
+         />
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
 </RelativeLayout>
