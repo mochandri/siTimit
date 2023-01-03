@@ -34,7 +34,6 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
         volume =(TextView) findViewById(R.id.twvolume);
         luas = (TextView) findViewById(R.id.twluas);
         hasil = (Button) findViewById(R.id.hasil);
-        back = (ImageButton) findViewById(R.id.iback);
 
         hasil.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -25,6 +25,7 @@ public class HomeFragment extends Fragment {
     ImageSlider imageSlider;
     FragmentHomeBinding binding;
     Button back;
+
 //    private ArrayList<News> newArraylist;
     private String[] newHeading;
     private int[] imageResourceID;
@@ -49,8 +50,6 @@ public class HomeFragment extends Fragment {
         });
 
         imageSlider = view.findViewById(R.id.image_slider);
-
-
 
         ArrayList<SlideModel> imageList = new ArrayList<>();
         imageList.add(new SlideModel(R.drawable.kantor, null));
