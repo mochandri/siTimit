@@ -47,6 +47,18 @@
 <!--        android:layout_marginTop="90dp"-->
 <!--        android:layout_marginEnd="10dp"-->
 <!--        android:background="#EAFCEC"/>-->
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
     <com.denzcoskun.imageslider.ImageSlider
 
         android:id="@+id/image_slider"
@@ -60,140 +72,352 @@
 
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/csKategori"
-        android:layout_width="match_parent"
-        android:layout_height="195dp"
-        android:layout_marginTop="10dp">
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="57dp"
-            android:layout_height="52dp"
-            android:src="@drawable/kategori"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView3"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="256dp"
-            android:layout_height="33dp"
-            android:layout_marginStart="64dp"
-            android:fontFamily="sans-serif-black"
-            android:text="Pilih Kategori Produk"
-            android:textSize="26dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
-        </TextView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/csKategori"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#EAFCEC">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Tampilkan produk berdasarkan kategori"
-            android:textColor="@color/hijau"
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="46dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/kategori"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView3"
+                    app:layout_constraintHorizontal_bias="0.388"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
-            app:layout_constraintHorizontal_bias="0.291"
-            app:layout_constraintStart_toEndOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="207dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Pilih Kategori Produk"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.046">
+                </TextView>
 
-            <Button
-            android:id="@+id/btnkategori"
-            android:onClick="kategori"
-            android:layout_width="82dp"
-            android:layout_height="37dp"
-            android:layout_marginStart="4dp"
-            android:backgroundTint="@color/hijau"
-            android:bufferType="normal"
-            android:text="Pilih Kategori"
-            android:textSize="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/textView3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.071" />
+                <TextView
+                    android:layout_width="257dp"
+                    android:layout_height="19dp"
+                    android:text="Tampilkan produk berdasarkan kategori"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/hijau"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="60dp"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <Button
+                    android:id="@+id/btnkategori"
+                    android:onClick="buttonlihat"
+                    android:layout_width="111dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="280dp"
+                    android:backgroundTint="@color/hijau"
+                    android:text="Lihat Semua"
+                    android:textSize="8dp"/>
 
-<!--<FrameLayout-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent">-->
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/recyclerview"-->
+                <HorizontalScrollView
+                    android:id="@+id/scrol1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/imgbtn1"
+                            android:onClick="buttonimg1"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/kantorsurabaya"/>
+                        <ImageButton
+                            android:id="@+id/imgbtn2"
+                            android:onClick="buttonimg2"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/kantorsurabaya"/>
+                        <ImageButton
+                            android:id="@+id/imgbtn3"
+                            android:onClick="buttonimg3"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/kantorsurabaya"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/csArtikel"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#EAFCEC">
+
+                <ImageView
+                    android:id="@+id/gmbrartikel"
+                    android:layout_width="46dp"
+                    android:layout_height="47dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/artikel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textartikel"
+                    android:layout_width="159dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="64dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Pilih Artikel Kami"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+                </TextView>
+
+                <TextView
+                    android:layout_width="223dp"
+                    android:layout_height="19dp"
+                    android:text="Baca artikel terbaru dan berita lainnya"
+                    android:textSize="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="@color/hijau"/>
+
+                <Button
+                    android:id="@+id/btnselengkapnya"
+                    android:onClick="buttonselengkapnya"
+                    android:layout_width="111dp"
+                    android:layout_height="42dp"
+                    android:layout_marginLeft="280dp"
+                    android:backgroundTint="@color/hijau"
+                    android:text="SELENGKAPNYA"
+                    android:textSize="8dp"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/scrol2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageButton
+                            android:id="@+id/btnartikel1"
+                            android:onClick="buttonartikel1"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/kantorsurabaya"/>
+                        <ImageButton
+                            android:id="@+id/btnartikel2"
+                            android:onClick="buttonartikel2"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/kantorsurabaya"/>
+                        <ImageButton
+                            android:id="@+id/btnartikel3"
+                            android:onClick="buttonartikel3"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/kantorsurabaya"/>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/csArtikel2"
+                android:layout_width="match_parent"
+                android:layout_height="195dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#EAFCEC">
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/csKategori"-->
 <!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        tools:listitem="@layout/list_item"/>-->
-<!--</FrameLayout>-->
+<!--        android:layout_height="195dp"-->
+<!--        android:layout_marginTop="10dp">-->
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/csArtikel"
-        android:layout_width="match_parent"
-        android:layout_height="195dp"
-        android:layout_marginTop="10dp">
 
-        <ImageView
-            android:id="@+id/gmbrartikel"
-            android:layout_width="57dp"
-            android:layout_height="52dp"
-            android:src="@drawable/artikel"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView5"-->
+<!--            android:layout_width="46dp"-->
+<!--            android:layout_height="47dp"-->
+<!--            android:src="@drawable/kategori"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView3"-->
+<!--            app:layout_constraintHorizontal_bias="0.388"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
 
-        <TextView
-            android:id="@+id/textartikel"
-            android:layout_width="258dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="64dp"
-            android:fontFamily="sans-serif-black"
-            android:text="Pilih Artikel Kami"
-            android:textSize="26dp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+<!--        <TextView-->
+<!--            android:id="@+id/textView3"-->
+<!--            android:layout_width="207dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginStart="64dp"-->
+<!--            android:fontFamily="sans-serif-black"-->
+<!--            android:text="Pilih Kategori Produk"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18dp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.046">-->
+<!--        </TextView>-->
 
-        </TextView>
+<!--        <TextView-->
+<!--            android:layout_width="257dp"-->
+<!--            android:layout_height="19dp"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            android:text="Tampilkan produk berdasarkan kategori"-->
+<!--            android:textSize="12dp"-->
+<!--            android:textColor="@color/hijau"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/imageView5"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textView3" />-->
 
-        <TextView
-            android:layout_width="202dp"
-            android:layout_height="23dp"
+<!--        <Button-->
+<!--            android:id="@+id/btnkategori"-->
+<!--            android:layout_width="96dp"-->
+<!--            android:layout_height="38dp"-->
+<!--            android:layout_marginStart="4dp"-->
+<!--            android:backgroundTint="@color/hijau"-->
+<!--            android:bufferType="normal"-->
+<!--            android:onClick="kategori"-->
+<!--            android:text="Lihat Semua"-->
+<!--            android:textSize="8dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.6"-->
+<!--            app:layout_constraintStart_toEndOf="@+id/textView3"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
 
-            android:text="Tampilkan artikel terbaru kami"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.306"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textartikel" />
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:layout_width="363dp"-->
+<!--            android:layout_height="118dp"-->
+<!--            android:layout_marginBottom="16dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent" />-->
 
-        <Button
-            android:id="@+id/btnkartikel"
-            android:layout_width="82dp"
-            android:layout_height="37dp"
-            android:layout_marginStart="4dp"
-            android:backgroundTint="@color/hijau"
-            android:bufferType="normal"
-            android:onClick="kategori"
-            android:text="Pilih Kategori"
-            android:textSize="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.071" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--&lt;!&ndash;<FrameLayout&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_height="match_parent">&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/recyclerview"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        tools:listitem="@layout/list_item"/>&ndash;&gt;-->
+<!--&lt;!&ndash;</FrameLayout>&ndash;&gt;-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/csArtikel"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="195dp"-->
+<!--        android:layout_marginTop="10dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/gmbrartikel"-->
+<!--            android:layout_width="46dp"-->
+<!--            android:layout_height="47dp"-->
+<!--            android:layout_marginStart="8dp"-->
+<!--            android:src="@drawable/artikel"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/textartikel"-->
+<!--            android:layout_width="159dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginStart="64dp"-->
+<!--            android:fontFamily="sans-serif-black"-->
+<!--            android:text="Pilih Artikel Kami"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="18dp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0">-->
+
+<!--        </TextView>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="223dp"-->
+<!--            android:layout_height="19dp"-->
+<!--            android:text="Baca artikel terbaru dan berita lainnya"-->
+<!--            android:textSize="12dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.303"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textartikel" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnkartikel"-->
+<!--            android:layout_width="111dp"-->
+<!--            android:layout_height="42dp"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:backgroundTint="@color/hijau"-->
+<!--            android:bufferType="normal"-->
+<!--            android:onClick="kategori"-->
+<!--            android:text="SELENGKAPNYA"-->
+<!--            android:textSize="8dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.0" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
 
 </LinearLayout>

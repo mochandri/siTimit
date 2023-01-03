@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+
 import android.widget.TextView;
 
 public class DetailActivity extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
+
 
         getSupportActionBar().hide();
 
@@ -31,5 +33,6 @@ public class DetailActivity extends AppCompatActivity {
         imageView.setImageResource(Integer.parseInt(gambar_url));
         textNama.setText(nama_bata);
         textDeskripsi.setText(deskripsi_bata);
+
     }
 }
