@@ -37,17 +37,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        back = view.findViewById(R.id.btnkategori);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment kategori = new ProdukFragment();
-                FragmentTransaction fm = getFragmentManager().beginTransaction();
-                fm.replace(R.id.kategori,kategori);
-                fm.addToBackStack(null);
-                fm.remove(kategori).commit();
-            }
-        });
 
         imageSlider = view.findViewById(R.id.image_slider);
 

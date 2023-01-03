@@ -119,16 +119,6 @@
                     android:textSize="12dp"
                     android:layout_marginLeft="60dp"/>
 
-                <Button
-                    android:id="@+id/btnkategori"
-                    android:onClick="buttonlihat"
-                    android:layout_width="111dp"
-                    android:layout_height="42dp"
-                    android:layout_marginLeft="280dp"
-                    android:backgroundTint="@color/hijau"
-                    android:text="Lihat Semua"
-                    android:textSize="8dp"/>
-
 
                 <HorizontalScrollView
                     android:id="@+id/scrol1"
@@ -212,16 +202,6 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="60dp"
                     android:textColor="@color/hijau"/>
-
-                <Button
-                    android:id="@+id/btnselengkapnya"
-                    android:onClick="buttonselengkapnya"
-                    android:layout_width="111dp"
-                    android:layout_height="42dp"
-                    android:layout_marginLeft="280dp"
-                    android:backgroundTint="@color/hijau"
-                    android:text="SELENGKAPNYA"
-                    android:textSize="8dp"/>
 
                 <HorizontalScrollView
                     android:id="@+id/scrol2"
