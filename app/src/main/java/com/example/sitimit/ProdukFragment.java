@@ -65,6 +65,8 @@ public class ProdukFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_produk, container, false);
 
+        Button btnPanel = (Button)view.findViewById(R.id.buttonPanelLantai);
+        Button btnSemen = (Button) view.findViewById(R.id.buttonMortar);
         Button btnBata = (Button) view.findViewById(R.id.buttonBataRingan);
         btnBata.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +76,26 @@ public class ProdukFragment extends Fragment {
             }
             public void btnBata(){
                 Intent intent = new Intent(getActivity(), BataRingan.class);
+                startActivity(intent);
+            }
+        });
+        btnSemen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnSemen();
+            }
+            public void btnSemen(){
+                Intent intent = new Intent(getActivity(), semenMortar.class);
+                startActivity(intent);
+            }
+        });
+        btnPanel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnPanel();
+            }
+            public void btnPanel(){
+                Intent intent = new Intent(getActivity(), PanelLantai.class);
                 startActivity(intent);
             }
         });

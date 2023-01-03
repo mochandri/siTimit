@@ -51,7 +51,7 @@
     <string name="head_3">bata ringan  presisi</string>
 
 
-<string name="kontakkami">
+    <string name="kontakkami">
         Telp     :(031)XXXXXX\n
         Watshapp :0812XXXXXXX
     </string>
@@ -59,7 +59,7 @@
         Telp     :(031)XXXXXX\n
         Watshapp :0812XXXXXXX
     </string>
-<string name="jamoperasi">
+    <string name="jamoperasi">
         Senin - jumat : Jam 08.00-16.00 WIB\nSabtu : Jam 08.00-14.00 WIB
     </string>
 

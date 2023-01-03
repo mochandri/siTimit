@@ -45,8 +45,10 @@ public class BataRingan extends AppCompatActivity
 
             mManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
             mRecyclerview.setLayoutManager(mManager);
-            mAdapter = new AdapterList(mListItems,BataRingan.this);
+            mAdapter = new AdapterList(mListItems, BataRingan.this);
             mRecyclerview.setAdapter(mAdapter);
+
+
 
         }
         private void request(){
@@ -61,6 +63,7 @@ public class BataRingan extends AppCompatActivity
                                     ModelList model= new ModelList();
                                     model.setNama_bata(data.getString("nama_bata"));
                                     model.setHarga_bata(data.getString("harga_bata"));
+                                    model.setDeskripsi_bata(data.getString("deskripsi_bata"));
                                     model.setGambar_url(data.getString("gambar_url"));
 
                                     mListItems.add(model);

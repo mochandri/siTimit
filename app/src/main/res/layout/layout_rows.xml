@@ -1,60 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
+    android:layout_height="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cardview"
     android:elevation="100dp">
 
     <LinearLayout
+        android:layout_width="187dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="citicon"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="271dp"
+        android:orientation="horizontal"
+        android:elevation="100dp">
 
         <ImageView
             android:id="@+id/img_cover"
-            android:layout_width="182dp"
-            android:layout_height="198dp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_width="176dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp" />
+
 
         <LinearLayout
-            android:layout_width="217dp"
+            android:layout_width="221dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/nama"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:text="citicon"
-                android:textSize="30dp" />
+            <!--            <TextView-->
+            <!--                android:id="@+id/nama"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:fontFamily="sans-serif-black"-->
+            <!--                android:text="citicon"-->
+            <!--                android:textSize="35dp"-->
+            <!--                android:textColor="@color/black"/>-->
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="Rp. " />
+                android:layout_marginTop="30dp"
+                android:text="Rp."
+                android:textSize="15dp" />
 
             <TextView
                 android:id="@+id/harga"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
+                android:layout_marginLeft="20dp"
                 android:text="harga"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="deskripsi"
                 android:textSize="15dp" />
 
             <Button
                 android:id="@+id/btnBeli"
-                android:layout_width="69dp"
-                android:layout_height="37dp"
+                android:layout_width="66dp"
+                android:layout_height="38dp"
                 android:layout_gravity="right"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="25dp"
                 android:layout_marginRight="30dp"
-                android:text="BELI SEKARANG"
-                android:textSize="05dp" />
+                android:text="BELI "
+                android:textSize="10dp" />
+
+
 
         </LinearLayout>
     </LinearLayout>

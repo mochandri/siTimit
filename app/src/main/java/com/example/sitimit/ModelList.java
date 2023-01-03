@@ -1,6 +1,8 @@
 package com.example.sitimit;
 
+
 public class ModelList {
+
     int id;
     String nama_bata;
     String harga_bata;

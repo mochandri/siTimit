@@ -71,7 +71,7 @@ public class TentangKamiFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_tentang_kami, container, false);
         Button button = (Button) view.findViewById(R.id.buttonsby);
         Button btnmalang = (Button) view.findViewById(R.id.buttonmalang);
-        Button btnfag = (Button) view.findViewById(R.id.buttonfag);
+        Button btnfag = (Button) view.findViewById(R.id.buttonfaq);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,6 +84,16 @@ public class TentangKamiFragment extends Fragment {
             }
 
         });
+        btnfag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                buttonfaq();
+            }
+            private void buttonfaq(){
+                Intent intent = new Intent(getActivity(),faq.class);
+                startActivity(intent);
+            }
+        });
         btnmalang.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,16 +104,7 @@ public class TentangKamiFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        btnfag.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               buttonfag();
-            }
-            private void buttonfag(){
-                Intent intent = new Intent(getActivity(), faq.class);
-                startActivity(intent);
-            }
-        });
+
         return view;
     }
 
