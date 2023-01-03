@@ -1,8 +1,13 @@
 package com.example.sitimit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,12 +46,13 @@ public class BataRingan extends AppCompatActivity
             mRequest = Volley.newRequestQueue(getApplicationContext());
             mListItems = new ArrayList<>();
 
-            request();
 
+            request();
             mManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
             mRecyclerview.setLayoutManager(mManager);
             mAdapter = new AdapterList(mListItems,BataRingan.this);
             mRecyclerview.setAdapter(mAdapter);
+
 
         }
         private void request(){
