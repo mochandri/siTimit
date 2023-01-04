@@ -281,7 +281,7 @@
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/i"/>
+                            android:src="@drawable/ip"/>
                         <ImageView
                             android:id="@+id/img_10"
                             android:layout_width="200dp"
