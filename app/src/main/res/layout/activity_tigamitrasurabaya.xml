@@ -68,7 +68,7 @@ tools:context=".tigamitrasurabaya"
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_centerInParent="true"
                     android:gravity="center"
                     android:orientation="vertical">
@@ -78,18 +78,25 @@ tools:context=".tigamitrasurabaya"
                         android:layout_width="500dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-medium"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="25dp"
                         android:gravity="center"
                         android:textStyle="bold"
                         android:text="PT.TIGA MITRA SURABAYA "
                         android:textColor="@color/black" />
 
-                    <ImageView
+                    <WebView
+                        android:id="@+id/video"
+                        android:layout_marginTop="25dp"
                         android:layout_width="385dp"
                         android:layout_height="166dp"
-                        android:layout_marginTop="15dp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/kantorsurabaya" />
+                        android:layout_centerInParent="true"/>
+
+                    <!--                    <ImageView-->
+<!--                        android:layout_width="385dp"-->
+<!--                        android:layout_height="166dp"-->
+<!--                        android:layout_marginTop="15dp"-->
+<!--                        android:scaleType="centerCrop"-->
+<!--                        android:src="@drawable/kantorsurabaya" />-->
 
                 </LinearLayout>
 

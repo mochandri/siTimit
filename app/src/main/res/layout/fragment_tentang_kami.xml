@@ -77,9 +77,9 @@
                 <Button
                     android:id="@+id/buttonsby"
                     android:onClick="tigamitrasby"
-                    android:layout_width="190dp"
+                    android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="170dp"
+                    android:layout_marginLeft="190dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
@@ -105,14 +105,14 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/kantorsurabaya" />
+                    android:src="@drawable/kantormalang" />
 
                 <Button
                     android:id="@+id/buttonmalang"
                     android:onClick="tigamitramalang"
-                    android:layout_width="190dp"
+                    android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="170dp"
+                    android:layout_marginLeft="190dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
@@ -129,6 +129,7 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
                 app:cardBackgroundColor="#EAFCEC">
 
                 <ImageView
@@ -138,14 +139,14 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/kantorsurabaya" />
+                    android:src="@drawable/faq2" />
 
                 <Button
                     android:id="@+id/buttonfaq"
                     android:onClick="faq"
-                    android:layout_width="190dp"
+                    android:layout_width="150dp"
                     android:layout_height="50dp"
-                    android:layout_marginLeft="170dp"
+                    android:layout_marginLeft="190dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
