@@ -27,6 +27,7 @@
         </activity>
         <activity
             android:name=".DetailActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -34,9 +35,11 @@
         </activity>
         <activity
             android:name=".artikel"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".KalkulatorPanelLantai"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="false" /> <!-- android:name=".faq" -->
         <!-- android:exported="false"/> -->
         <meta-data
@@ -45,6 +48,7 @@
 
         <activity
             android:name=".tigamitramalang"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -59,9 +63,11 @@
         </activity>
         <activity
             android:name=".tigamitrasurabaya"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="false" />
         <activity
             android:name=".KalkulatorBata"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -69,6 +75,7 @@
         </activity>
         <activity
             android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -78,6 +85,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="true" />
     </application>
 

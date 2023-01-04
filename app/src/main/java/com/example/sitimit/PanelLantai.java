@@ -1,11 +1,14 @@
 package com.example.sitimit;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -24,7 +27,7 @@ import java.util.List;
 public class PanelLantai extends AppCompatActivity {
 
     RecyclerView mRecyclerview;
-    RecyclerView.Adapter mAdapter;
+    AdapterPanel mAdapter;
     RecyclerView.LayoutManager mManager;
     RequestQueue mRequest;
     List<ModelPanel> mListItems;
@@ -47,6 +50,34 @@ public class PanelLantai extends AppCompatActivity {
         mAdapter = new AdapterPanel(mListItems,PanelLantai.this);
         mRecyclerview.setAdapter(mAdapter);
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.search_menu,menu);
+        SearchView searchView = (SearchView) menu.findItem(R.id.item_search).getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                newText = newText.toLowerCase();
+                ArrayList<ModelPanel> itemFilter = new ArrayList<>();
+                for (ModelPanel modelPanel : mListItems ){
+                    String nama = modelPanel.getNama_panel().toLowerCase();
+                    if(nama.contains(newText)){
+                        itemFilter.add(modelPanel);
+                    }
+                }
+                mAdapter.setFilter(itemFilter);
+
+                return true;
+            }
+        });
+        return super.onCreateOptionsMenu(menu);
     }
     private void request(){
         JsonArrayRequest requestImage = new JsonArrayRequest(Request.Method.POST,url,null,

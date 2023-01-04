@@ -15,10 +15,10 @@
 
 
         <TextView
-            android:layout_width="198dp"
-            android:layout_height="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Bata Ringan"
+            android:text="SEMEN MORTAR"
             android:textSize="20dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,13 +69,9 @@
         android:layout_width="match_parent"
         android:layout_height="615dp"
         android:layout_below="@+id/consAtas"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/layout_rows"
-        android:orientation="vertical"/>
-
-
-
-
+        tools:listitem="@layout/layout_rows" />
 </RelativeLayout>

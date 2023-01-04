@@ -1,11 +1,16 @@
 package com.example.sitimit;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.widget.Toast;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -20,11 +25,12 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class semenMortar extends AppCompatActivity {
 
         RecyclerView mRecyclerview;
-        RecyclerView.Adapter mAdapter;
+        AdapterSemen mAdapter;
         RecyclerView.LayoutManager mManager;
         RequestQueue mRequest;
         List<ModelSemen> mListItem;
@@ -48,7 +54,37 @@ public class semenMortar extends AppCompatActivity {
         mRecyclerview.setAdapter(mAdapter);
 
     }
-        private void request () {
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.search_menu,menu);
+        SearchView searchView = (SearchView) menu.findItem(R.id.item_search).getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                newText = newText.toLowerCase();
+                ArrayList<ModelSemen> itemFilter = new ArrayList<>();
+                for (ModelSemen modelSemen : mListItem ){
+                    String nama = modelSemen.getNama_semen().toLowerCase();
+                    if(nama.contains(newText)){
+                        itemFilter.add(modelSemen);
+                    }
+                }
+                mAdapter.setFilter(itemFilter);
+
+                return true;
+            }
+        });
+            return super.onCreateOptionsMenu(menu);
+    }
+
+    private void request () {
         JsonArrayRequest requestImage = new JsonArrayRequest(Request.Method.POST, url, null,
                 new Response.Listener<JSONArray>() {
                     @Override

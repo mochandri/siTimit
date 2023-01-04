@@ -16,11 +16,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AdapterSemen extends RecyclerView.Adapter<AdapterSemen.HolderItem> {
     List<ModelSemen> mListItem;
     Context context;
+
 
     public AdapterSemen(List<ModelSemen> mListItem, Context context) {
         this.mListItem = mListItem;
@@ -73,5 +75,10 @@ public class AdapterSemen extends RecyclerView.Adapter<AdapterSemen.HolderItem> 
             deskripsi_semen = (TextView) v.findViewById(R.id.deskripsi);
             btnbeli = (Button) v.findViewById(R.id.btnBeli);
         }
+    }
+    void setFilter (ArrayList<ModelSemen> filterModel){
+        mListItem = new ArrayList<>();
+        mListItem.addAll(filterModel);
+        notifyDataSetChanged();
     }
 }
