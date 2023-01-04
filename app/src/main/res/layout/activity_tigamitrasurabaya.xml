@@ -88,7 +88,7 @@ tools:context=".tigamitrasurabaya"
                         android:id="@+id/video"
                         android:layout_marginTop="25dp"
                         android:layout_width="385dp"
-                        android:layout_height="166dp"
+                        android:layout_height="250dp"
                         android:layout_centerInParent="true"/>
 
                     <!--                    <ImageView-->

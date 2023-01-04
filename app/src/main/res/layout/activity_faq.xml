@@ -97,8 +97,10 @@
                     android:justificationMode="inter_word"/>
 
                 <Button
+                    android:id="@+id/buttonwaa"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="btnwa"
                     android:text="Hubungi Kami"
                     android:textSize="16dp"
                     android:textColor="@color/black"

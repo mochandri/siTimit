@@ -7,7 +7,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
-public class faq extends AppCompatActivity {
+public class Faq extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +15,7 @@ public class faq extends AppCompatActivity {
         setContentView(R.layout.activity_faq);
     }
     public void btnwa(View view){
-        String url="https://wa.me/6281231313222";
+        String url="https://api.whatsapp.com/send?phone=6281231313222&text=Halo%20Bu%20Rida%20Tiga%20Mitra%20Surabaya..%20Ada%20Yang%20Ingin%20Saya%20Tanyakan..";
         Intent bukawa = new Intent(Intent.ACTION_VIEW);
         bukawa.setData(Uri.parse(url));
         startActivity(bukawa);

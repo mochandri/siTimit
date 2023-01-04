@@ -62,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setIcon(R.drawable.ic_exit);
-        builder.setTitle("Konfirmasi Keluar?");
-        builder.setMessage("Apakah Anda Yakin Ingin Keluar?");
+        builder.setTitle("Konfirmasi Keluar");
+        builder.setMessage("Apakah Anda Yakin Ingin Keluar ?");
         builder.setPositiveButton("Iya", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
