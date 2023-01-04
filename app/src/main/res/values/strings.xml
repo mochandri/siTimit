@@ -56,5 +56,9 @@
         Senin - jumat : Jam 08.00-16.00 WIB\nSabtu : Jam 08.00-14.00 WIB
     </string>
 
+    <string name="rekening">
+        Pastikan Anda hanya membayar/mentransfer di Rekening Resmi kami\n\nRek Bank BCA\n1870452957 a/n CV Tiga Mitra\n\nRek Bank Mandiri\n141-00-98899-222 a/n PT Tiga Mitra Surabaya\n\nRek Bank BRI\n0583-01-000242-303 a/n CV Tiga Mitra
+    </string>
+
 </resources>
 
