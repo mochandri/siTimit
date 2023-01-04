@@ -136,16 +136,18 @@
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/kantorsurabaya"/>
+                            android:src="@drawable/kategori01"/>
+
                         <ImageButton
                             android:id="@+id/imgbtn2"
-                            android:onClick="buttonimg2"
                             android:layout_width="230dp"
                             android:layout_height="130dp"
-                            android:layout_marginTop="50dp"
                             android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/kantorsurabaya"/>
+                            android:onClick="buttonimg2"
+                            android:src="@drawable/kategori02" />
+
                         <ImageButton
                             android:id="@+id/imgbtn3"
                             android:onClick="buttonimg3"
@@ -154,7 +156,7 @@
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="5dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/kantorsurabaya"/>
+                            android:src="@drawable/kategori03"/>
 
                     </LinearLayout>
                 </HorizontalScrollView>
