@@ -91,7 +91,7 @@ public class TentangKamiFragment extends Fragment {
                 buttonfaq();
             }
             private void buttonfaq(){
-                Intent intent = new Intent(getActivity(),faq.class);
+                Intent intent = new Intent(getActivity(),Faq.class);
                 startActivity(intent);
             }
         });

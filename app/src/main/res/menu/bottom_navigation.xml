@@ -17,7 +17,7 @@
         />
     <item
         android:id="@+id/nav_tentangKami"
-        android:icon="@drawable/ip"
+        android:icon="@drawable/i"
         android:title="Tentang Kami"
         />
 
