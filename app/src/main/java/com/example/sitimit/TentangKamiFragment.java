@@ -73,6 +73,7 @@ public class TentangKamiFragment extends Fragment {
         Button btnmalang = (Button) view.findViewById(R.id.buttonmalang);
         Button btnfag = (Button) view.findViewById(R.id.buttonfaq);
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 buttonsby();
