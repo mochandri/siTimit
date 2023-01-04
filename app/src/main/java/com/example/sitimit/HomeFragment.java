@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 
 import com.denzcoskun.imageslider.ImageSlider;
@@ -24,6 +25,7 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
     ImageSlider imageSlider;
     FragmentHomeBinding binding;
+    ImageButton imageButton;
     Button back;
 
 //    private ArrayList<News> newArraylist;
@@ -37,8 +39,10 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
+        
 
         imageSlider = view.findViewById(R.id.image_slider);
+
 
         ArrayList<SlideModel> imageList = new ArrayList<>();
         imageList.add(new SlideModel(R.drawable.kantor, null));
@@ -48,6 +52,12 @@ public class HomeFragment extends Fragment {
         imageList.add(new SlideModel(R.drawable.no5, null));
         imageSlider.setImageList(imageList);
 
+        return view;
+
+
+    }
+
+    }
 
 //        Button button = (Button) view.findViewById(R.id.btnkategori);
 //        button.setOnClickListener(new View.OnClickListener() {
@@ -63,19 +73,6 @@ public class HomeFragment extends Fragment {
 //                ft.commit();
 //            }
 //        });
-        return view;
-
-
-
-
-
-    
-
-
-
-    }
-
-
 //    public View onClick(LayoutInflater inflater, ViewGroup container,
 //                              Bundle savedInstanceState) {
 //        // Inflate the layout for this fragment
