@@ -34,14 +34,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".DetailActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".artikel"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
