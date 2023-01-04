@@ -52,6 +52,7 @@
             android:text="Hai Sobat !"
             android:textColor="@color/white"
             android:textSize="10dp"
+            android:fontFamily="@font/futuraptbold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.985"
             app:layout_constraintStart_toStartOf="parent"
@@ -68,9 +69,10 @@
 
         <TextView
             android:id="@+id/textView5"
-            android:layout_width="223dp"
-            android:layout_height="58dp"
-            android:layout_marginBottom="60dp"
+            android:layout_width="255dp"
+            android:layout_height="27dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/poppins_bold"
             android:text="Kalkulator Bata Ringan"
             android:textColor="@color/black"
             android:textSize="20dp"
@@ -85,7 +87,8 @@
             android:layout_marginTop="76dp"
             android:text="Hitung Kebutuhan Bata Ringanmu Disini !!"
             android:textColor="@color/white"
-            android:textSize="18dp"
+            android:fontFamily="@font/robotoslab_black"
+            android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.16"
@@ -141,7 +144,7 @@
             android:textSize="10dp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="16dp"
             android:hint="Masukkan Panjang" />
 
         <EditText
@@ -153,7 +156,7 @@
             android:textSize="10dp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="146dp"
             android:hint="Masukkan Lebar" />
 
         <EditText
@@ -165,14 +168,14 @@
             android:textSize="10dp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="280dp"
+            android:layout_marginLeft="276dp"
             android:hint="Masukkan Tinggi" />
 
         <TextView
             android:id="@+id/txt_tebalbata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="130dp"
             android:layout_marginLeft="20dp"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="12dp"
@@ -180,10 +183,10 @@
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="150dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="120dp"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="130dp"
+            android:layout_marginTop="120dp"
             android:background="@android:drawable/btn_dropdown" />
 
         <Button

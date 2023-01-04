@@ -42,7 +42,6 @@ public class KalkulatorBata extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String value = parent.getItemAtPosition(position).toString();
-                Toast.makeText(KalkulatorBata.this, value, Toast.LENGTH_SHORT).show();
             }
 
             @Override

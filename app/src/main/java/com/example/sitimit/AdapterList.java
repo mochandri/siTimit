@@ -34,7 +34,7 @@ public class AdapterList extends RecyclerView.Adapter<AdapterList.HolderItem> {
     @NonNull
     @Override
     public HolderItem onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View layout = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_rows,parent,false);
+        View layout = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_bata,parent,false);
         HolderItem holder = new HolderItem(layout);
 
         return holder;
@@ -73,11 +73,11 @@ public class AdapterList extends RecyclerView.Adapter<AdapterList.HolderItem> {
 
         public HolderItem (View v){
             super(v);
-            thumbnail = (ImageView) v.findViewById(R.id.img_cover);
-            nama_bata = (TextView) v.findViewById(R.id.nama);
-            harga_bata = (TextView) v.findViewById(R.id.harga);
-            deskripsi_bata = (TextView) v.findViewById(R.id.deskripsi);
-            btnbeli = (Button) v.findViewById(R.id.btnBeli);
+            thumbnail = (ImageView) v.findViewById(R.id.img_coverr);
+            nama_bata = (TextView) v.findViewById(R.id.namaa);
+            harga_bata = (TextView) v.findViewById(R.id.hargaa);
+            deskripsi_bata = (TextView) v.findViewById(R.id.deskripsii);
+            btnbeli = (Button) v.findViewById(R.id.btnBelii);
         }
     }
     void setFilter (ArrayList<ModelList> filterModel){

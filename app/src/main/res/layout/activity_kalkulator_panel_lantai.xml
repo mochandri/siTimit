@@ -98,7 +98,7 @@
             android:textSize="10dp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="67dp"
+            android:layout_marginLeft="63dp"
             android:hint="Masukkan Panjang" />
 
         <EditText
@@ -110,7 +110,7 @@
             android:textSize="10dp"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="230dp"
+            android:layout_marginLeft="226dp"
             android:hint="Masukkan Lebar" />
 
         <Button

@@ -31,10 +31,10 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="64dp"
-            android:layout_height="43dp"
-            android:src="@drawable/timit"
-            android:layout_marginLeft="350dp"/>
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="330dp"
+            android:src="@drawable/timit" />
         <TextView
             android:layout_width="53dp"
             android:layout_height="13dp"
@@ -42,7 +42,7 @@
             android:textColor="@color/white"
             android:textSize="10dp"
             android:layout_below="@+id/imageView"
-            android:layout_marginLeft="357dp" />
+            android:layout_marginLeft="335dp" />
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -54,7 +54,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/layout_rows" />
+        tools:listitem="@layout/layout_panel" />
 
 
 

@@ -30,7 +30,7 @@ public class AdapterPanel extends RecyclerView.Adapter<AdapterPanel.HolderItem> 
     @NonNull
     @Override
     public HolderItem onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View layout = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_rows,parent,false);
+        View layout = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_panel,parent,false);
         HolderItem holder = new HolderItem(layout);
 
         return holder;
