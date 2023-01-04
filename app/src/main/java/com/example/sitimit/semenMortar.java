@@ -61,6 +61,7 @@ public class semenMortar extends AppCompatActivity {
                                 modell.setNama_semen(dataa.getString("nama_semen"));
                                 modell.setHarga_semen(dataa.getString("harga_semen"));
                                 modell.setGambar_url(dataa.getString("gambar_url"));
+                                modell.setDeskripsi_semen(dataa.getString("deskripsi_semen"));
 
                                 mListItem.add(modell);
 

@@ -61,6 +61,7 @@ public class PanelLantai extends AppCompatActivity {
                                 model.setNama_panel(data.getString("nama_panel"));
                                 model.setHarga_panel(data.getString("harga_panel"));
                                 model.setGambar_url(data.getString("gambar_url"));
+                                model.setDeskripsi_panel(data.getString("deskripsi_panel"));
 
                                 mListItems.add(model);
 

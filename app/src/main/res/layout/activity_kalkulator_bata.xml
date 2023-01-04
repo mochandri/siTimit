@@ -142,7 +142,7 @@
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
             android:layout_marginLeft="20dp"
-            android:text="Masukkan Panjang" />
+            android:hint="Masukkan Panjang" />
 
         <EditText
             android:id="@+id/lebar"
@@ -154,7 +154,7 @@
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
             android:layout_marginLeft="150dp"
-            android:text="Masukkan Lebar" />
+            android:hint="Masukkan Lebar" />
 
         <EditText
             android:id="@+id/tinggi"
@@ -166,7 +166,7 @@
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
             android:layout_marginLeft="280dp"
-            android:text="Masukkan Tinggi" />
+            android:hint="Masukkan Tinggi" />
 
         <TextView
             android:id="@+id/txt_tebalbata"

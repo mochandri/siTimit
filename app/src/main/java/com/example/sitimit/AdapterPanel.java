@@ -1,9 +1,12 @@
 package com.example.sitimit;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -37,9 +40,20 @@ public class AdapterPanel extends RecyclerView.Adapter<AdapterPanel.HolderItem> 
         ModelPanel mList = mListItem.get(position);
         holder.nama_panel.setText(mList.getNama_panel());
         holder.harga_panel.setText(mList.getHarga_panel());
+        holder.deskripsi_panel.setText(mList.getDeskripsi_panel());
 
         Glide.with(context).load(mList.getGambar_url()).thumbnail(0.5f).diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(holder.thumbnail);
+        holder.btnbeli.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String wpurl="https://api.whatsapp.com/send?phone=6281231313222&text=Halo%20Bu%20Rida%20Tiga%20Mitra%20Surabaya..%20saya%20ingin%20membeli%20panel%20lantai..";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(wpurl));
+                context.startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -48,13 +62,15 @@ public class AdapterPanel extends RecyclerView.Adapter<AdapterPanel.HolderItem> 
     }
     public class HolderItem extends RecyclerView.ViewHolder{
         ImageView thumbnail;
-        TextView nama_panel, harga_panel;
+        TextView nama_panel, harga_panel,deskripsi_panel,btnbeli;
 
         public HolderItem (View v){
             super(v);
             thumbnail = (ImageView) v.findViewById(R.id.img_cover);
             nama_panel = (TextView) v.findViewById(R.id.nama);
             harga_panel = (TextView) v.findViewById(R.id.harga);
+            deskripsi_panel =(TextView) v.findViewById(R.id.deskripsi);
+            btnbeli = (Button) v.findViewById(R.id.btnBeli);
         }
     }
 }

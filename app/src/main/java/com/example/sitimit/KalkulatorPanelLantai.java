@@ -21,7 +21,6 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
     EditText p,l;
     TextView volume, luas;
     Button hasil;
-    ImageButton back;
     Button button2;
 
     @Override
@@ -75,16 +74,7 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment fragment = new KalkulatorFragment();
-                FragmentTransaction fm = getSupportFragmentManager().beginTransaction();
-                fm.replace(R.id.kalkulatorpanel,fragment).commit();
 
-            }
-
-            });
     }
     public double luasPanel (double p, double l){
         return (p*l);
