@@ -10,26 +10,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/consAtas"
         android:layout_width="match_parent"
-        android:layout_height="116dp"
+        android:layout_height="69dp"
         android:background="@color/hijau">
 
 
         <TextView
-            android:layout_width="198dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="16dp"
-            android:text="Bata Ringan"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
             android:layout_width="241dp"
             android:layout_height="55dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="8dp"
             android:text="Pilih Produk dan Dapatkan Harga Terbaik!"
             android:textColor="@color/white"
             android:textSize="20dp"
@@ -67,13 +55,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="615dp"
+        android:layout_height="662dp"
         android:layout_below="@+id/consAtas"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/layout_rows"
-        android:orientation="vertical"/>
+        tools:listitem="@layout/layout_rows" />
 
 
 
