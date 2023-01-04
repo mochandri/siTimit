@@ -1,15 +1,12 @@
 package com.example.sitimit;
 
-import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.GestureDetector;
 import android.view.Menu;
 import android.view.MenuInflater;
-import android.view.MotionEvent;
-import android.view.View;
 
-import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -44,6 +41,10 @@ public class BataRingan extends AppCompatActivity
         protected void onCreate(Bundle savedInstanceState){
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_bata_ringan);
+
+            getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+            getSupportActionBar().setCustomView(R.layout.action_bar_layout_bata);
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.hijau)));
 
             mRecyclerview = (RecyclerView) findViewById(R.id.recyclerView);
             mRequest = Volley.newRequestQueue(getApplicationContext());
