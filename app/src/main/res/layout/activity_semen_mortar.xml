@@ -7,29 +7,19 @@
     tools:context=".BataRingan">
 
     <!-- TODO: Update blank fragment layout -->
-    <androidx.constraintlayout.widget.ConstraintLayout
+
+    <RelativeLayout
         android:id="@+id/consAtas"
         android:layout_width="match_parent"
-        android:layout_height="116dp"
+        android:layout_height="69dp"
         android:background="@color/hijau">
 
 
         <TextView
-            android:layout_width="198dp"
-            android:layout_height="35dp"
-            android:layout_marginTop="16dp"
-            android:text="Bata Ringan"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
             android:layout_width="241dp"
             android:layout_height="55dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
             android:text="Pilih Produk dan Dapatkan Harga Terbaik!"
             android:textColor="@color/white"
             android:textSize="20dp"
@@ -39,43 +29,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="64dp"
+            android:layout_height="43dp"
+            android:src="@drawable/timit"
+            android:layout_marginLeft="350dp"/>
         <TextView
             android:layout_width="53dp"
             android:layout_height="13dp"
             android:text="Hai Sobat !"
             android:textColor="@color/white"
             android:textSize="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.988"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.932" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="64dp"
-            android:layout_height="43dp"
-            android:layout_marginEnd="4dp"
-            android:src="@drawable/timit"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.726" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="357dp" />
+    </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewsemen"
         android:layout_width="match_parent"
-        android:layout_height="615dp"
+        android:layout_height="662dp"
         android:layout_below="@+id/consAtas"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/layout_rows"
-        android:orientation="vertical"/>
-
-
-
-
+        tools:listitem="@layout/layout_rows" />
 </RelativeLayout>

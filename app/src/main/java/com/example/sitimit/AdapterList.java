@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AdapterList extends RecyclerView.Adapter<AdapterList.HolderItem> {
@@ -78,6 +79,11 @@ public class AdapterList extends RecyclerView.Adapter<AdapterList.HolderItem> {
             deskripsi_bata = (TextView) v.findViewById(R.id.deskripsi);
             btnbeli = (Button) v.findViewById(R.id.btnBeli);
         }
+    }
+    void setFilter (ArrayList<ModelList> filterModel){
+        mListItem = new ArrayList<>();
+        mListItem.addAll(filterModel);
+        notifyDataSetChanged();
     }
 
 }

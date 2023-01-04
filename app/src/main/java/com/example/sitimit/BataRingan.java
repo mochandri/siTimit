@@ -1,14 +1,14 @@
 package com.example.sitimit;
 
-import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
-import android.view.View;
+import android.view.Menu;
+import android.view.MenuInflater;
 
-import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -30,7 +30,7 @@ import java.util.List;
 public class BataRingan extends AppCompatActivity
     {
         RecyclerView mRecyclerview;
-        RecyclerView.Adapter mAdapter;
+        AdapterList mAdapter;
         RecyclerView.LayoutManager mManager;
         RequestQueue mRequest;
         List<ModelList> mListItems;
@@ -41,6 +41,10 @@ public class BataRingan extends AppCompatActivity
         protected void onCreate(Bundle savedInstanceState){
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_bata_ringan);
+
+            getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+            getSupportActionBar().setCustomView(R.layout.action_bar_layout_bata);
+            getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.hijau)));
 
             mRecyclerview = (RecyclerView) findViewById(R.id.recyclerView);
             mRequest = Volley.newRequestQueue(getApplicationContext());
@@ -55,6 +59,34 @@ public class BataRingan extends AppCompatActivity
 
 
 
+        }
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.search_menu,menu);
+            SearchView searchView = (SearchView) menu.findItem(R.id.item_search).getActionView();
+            searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+                @Override
+                public boolean onQueryTextSubmit(String query) {
+                    return false;
+                }
+
+                @Override
+                public boolean onQueryTextChange(String newText) {
+                    newText = newText.toLowerCase();
+                    ArrayList<ModelList> itemFilter = new ArrayList<>();
+                    for (ModelList modelList : mListItems ){
+                        String nama = modelList.getNama_bata().toLowerCase();
+                        if(nama.contains(newText)){
+                            itemFilter.add(modelList);
+                        }
+                    }
+                    mAdapter.setFilter(itemFilter);
+
+                    return true;
+                }
+            });
+            return super.onCreateOptionsMenu(menu);
         }
         private void request(){
             JsonArrayRequest requestImage = new JsonArrayRequest(Request.Method.POST,url,null,
