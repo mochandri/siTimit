@@ -96,7 +96,7 @@
                     android:layout_width="207dp"
                     android:layout_height="24dp"
                     android:layout_marginStart="64dp"
-                    android:fontFamily="sans-serif-black"
+                    android:fontFamily="@font/futuraptbold"
                     android:text="Pilih Kategori Produk"
                     android:textColor="@color/black"
                     android:textSize="18dp"
@@ -113,6 +113,7 @@
                     android:text="Tampilkan produk berdasarkan kategori"
                     android:layout_marginTop="20dp"
                     android:textColor="@color/hijau"
+                    android:fontFamily="@font/robotoslab_regular"
                     android:textSize="12dp"
                     android:layout_marginLeft="60dp"/>
 
@@ -182,11 +183,10 @@
                     android:layout_width="270dp"
                     android:layout_height="24dp"
                     android:layout_marginStart="64dp"
-                    android:fontFamily="sans-serif-black"
+                    android:fontFamily="@font/futuraptbold"
                     android:text="Galeri Pemasangan"
                     android:textColor="@color/black"
                     android:textSize="18dp"
-                    android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -198,9 +198,10 @@
                     android:layout_height="19dp"
                     android:text="Testimoni pemasangan panel lantai"
                     android:textSize="12dp"
+                    android:fontFamily="@font/robotoslab_regular"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="60dp"
-                    android:textColor="@color/hijau"/>
+                    android:textColor="@android:color/holo_purple"/>
 
                 <HorizontalScrollView
                     android:id="@+id/scrol2"

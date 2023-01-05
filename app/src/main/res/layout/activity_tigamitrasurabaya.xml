@@ -21,9 +21,24 @@ tools:context=".tigamitrasurabaya"
         android:layout_marginTop="16dp"
         android:text="Tentang Kami"
         android:textSize="20dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="129dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/robotoslab_black"
+        android:text="Company Profile"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,6 +48,7 @@ tools:context=".tigamitrasurabaya"
         android:layout_marginTop="92dp"
         android:text="Hai Sobat !"
         android:textColor="@color/white"
+        android:fontFamily="@font/futuraptbold"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.985"
@@ -42,8 +58,8 @@ tools:context=".tigamitrasurabaya"
     <ImageView
         android:layout_width="64dp"
         android:layout_height="43dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="4dp"
         android:src="@drawable/sitimit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -77,26 +93,27 @@ tools:context=".tigamitrasurabaya"
                     <TextView
                         android:layout_width="500dp"
                         android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-medium"
                         android:layout_marginTop="115dp"
+                        android:fontFamily="@font/futuraptbold"
                         android:gravity="center"
-                        android:textStyle="bold"
-                        android:text="PT.TIGA MITRA SURABAYA "
-                        android:textColor="@color/black" />
+                        android:text="PT. Tiga Mitra Surabaya "
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
                     <WebView
                         android:id="@+id/video"
-                        android:layout_marginTop="15dp"
                         android:layout_width="385dp"
                         android:layout_height="250dp"
-                        android:layout_centerInParent="true"/>
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="15dp" />
 
                     <!--                    <ImageView-->
-<!--                        android:layout_width="385dp"-->
-<!--                        android:layout_height="166dp"-->
-<!--                        android:layout_marginTop="15dp"-->
-<!--                        android:scaleType="centerCrop"-->
-<!--                        android:src="@drawable/kantorsurabaya" />-->
+                    <!--                        android:layout_width="385dp"-->
+                    <!--                        android:layout_height="166dp"-->
+                    <!--                        android:layout_marginTop="15dp"-->
+                    <!--                        android:scaleType="centerCrop"-->
+                    <!--                        android:src="@drawable/kantorsurabaya" />-->
 
                 </LinearLayout>
 
@@ -116,9 +133,11 @@ tools:context=".tigamitrasurabaya"
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:justificationMode="inter_word"
                     android:text="@string/article_text1"
-                    android:textColor="@color/black"
-                    android:justificationMode="inter_word"/>
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:textSize="12dp"
+                    android:textColor="@color/black" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -132,10 +151,11 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="55dp"
                         android:layout_marginBottom="208dp"
                         android:gravity="center"
-                        android:text="Kenapa Harus PT. Tiga Mitra Surabaya"
+                        android:text="Kenapa Harus PT. Tiga Mitra Surabaya ?"
+                        android:fontFamily="@font/futuraptbold"
                         android:textColor="@color/black"
+                        android:textSize="14dp"
                         android:textStyle="bold"
-                        android:textSize="16dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.333"
@@ -158,6 +178,7 @@ tools:context=".tigamitrasurabaya"
                         android:gravity="center"
                         android:text="Cs 24 Jam"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/robotoslab_regular"
                         android:textSize="12dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -182,8 +203,9 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="39dp"
                         android:layout_marginBottom="108dp"
                         android:gravity="center"
-                        android:text="Fast respon"
+                        android:text="Fast Respon"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/robotoslab_regular"
                         android:textSize="12dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -206,8 +228,9 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="39dp"
                         android:layout_marginBottom="108dp"
                         android:gravity="center"
-                        android:text="Free ongkir"
+                        android:text="Free Ongkir"
                         android:textColor="@color/black"
+                        android:fontFamily="@font/robotoslab_regular"
                         android:textSize="12dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -253,7 +276,8 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="39dp"
                         android:layout_marginTop="204dp"
                         android:gravity="center"
-                        android:text="kirim cepat"
+                        android:text="Kirim Cepat"
+                        android:fontFamily="@font/robotoslab_regular"
                         android:textColor="@color/black"
                         android:textSize="12dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -263,11 +287,13 @@ tools:context=".tigamitrasurabaya"
 
                     <TextView
                         android:id="@+id/textView7"
-                        android:layout_width="49dp"
-                        android:layout_height="39dp"
+                        android:layout_width="66dp"
+                        android:layout_height="30dp"
                         android:layout_marginTop="204dp"
+                        android:fontFamily="@font/robotoslab_regular"
                         android:gravity="center"
-                        android:text="free konsulatasi"
+                        android:text="Free
+                        Konsultasi"
                         android:textColor="@color/black"
                         android:textSize="12dp"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -277,15 +303,16 @@ tools:context=".tigamitrasurabaya"
 
                     <TextView
                         android:id="@+id/textView8"
-                        android:layout_width="49dp"
+                        android:layout_width="86dp"
                         android:layout_height="39dp"
-                        android:layout_marginTop="204dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/robotoslab_regular"
                         android:gravity="center"
-                        android:text="garansi kepuasan"
+                        android:text="Garansi Kepuasan"
                         android:textColor="@color/black"
                         android:textSize="12dp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.116"
+                        app:layout_constraintHorizontal_bias="0.056"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -297,6 +324,8 @@ tools:context=".tigamitrasurabaya"
                     android:layout_marginTop="20dp"
                     android:gravity="center"
                     android:text="Tim Kami"
+                    android:fontFamily="@font/futuraptbold"
+                    android:textSize="14dp"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -330,15 +359,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Emilia Kurniasih"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Director"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textSize="10dp" />
 
                 </LinearLayout>
 
@@ -371,15 +402,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Khorida Nafis A."
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Head of CS"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                 </LinearLayout>
 
@@ -400,15 +433,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Winda Lestari"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textSize="12dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Head Of Distri"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:text="Head Of Distribution"
+                        android:textSize="10dp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                 </LinearLayout>
 
@@ -430,15 +465,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Dina Izza K."
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textSize="12dp"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Costumer Service"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textSize="10dp"/>
 
                 </LinearLayout>
 
@@ -470,15 +507,18 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Karina Julistia"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Admin"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textSize="10dp"/>
+"/>
 
                 </LinearLayout>
 
@@ -499,15 +539,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Mirna Bidasari"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tax consultant"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                 </LinearLayout>
 
@@ -529,15 +571,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Ilmi Rahmadhana"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Digital Marketing"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                 </LinearLayout>
 
@@ -569,15 +613,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Agustian Dwi N."
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Head of D.M"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textSize="10dp"/>
 
                 </LinearLayout>
 
@@ -598,15 +644,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Suhartono"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Head Of Survior"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textSize="10dp"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                 </LinearLayout>
 
@@ -628,15 +676,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Nanang Isnaini"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Survior"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:text="Surveyor"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                 </LinearLayout>
 
@@ -668,15 +718,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Nur Fauzan"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Driver"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:textSize="10dp"/>
 
                 </LinearLayout>
 
@@ -697,15 +749,17 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Edy Sunarto"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Driver"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                 </LinearLayout>
 
@@ -727,79 +781,21 @@ tools:context=".tigamitrasurabaya"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:text="Miftahus Sugiri"
-                        android:textColor="@color/grey_90"
-                        android:fontFamily="sans-serif-medium"/>
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Driver"
-                        android:textColor="@color/black"
-                        android:fontFamily="sans-serif-light"/>
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="10dp"
+                        android:fontFamily="@font/robotoslab_regular"/>
 
                 </LinearLayout>
 
             </LinearLayout>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="450dp"
-                app:cardCornerRadius="15dp"
-                android:layout_marginRight="50dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="50dp"
-                app:cardBackgroundColor="#EAFCEC">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nomor Rekening Resmi"
-                    android:textSize="16dp"
-                    android:textColor="@color/black"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="15dp"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/rekening"
-                    android:layout_marginLeft="25dp"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="45dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Kontak kami"
-                    android:layout_marginTop="255dp"
-                    android:layout_marginLeft="15dp"
-                    android:textSize="16dp"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_marginTop="280dp"
-                    android:layout_marginLeft="25dp"
-                    android:textColor="@color/black"
-                    android:layout_height="match_parent"
-                    android:text="@string/kontakkami"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="330dp"
-                    android:layout_marginLeft="15dp"
-                    android:textColor="@color/black"
-                    android:text="Jam Operasional"
-                    android:textSize="16dp"
-                    android:textStyle="bold"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="@string/jamoperasi"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="359dp"
-                    android:layout_marginLeft="25dp"/>
-
-            </androidx.cardview.widget.CardView>
 
 
             <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
@@ -844,6 +840,77 @@ tools:context=".tigamitrasurabaya"
 
             <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
 
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="50dp"
+                app:cardBackgroundColor="#EAFCEC"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:text="Nomor Rekening Resmi"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="@string/rekening"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="240dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:text="Kontak kami"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="250dp"
+                    android:text="@string/kontakkami"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="320dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:text="Jam Operasional"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="330dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="@string/jamoperasi"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+            </androidx.cardview.widget.CardView>
+
             <Button
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
@@ -854,6 +921,8 @@ tools:context=".tigamitrasurabaya"
                 android:text="Hubungi Kami"
                 android:onClick="btnwa"
                 android:id="@+id/buttonwa"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textSize="12dp"
                 android:backgroundTint="@color/hijau"
                 android:textColor="@color/black"/>
         </LinearLayout>

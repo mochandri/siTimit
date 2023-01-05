@@ -14,31 +14,49 @@
         android:background="@color/hijau">
 
         <TextView
-            android:layout_width="121dp"
-            android:layout_height="57dp"
+            android:layout_width="194dp"
+            android:layout_height="37dp"
             android:layout_marginTop="16dp"
             android:text="Tentang Kami"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="129dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="72dp"
+            android:fontFamily="@font/robotoslab_black"
+            android:text="Company Profile"
+            android:textColor="@color/white"
             android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.541"
+            app:layout_constraintHorizontal_bias="0.056"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
         <TextView
             android:layout_width="57dp"
             android:layout_height="23dp"
             android:layout_marginTop="92dp"
             android:text="Hai Sobat !"
             android:textColor="@color/white"
+            android:fontFamily="@font/futuraptbold"
             android:textSize="10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.985"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:layout_width="64dp"
             android:layout_height="43dp"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="48dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/sitimit"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,8 +103,9 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="20dp"
                     android:text="SURABAYA"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/futuraptbold"
+                    android:textSize="14dp"
+                    android:textColor="@color/black" />
 
 
             </androidx.cardview.widget.CardView>
@@ -110,16 +129,16 @@
 
                 <Button
                     android:id="@+id/buttonmalang"
-                    android:onClick="tigamitramalang"
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="190dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
+                    android:onClick="tigamitramalang"
                     android:text="MALANG"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/futuraptbold"
+                    android:textColor="@color/black" />
 
 
             </androidx.cardview.widget.CardView>
@@ -135,12 +154,12 @@
 
                 <ImageView
                     android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_gravity="center_vertical"
-                    android:src="@drawable/faq2" />
+                    android:src="@drawable/faqttg" />
 
                 <Button
                     android:id="@+id/buttonfaq"
@@ -152,6 +171,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="20dp"
                     android:text="FAQ"
+                    android:fontFamily="@font/futuraptbold"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 

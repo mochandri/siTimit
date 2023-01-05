@@ -15,19 +15,19 @@
 
 
         <TextView
-            android:layout_width="241dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/robotoslab_black"
             android:text="Pilih Produk dan Dapatkan Harga Terbaik!"
             android:textColor="@color/white"
-            android:textSize="20dp"
+            android:textSize="16dp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.094"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <ImageView
             android:id="@+id/imageView"
@@ -40,6 +40,7 @@
             android:layout_height="13dp"
             android:text="Hai Sobat !"
             android:textColor="@color/white"
+            android:fontFamily="@font/futuraptbold"
             android:textSize="10dp"
             android:layout_below="@+id/imageView"
             android:layout_marginLeft="335dp" />
