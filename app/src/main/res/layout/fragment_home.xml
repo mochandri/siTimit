@@ -96,6 +96,7 @@
                     android:layout_width="207dp"
                     android:layout_height="24dp"
                     android:layout_marginStart="64dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/futuraptbold"
                     android:text="Pilih Kategori Produk"
                     android:textColor="@color/black"
@@ -111,10 +112,10 @@
                     android:layout_width="257dp"
                     android:layout_height="19dp"
                     android:text="Tampilkan produk berdasarkan kategori"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="28dp"
                     android:textColor="@color/hijau"
                     android:fontFamily="@font/robotoslab_regular"
-                    android:textSize="12dp"
+                    android:textSize="10dp"
                     android:layout_marginLeft="60dp"/>
 
 
@@ -122,19 +123,21 @@
                     android:id="@+id/scrol1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <ImageButton
                             android:id="@+id/imgbtn1"
-                            android:onClick="buttonimg1"
                             android:layout_width="230dp"
                             android:layout_height="130dp"
-                            android:layout_marginTop="50dp"
                             android:layout_marginLeft="10dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/kategori01"/>
+                            android:onClick="buttonimg1"
+                            android:src="@drawable/kategori01" />
 
                         <ImageButton
                             android:id="@+id/imgbtn2"
@@ -148,13 +151,13 @@
 
                         <ImageButton
                             android:id="@+id/imgbtn3"
-                            android:onClick="buttonimg3"
                             android:layout_width="230dp"
                             android:layout_height="130dp"
-                            android:layout_marginTop="50dp"
                             android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/kategori03"/>
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/kategori03" />
 
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -183,6 +186,7 @@
                     android:layout_width="270dp"
                     android:layout_height="24dp"
                     android:layout_marginStart="64dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/futuraptbold"
                     android:text="Galeri Pemasangan"
                     android:textColor="@color/black"
@@ -197,9 +201,9 @@
                     android:layout_width="223dp"
                     android:layout_height="19dp"
                     android:text="Testimoni pemasangan panel lantai"
-                    android:textSize="12dp"
+                    android:textSize="10dp"
                     android:fontFamily="@font/robotoslab_regular"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="28dp"
                     android:layout_marginLeft="60dp"
                     android:textColor="@android:color/holo_purple"/>
 

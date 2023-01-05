@@ -28,8 +28,8 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_width="129dp"
-            android:layout_height="23dp"
+            android:layout_width="170dp"
+            android:layout_height="26dp"
             android:layout_marginTop="72dp"
             android:fontFamily="@font/robotoslab_black"
             android:text="Company Profile"
@@ -450,7 +450,7 @@
                     android:layout_width="209dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="38dp"
                     android:text="@string/kontakkami1"
                     android:textSize="12dp"
                     android:fontFamily="@font/robotoslab_regular"
@@ -474,7 +474,7 @@
                     android:textColor="@color/black"
                     android:textSize="12dp"
                     android:fontFamily="@font/robotoslab_regular"
-                    android:layout_marginTop="100dp"
+                    android:layout_marginTop="115dp"
                     android:layout_marginLeft="25dp"/>
 
             </androidx.cardview.widget.CardView>
@@ -490,7 +490,6 @@
                 android:textSize="14dp"
                 android:fontFamily="@font/robotoslab_regular"
                 android:text="Hubungi Kami"
-                android:textStyle="bold"
                 android:onClick="btnwa"
                 android:id="@+id/buttonwa"
                 android:backgroundTint="@color/hijau"

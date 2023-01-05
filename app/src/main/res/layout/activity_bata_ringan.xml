@@ -33,6 +33,7 @@
             android:id="@+id/imageView"
             android:layout_width="52dp"
             android:layout_height="35dp"
+            android:layout_marginTop="12dp"
             android:layout_marginLeft="330dp"
             android:src="@drawable/timit" />
 
@@ -41,7 +42,7 @@
             android:layout_height="13dp"
             android:layout_below="@+id/imageView"
             android:layout_marginLeft="335dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="2dp"
             android:fontFamily="@font/futuraptbold"
             android:text="Hai Sobat !"
             android:textColor="@color/white"
