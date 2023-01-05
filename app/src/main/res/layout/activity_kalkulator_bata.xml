@@ -148,7 +148,7 @@
             android:fontFamily="@font/robotoslab_regular"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="14dp"
             android:hint="Masukkan Panjang" />
 
         <EditText
