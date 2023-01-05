@@ -96,6 +96,7 @@
                     android:layout_width="207dp"
                     android:layout_height="24dp"
                     android:layout_marginStart="64dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/futuraptbold"
                     android:text="Pilih Kategori Produk"
                     android:textColor="@color/black"
@@ -111,10 +112,10 @@
                     android:layout_width="257dp"
                     android:layout_height="19dp"
                     android:text="Tampilkan produk berdasarkan kategori"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="28dp"
                     android:textColor="@color/hijau"
                     android:fontFamily="@font/robotoslab_regular"
-                    android:textSize="12dp"
+                    android:textSize="10dp"
                     android:layout_marginLeft="60dp"/>
 
 
@@ -122,19 +123,21 @@
                     android:id="@+id/scrol1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <ImageButton
                             android:id="@+id/imgbtn1"
-                            android:onClick="buttonimg1"
                             android:layout_width="230dp"
                             android:layout_height="130dp"
-                            android:layout_marginTop="50dp"
                             android:layout_marginLeft="10dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/kategori01"/>
+                            android:onClick="buttonimg1"
+                            android:src="@drawable/kategori01" />
 
                         <ImageButton
                             android:id="@+id/imgbtn2"
@@ -148,13 +151,13 @@
 
                         <ImageButton
                             android:id="@+id/imgbtn3"
-                            android:onClick="buttonimg3"
                             android:layout_width="230dp"
                             android:layout_height="130dp"
-                            android:layout_marginTop="50dp"
                             android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/kategori03"/>
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/kategori03" />
 
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -163,7 +166,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/csArtikel"
                 android:layout_width="match_parent"
-                android:layout_height="195dp"
+                android:layout_height="230dp"
                 android:layout_marginTop="10dp"
                 app:cardBackgroundColor="#EAFCEC">
 
@@ -183,6 +186,7 @@
                     android:layout_width="270dp"
                     android:layout_height="24dp"
                     android:layout_marginStart="64dp"
+                    android:layout_marginTop="4dp"
                     android:fontFamily="@font/futuraptbold"
                     android:text="Galeri Pemasangan"
                     android:textColor="@color/black"
@@ -197,9 +201,9 @@
                     android:layout_width="223dp"
                     android:layout_height="19dp"
                     android:text="Testimoni pemasangan panel lantai"
-                    android:textSize="12dp"
+                    android:textSize="10dp"
                     android:fontFamily="@font/robotoslab_regular"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="28dp"
                     android:layout_marginLeft="60dp"
                     android:textColor="@android:color/holo_purple"/>
 
@@ -213,95 +217,256 @@
                         android:orientation="horizontal">
                         <ImageView
                             android:id="@+id/img_1"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/a"/>
                         <ImageView
-                            android:id="@+id/img_2"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/b"/>
-                        <ImageView
                             android:id="@+id/img_3"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/c"/>
                         <ImageView
                             android:id="@+id/img_4"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/d"/>
                         <ImageView
                             android:id="@+id/img_5"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
+                            android:layout_width="270dp"
+                            android:layout_height="170dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/e"/>
                         <ImageView
-                            android:id="@+id/img_6"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/f"/>
-                        <ImageView
                             android:id="@+id/img_7"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/g"/>
                         <ImageView
                             android:id="@+id/img_8"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
+                            android:layout_width="260dp"
+                            android:layout_height="190dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/h"/>
+
                         <ImageView
                             android:id="@+id/img_9"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
-                            android:layout_marginTop="50dp"
+                            android:layout_width="260dp"
+                            android:layout_height="190dp"
                             android:layout_marginLeft="0dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/ip"/>
+                            android:src="@drawable/ip" />
+
                         <ImageView
                             android:id="@+id/img_10"
-                            android:layout_width="200dp"
-                            android:layout_height="130dp"
-                            android:layout_marginTop="50dp"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
                             android:layout_marginLeft="0dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/j"/>
+                            android:src="@drawable/j" />
                     </LinearLayout>
                 </HorizontalScrollView>
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
-                android:id="@+id/csArtikel2"
+                android:id="@+id/csblog"
                 android:layout_width="match_parent"
                 android:layout_height="195dp"
                 android:layout_marginTop="10dp"
                 app:cardBackgroundColor="#EAFCEC">
 
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="46dp"
+                    android:layout_height="47dp"
+                    android:src="@drawable/kategori"
+                    android:layout_marginLeft="5dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView3"
+                    app:layout_constraintHorizontal_bias="0.388"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="207dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:text="Artikel"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.046">
+                </TextView>
+
+                <TextView
+                    android:layout_width="257dp"
+                    android:layout_height="19dp"
+                    android:text="Baca artikel terbaru dan berita lainnya"
+                    android:layout_marginTop="28dp"
+                    android:textColor="@color/hijau"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="60dp"/>
+
+
+                <HorizontalScrollView
+                    android:id="@+id/scrolblog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_bata"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg1"
+                            android:src="@drawable/artikel_bata" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_dua"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg2"
+                            android:src="@drawable/artikel_dua" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtn_tiga"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_tiga" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_empat"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_empat" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_lima"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_lima" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_enam"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_enam" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_tujuh"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_tujuh" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_delapan"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/art6ikel_delapan" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_sembilan"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_sembilan" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_sepuluh"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_sepuluh" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_sebelas"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_sebelas" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_duabelas"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_duabelas" />
+                        <ImageButton
+                            android:id="@+id/imgbtn_tigabelas"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:onClick="buttonimg3"
+                            android:src="@drawable/artikel_tigabelas" />
+
+
+                    </LinearLayout>
+                </HorizontalScrollView>
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>

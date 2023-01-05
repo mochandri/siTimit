@@ -113,6 +113,7 @@
                     android:text="Hubungi Kami"
                     android:textSize="16dp"
                     android:textColor="@color/black"
+                    android:fontFamily="@font/robotoslab_regular"
                     android:backgroundTint="@color/hijau"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="15dp"

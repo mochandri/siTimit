@@ -1,6 +1,7 @@
 package com.example.sitimit;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -44,6 +45,15 @@ public class HomeFragment extends Fragment {
         ImageButton imgbtn1 = (ImageButton)view.findViewById(R.id.imgbtn1);
         ImageButton imgbtn2 = (ImageButton)view.findViewById(R.id.imgbtn2);
         ImageButton imgbtn3 = (ImageButton)view.findViewById(R.id.imgbtn3);
+        ImageButton imgbtn_bata = (ImageButton)view.findViewById(R.id.imgbtn_bata);
+        ImageButton imgbtn_dua = (ImageButton)view.findViewById(R.id.imgbtn_dua);
+
+        imgbtn_bata.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
         imgbtn1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +88,8 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
+
         imageSlider = view.findViewById(R.id.image_slider);
 
 
@@ -96,82 +108,7 @@ public class HomeFragment extends Fragment {
 
     }
 
-//        Button button = (Button) view.findViewById(R.id.btnkategori);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                Fragment fragment = new Fragment();
-////                FragmentTransaction fm = getParentFragmentManager().beginTransaction();
-////                fm.replace(R.id.kategori,fragment).commit();
-//                FragmentManager fm = getFragmentManager();
-//                FragmentTransaction ft = fm.beginTransaction();
-//                FragmentGreen llf = new FragmentGreen();
-//                ft.replace(R.id.listFragment, llf);
-//                ft.commit();
-//            }
-//        });
-//    public View onClick(LayoutInflater inflater, ViewGroup container,
-//                              Bundle savedInstanceState) {
-//        // Inflate the layout for this fragment
-//        View view = inflater.inflate(R.layout.fragment_home, container, false);
-//        Button button = (Button) view.findViewById(R.id.btnkategori);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                btnKategori();
-//            }
-//
-//            private void btnKategori() {
-//                Intent intent = new Intent(getActivity(), ProdukFragment.class);
-//                startActivity(intent);
-//            }
-//        });
-//        return view;
-//    }
-//
-//    ;
 
-
-//    @Override
-//    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-//        super.onViewCreated(view, savedInstanceState);
-//
-//        dataInitialize();
-//
-//        recyclerView =view.findViewById(R.id.recyclerview);
-//        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-//        recyclerView.setHasFixedSize(true);
-//        Myadapter myadapter = new Myadapter(getContext(),newArraylist);
-//        recyclerView.setAdapter(myadapter);
-//        myadapter.notifyDataSetChanged();
-//    }
-//
-//    private void dataInitialize() {
-//
-//        newArraylist = new ArrayList<>();
-//
-//        newHeading = new String[]{
-//                getString(R.string.head_1),
-//                getString(R.string.head_2),
-//                getString(R.string.head_3),
-//
-//
-//
-//        };
-//        imageResourceID = new int[]{
-//                R.drawable.a_panel,
-//                R.drawable.b_mortar,
-//                R.drawable.c_bata,
-//
-//        };
-//
-//
-//        for (int i=0;i<newHeading.length;i++){
-//
-//            News news = new News(newHeading[i],imageResourceID[i]);
-//            newArraylist.add(news);
-//        }
-//    }
 
 
 
