@@ -7,46 +7,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".HomeFragment">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:id="@+id/clatas"
         android:layout_width="match_parent"
-        android:layout_height="82dp"
+        android:layout_height="60dp"
         android:background="@color/hijau">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="243dp"
             android:layout_height="43dp"
+            android:layout_marginTop="10dp"
             android:layout_marginStart="66dp"
-            android:src="@drawable/logotulisan"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/imageView4"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.512" />
+            android:src="@drawable/logotulisan" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="45dp"
             android:layout_height="32dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="24dp"
-            android:src="@drawable/logonew"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:layout_width="316dp"-->
-<!--        android:layout_height="162dp"-->
-<!--        android:layout_alignParentStart="true"-->
-<!--        android:layout_alignParentEnd="true"-->
-<!--        android:layout_marginStart="10dp"-->
-<!--        android:layout_marginTop="90dp"-->
-<!--        android:layout_marginEnd="10dp"-->
-<!--        android:background="#EAFCEC"/>-->
+            android:layout_marginTop="14dp"
+            android:src="@drawable/logonew" />
+    </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -66,24 +48,25 @@
         android:layout_height="256dp"
         app:iss_auto_cycle="true"
         app:iss_delay="0"
-        app:iss_period="1000"
+        app:iss_period="2000"
+        android:layout_marginTop="5dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"/>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/csKategori"
                 android:layout_width="match_parent"
-                android:layout_height="195dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="10dp"
                 app:cardBackgroundColor="#EAFCEC">
 
-
                 <ImageView
                     android:id="@+id/imageView5"
-                    android:layout_width="46dp"
-                    android:layout_height="47dp"
-                    android:src="@drawable/kategori"
-                    android:layout_marginLeft="5dp"
+                    android:layout_width="48dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/category"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/textView3"
                     app:layout_constraintHorizontal_bias="0.388"
@@ -130,161 +113,39 @@
                         android:orientation="horizontal">
 
                         <ImageButton
-                            android:id="@+id/imgbtn1"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:onClick="buttonimg1"
-                            android:src="@drawable/kategori01" />
-
-                        <ImageButton
                             android:id="@+id/imgbtn2"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
+                            android:layout_width="220dp"
+                            android:layout_height="110dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="55dp"
                             android:layout_marginRight="10dp"
                             android:onClick="buttonimg2"
                             android:src="@drawable/kategori02" />
 
                         <ImageButton
                             android:id="@+id/imgbtn3"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
+                            android:layout_width="220dp"
+                            android:layout_height="110dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="55dp"
                             android:layout_marginRight="10dp"
                             android:onClick="buttonimg3"
                             android:src="@drawable/kategori03" />
 
-                    </LinearLayout>
-                </HorizontalScrollView>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/csArtikel"
-                android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:layout_marginTop="10dp"
-                app:cardBackgroundColor="#EAFCEC">
-
-                <ImageView
-                    android:id="@+id/gmbrartikel"
-                    android:layout_width="46dp"
-                    android:layout_height="47dp"
-                    android:layout_marginStart="8dp"
-                    android:src="@drawable/artikel"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
-
-                <TextView
-                    android:id="@+id/textartikel"
-                    android:layout_width="270dp"
-                    android:layout_height="24dp"
-                    android:layout_marginStart="64dp"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/futuraptbold"
-                    android:text="Galeri Pemasangan"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0">
-                </TextView>
-
-                <TextView
-                    android:layout_width="223dp"
-                    android:layout_height="19dp"
-                    android:text="Testimoni pemasangan panel lantai"
-                    android:textSize="10dp"
-                    android:fontFamily="@font/robotoslab_regular"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginLeft="60dp"
-                    android:textColor="@android:color/holo_purple"/>
-
-                <HorizontalScrollView
-                    android:id="@+id/scrol2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:id="@+id/img_1"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="50dp"
+                        <ImageButton
+                            android:id="@+id/imgbtn1"
+                            android:layout_width="230dp"
+                            android:layout_height="110dp"
                             android:layout_marginLeft="10dp"
+                            android:layout_marginTop="55dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/a"/>
-                        <ImageView
-                            android:id="@+id/img_3"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/c"/>
-                        <ImageView
-                            android:id="@+id/img_4"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/d"/>
-                        <ImageView
-                            android:id="@+id/img_5"
-                            android:layout_width="270dp"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/e"/>
-                        <ImageView
-                            android:id="@+id/img_7"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/g"/>
-                        <ImageView
-                            android:id="@+id/img_8"
-                            android:layout_width="260dp"
-                            android:layout_height="190dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/h"/>
+                            android:onClick="buttonimg1"
+                            android:src="@drawable/kategori01" />
 
-                        <ImageView
-                            android:id="@+id/img_9"
-                            android:layout_width="260dp"
-                            android:layout_height="190dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/ip" />
-
-                        <ImageView
-                            android:id="@+id/img_10"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/j" />
                     </LinearLayout>
                 </HorizontalScrollView>
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/csblog"
                 android:layout_width="match_parent"
@@ -295,17 +156,11 @@
 
                 <ImageView
                     android:id="@+id/imageView6"
-                    android:layout_width="46dp"
-                    android:layout_height="47dp"
-                    android:src="@drawable/kategori"
-                    android:layout_marginLeft="5dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/textView3"
-                    app:layout_constraintHorizontal_bias="0.388"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
-
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/blog"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="7dp" />
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="207dp"
@@ -328,7 +183,7 @@
                     android:layout_height="19dp"
                     android:text="Baca artikel terbaru dan berita lainnya"
                     android:layout_marginTop="28dp"
-                    android:textColor="@color/hijau"
+                    android:textColor="@android:color/holo_orange_dark"
                     android:fontFamily="@font/robotoslab_regular"
                     android:textSize="10dp"
                     android:layout_marginLeft="60dp"/>
@@ -464,160 +319,97 @@
                             android:onClick="buttonimg3"
                             android:src="@drawable/artikel_tigabelas" />
 
-
                     </LinearLayout>
                 </HorizontalScrollView>
             </androidx.cardview.widget.CardView>
 
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/csArtikel"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#EAFCEC">
+
+                <ImageView
+                    android:id="@+id/gmbrartikel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/picture" />
+
+                <TextView
+                    android:id="@+id/textartikel"
+                    android:layout_width="270dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:text="Galeri Pemasangan"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="223dp"
+                    android:layout_height="19dp"
+                    android:text="Testimoni pemasangan panel lantai"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="@android:color/holo_blue_dark"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/scrol2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/img_1"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/a"/>
+                        <ImageView
+                            android:id="@+id/img_3"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/c"/>
+                        <ImageView
+                            android:id="@+id/img_8"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/h"/>
+
+                        <ImageView
+                            android:id="@+id/img_9"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ip" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
-
-
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:id="@+id/csKategori"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="195dp"-->
-<!--        android:layout_marginTop="10dp">-->
-
-
-<!--        <ImageView-->
-<!--            android:id="@+id/imageView5"-->
-<!--            android:layout_width="46dp"-->
-<!--            android:layout_height="47dp"-->
-<!--            android:src="@drawable/kategori"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toStartOf="@+id/textView3"-->
-<!--            app:layout_constraintHorizontal_bias="0.388"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.0" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/textView3"-->
-<!--            android:layout_width="207dp"-->
-<!--            android:layout_height="24dp"-->
-<!--            android:layout_marginStart="64dp"-->
-<!--            android:fontFamily="sans-serif-black"-->
-<!--            android:text="Pilih Kategori Produk"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="18dp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.046">-->
-<!--        </TextView>-->
-
-<!--        <TextView-->
-<!--            android:layout_width="257dp"-->
-<!--            android:layout_height="19dp"-->
-<!--            android:layout_marginTop="4dp"-->
-<!--            android:text="Tampilkan produk berdasarkan kategori"-->
-<!--            android:textSize="12dp"-->
-<!--            android:textColor="@color/hijau"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/imageView5"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/textView3" />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/btnkategori"-->
-<!--            android:layout_width="96dp"-->
-<!--            android:layout_height="38dp"-->
-<!--            android:layout_marginStart="4dp"-->
-<!--            android:backgroundTint="@color/hijau"-->
-<!--            android:bufferType="normal"-->
-<!--            android:onClick="kategori"-->
-<!--            android:text="Lihat Semua"-->
-<!--            android:textSize="8dp"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.6"-->
-<!--            app:layout_constraintStart_toEndOf="@+id/textView3"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.0" />-->
-
-<!--        <androidx.recyclerview.widget.RecyclerView-->
-<!--            android:layout_width="363dp"-->
-<!--            android:layout_height="118dp"-->
-<!--            android:layout_marginBottom="16dp"-->
-<!--            android:orientation="horizontal"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent" />-->
-
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-<!--&lt;!&ndash;<FrameLayout&ndash;&gt;-->
-<!--&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;    android:layout_height="match_parent">&ndash;&gt;-->
-
-<!--&lt;!&ndash;    <androidx.recyclerview.widget.RecyclerView&ndash;&gt;-->
-<!--&lt;!&ndash;        android:id="@+id/recyclerview"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_width="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        android:layout_height="match_parent"&ndash;&gt;-->
-<!--&lt;!&ndash;        tools:listitem="@layout/list_item"/>&ndash;&gt;-->
-<!--&lt;!&ndash;</FrameLayout>&ndash;&gt;-->
-
-<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--        android:id="@+id/csArtikel"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="195dp"-->
-<!--        android:layout_marginTop="10dp">-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/gmbrartikel"-->
-<!--            android:layout_width="46dp"-->
-<!--            android:layout_height="47dp"-->
-<!--            android:layout_marginStart="8dp"-->
-<!--            android:src="@drawable/artikel"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.0" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/textartikel"-->
-<!--            android:layout_width="159dp"-->
-<!--            android:layout_height="24dp"-->
-<!--            android:layout_marginStart="64dp"-->
-<!--            android:fontFamily="sans-serif-black"-->
-<!--            android:text="Pilih Artikel Kami"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="18dp"-->
-<!--            android:textStyle="bold"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.0">-->
-
-<!--        </TextView>-->
-
-<!--        <TextView-->
-<!--            android:layout_width="223dp"-->
-<!--            android:layout_height="19dp"-->
-<!--            android:text="Baca artikel terbaru dan berita lainnya"-->
-<!--            android:textSize="12dp"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintHorizontal_bias="0.303"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/textartikel" />-->
-
-<!--        <Button-->
-<!--            android:id="@+id/btnkartikel"-->
-<!--            android:layout_width="111dp"-->
-<!--            android:layout_height="42dp"-->
-<!--            android:layout_marginEnd="16dp"-->
-<!--            android:backgroundTint="@color/hijau"-->
-<!--            android:bufferType="normal"-->
-<!--            android:onClick="kategori"-->
-<!--            android:text="SELENGKAPNYA"-->
-<!--            android:textSize="8dp"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintVertical_bias="0.0" />-->
-<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
 </LinearLayout>
 
 
