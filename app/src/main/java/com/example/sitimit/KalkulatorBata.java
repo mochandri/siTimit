@@ -94,18 +94,6 @@ public class KalkulatorBata extends AppCompatActivity {
 
 
                 }
-
-//                if(spinner.getSelectedItem().toString().equals("7,5")){
-//                    String isiPanjang = panjang.getText().toString();
-//                    String isiLebar = lebar.getText().toString();
-//                    String isiTinggi = tinggi.getText().toString();
-//
-//                    Double panjang = Double.parseDouble(isiPanjang);
-//                    Double lebar = Double.parseDouble(isiLebar);
-//                    Double tinggi = Double.parseDouble(isiTinggi);
-//                    double hv = kebutuhanBata (panjang,lebar,tinggi);
-//                    String kebutuhan = String.valueOf(hv);
-//                    jumlah.setText(kebutuhan.toString());
                 }
 
             });
@@ -123,9 +111,3 @@ public class KalkulatorBata extends AppCompatActivity {
         }
     }
 
-//    public  double luasBangunan (double panjang, double lebar, double tinggi){
-//        return ((2* panjang)+ (2*lebar)*tinggi);
-//    }
-//    public  double kebutuhanBata (double panjang, double lebar, double tinggi){
-//        return (2*(panjang + lebar) * tinggi);
-//    }
