@@ -456,7 +456,7 @@
                     <ImageButton
                     android:id="@+id/imgbtn_video1"
                     android:layout_width="230dp"
-                    android:layout_height="130dp"
+                    android:layout_height="135dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginRight="10dp"
@@ -466,7 +466,7 @@
                     <ImageButton
                         android:id="@+id/imgbtn_vide02"
                         android:layout_width="230dp"
-                        android:layout_height="130dp"
+                        android:layout_height="135dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="50dp"
                         android:layout_marginRight="10dp"
@@ -476,7 +476,7 @@
                     <ImageButton
                         android:id="@+id/imgbtn_video3"
                         android:layout_width="230dp"
-                        android:layout_height="130dp"
+                        android:layout_height="135dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="50dp"
                         android:layout_marginRight="10dp"
