@@ -484,6 +484,15 @@
                         android:onClick="buttonimg3"
                         android:src="@drawable/thumb_tiga" />
 
+                    <ImageButton
+                        android:id="@+id/imgbtn_video4"
+                        android:layout_width="230dp"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="10dp"
+                        android:onClick="buttonimg4"
+                        android:src="@drawable/thumb_empat" />
 
                 </LinearLayout>
                 </HorizontalScrollView>
