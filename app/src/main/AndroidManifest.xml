@@ -13,7 +13,7 @@
         android:theme="@style/Theme.SiTimit">
         <activity
             android:name=".Faq"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
