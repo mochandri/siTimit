@@ -473,36 +473,16 @@
                         android:onClick="buttonimg2"
                         android:src="@drawable/thumb_dua" />
 
-<!--                    Youtube Pemasangan-->
-<!--                    <ImageButton-->
-<!--                        android:id=""-->
-<!--                        android:layout_width="230dp"-->
-<!--                        android:layout_height="130dp"-->
-<!--                        android:layout_marginLeft="5dp"-->
-<!--                        android:layout_marginTop="50dp"-->
-<!--                        android:layout_marginRight="10dp"-->
-<!--                        android:onClick="buttonimg3"-->
-<!--                        android:src="" />-->
+                    <ImageButton
+                        android:id="@+id/imgbtn_video3"
+                        android:layout_width="230dp"
+                        android:layout_height="130dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="10dp"
+                        android:onClick="buttonimg3"
+                        android:src="@drawable/thumb_tiga" />
 
-<!--                    <ImageButton-->
-<!--                        android:id=""-->
-<!--                        android:layout_width="230dp"-->
-<!--                        android:layout_height="130dp"-->
-<!--                        android:layout_marginLeft="5dp"-->
-<!--                        android:layout_marginTop="50dp"-->
-<!--                        android:layout_marginRight="10dp"-->
-<!--                        android:onClick="buttonimg5"-->
-<!--                        android:src="" />-->
-
-<!--                    <ImageButton-->
-<!--                        android:id=""-->
-<!--                        android:layout_width="230dp"-->
-<!--                        android:layout_height="130dp"-->
-<!--                        android:layout_marginLeft="5dp"-->
-<!--                        android:layout_marginTop="50dp"-->
-<!--                        android:layout_marginRight="10dp"-->
-<!--                        android:onClick="buttonimg5"-->
-<!--                        android:src="" />-->
 
                 </LinearLayout>
                 </HorizontalScrollView>
