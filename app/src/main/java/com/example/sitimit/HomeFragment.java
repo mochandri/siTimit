@@ -61,6 +61,32 @@ public class HomeFragment extends Fragment {
         ImageButton imgbtn_duabelas = (ImageButton)view.findViewById(R.id.imgbtn_duabelas);
         ImageButton imgbtn_tigabelas = (ImageButton)view.findViewById(R.id.imgbtn_tigabelas);
 
+        // Youtube
+        ImageButton imgbtn_v1 = (ImageButton)view.findViewById(R.id.imgbtn_video1);
+        ImageButton imgbtn_v2 = (ImageButton)view.findViewById(R.id.imgbtn_vide02);
+
+        imgbtn_v1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String wpurl="https://youtu.be/ry0R5UfKizw";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(wpurl));
+                startActivity(intent);
+            }
+        });
+
+        imgbtn_v2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String wpurl = "https://youtu.be/XTeqaM3Mg6Q";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(wpurl));
+                startActivity(intent);
+            }
+        });
+
+
+
         imgbtn_bata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
