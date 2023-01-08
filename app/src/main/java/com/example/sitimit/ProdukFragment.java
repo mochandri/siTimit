@@ -47,12 +47,7 @@ public class ProdukFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-    public void btntlp(View view){
-        String url="https://wa.me/6281231313222";
-        Intent bukawa = new Intent(Intent.ACTION_VIEW);
-        bukawa.setData(Uri.parse(url));
-        startActivity(bukawa);
-    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,8 +55,8 @@ public class ProdukFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-    }
 
+    }
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -70,6 +65,14 @@ public class ProdukFragment extends Fragment {
         Button btnPanel = (Button)view.findViewById(R.id.buttonPanelLantai);
         Button btnSemen = (Button) view.findViewById(R.id.buttonMortar);
         Button btnBata = (Button) view.findViewById(R.id.buttonBataRingan);
+        Button btn = (Button)view.findViewById(R.id.button);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(getActivity(),CaraOrderPanel.class);
+                startActivity(intent);
+            }
+        });
         btnBata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,5 +106,4 @@ public class ProdukFragment extends Fragment {
         });
         return view;
     }
-
 }
