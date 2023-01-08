@@ -180,14 +180,15 @@
                     android:textColor="@color/black"
                     android:textSize="18dp"
                     android:textStyle="bold"/>
+
                 <Button
                     android:id="@+id/buttonMortar"
                     android:layout_width="150dp"
                     android:layout_height="52dp"
-                    android:layout_marginTop="100dp"
                     android:layout_marginLeft="200dp"
+                    android:layout_marginTop="100dp"
                     android:text="Lihat Selengkapnya"
-                    android:textSize="12dp"/>
+                    android:textSize="12dp" />
 
             </androidx.cardview.widget.CardView>
             <LinearLayout
@@ -199,14 +200,135 @@
                     android:id="@+id/txt_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
                     android:text="Cara Order Panel Lantai Terpasang"
                     android:textSize="18dp"
                     android:textStyle="bold"
                     android:fontFamily="@font/futuraptbold"
                     android:textColor="@color/biru"
                     android:layout_gravity="center_horizontal"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="391dp"
+                    android:layout_height="208dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    app:cardBackgroundColor="#EAFCEC"
+                    app:cardCornerRadius="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="38dp"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/futuraptbold"
+                        android:gravity="center"
+                        android:text="PROSEDUR I"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="149dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="28dp"
+                        android:gravity="center"
+                        android:text="Konsulkan Kebutuhan Dengan Cs Via Telp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="225dp"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/futuraptbold"
+                        android:gravity="center"
+                        android:text="PROSEDUR II"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="210dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="175dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginRight="175dp"
+                        android:layout_marginBottom="28dp"
+                        android:gravity="center"
+                        android:text="Cs Merespon dan Menjadwalkan Survey ke Lokasi"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="225dp"
+                        android:layout_marginTop="125dp"
+                        android:fontFamily="@font/futuraptbold"
+                        android:gravity="center"
+                        android:text="PROSEDUR III"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="131dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="215dp"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="28dp"
+                        android:gravity="center"
+                        android:text="Cs memberikan RAB Pemasangan"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="38dp"
+                        android:layout_marginTop="125dp"
+                        android:fontFamily="@font/futuraptbold"
+                        android:gravity="center"
+                        android:text="PROSEDUR IV"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="185dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="155dp"
+                        android:layout_marginRight="175dp"
+                        android:layout_marginBottom="28dp"
+                        android:gravity="center"
+                        android:text="Tim Datang Ke lokasi, Pemasangan Di Mulai"
+                        android:textColor="@color/black" />
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:text="Hubungi Kami"
+                    android:onClick="btn"
+                    android:id="@+id/buttontelp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:textSize="12dp"
+                    android:backgroundTint="@color/hijau"
+                    android:textColor="@color/black"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

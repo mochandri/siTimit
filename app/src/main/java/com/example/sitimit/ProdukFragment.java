@@ -1,6 +1,7 @@
 package com.example.sitimit;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -17,7 +17,6 @@ import android.widget.TextView;
  * create an instance of this fragment.
  */
 public class ProdukFragment extends Fragment {
-    TextView textView;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -48,7 +47,12 @@ public class ProdukFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-
+    public void btn(View view){
+        String url="https://wa.me/6281231313222";
+        Intent bukawa = new Intent(Intent.ACTION_VIEW);
+        bukawa.setData(Uri.parse(url));
+        startActivity(bukawa);
+    }
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -98,6 +102,6 @@ public class ProdukFragment extends Fragment {
             }
         });
         return view;
-
     }
+
 }
