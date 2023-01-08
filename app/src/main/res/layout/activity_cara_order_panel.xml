@@ -1,9 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CaraOrderPanel">
+    tools:context=".CaraOrderPanel"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/csatas"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/hijau">
+
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="16dp"
+            android:text="Cara Order Panel"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="223dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/robotoslab_black"
+            android:text="Yuk Ikuti Prosedur Di Bawah Ini"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.143"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="57dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="108dp"
+            android:fontFamily="@font/futuraptbold"
+            android:text="Hai Sobat !"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/timit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="313dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="#EAFCEC"
+                app:cardCornerRadius="15dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="148dp"
+                    android:src="@drawable/cs_satu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginTop="59dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:gravity="center"
+                    android:text="PROSEDUR I"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="149dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center"
+                    android:text="Konsulkan Kebutuhan Dengan Cs Via Telp"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="167dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginBottom="148dp"
+                    android:src="@drawable/right_arrow" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="274dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="148dp"
+                    android:src="@drawable/cs_dua" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="59dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:gravity="center"
+                    android:text="PROSEDUR II"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="149dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="85dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center"
+                    android:text="Cs Merespon dan Menjadwalkan Survey ke Lokasi"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="274dp"
+                    android:layout_marginTop="126dp"
+                    android:layout_marginBottom="148dp"
+                    android:src="@drawable/down_arrow" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="274dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="148dp"
+                    android:src="@drawable/cs_tiga" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="241dp"
+                    android:layout_marginTop="220dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:gravity="center"
+                    android:text="PROSEDUR IV"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="149dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="220dp"
+                    android:layout_marginTop="245dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center"
+                    android:text="Cs memberikan RAB Pemasangan"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="167dp"
+                    android:layout_marginTop="183dp"
+                    android:layout_marginBottom="148dp"
+                    android:src="@drawable/rewind_double_arrows_"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginBottom="148dp"
+                    android:src="@drawable/tim_pemasangan"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginTop="220dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:gravity="center"
+                    android:text="PROSEDUR V"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="149dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="245dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="28dp"
+                    android:gravity="center"
+                    android:text="Tim Datang Ke lokasi, Pemasangan Di Mulai"
+                    android:textColor="@color/black" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:text="Nah Seperti itu Prosedurnya, Yuk Hubungi Kami"
+                android:onClick="btnno"
+                android:id="@+id/buttonnomer"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textSize="12dp"
+                android:backgroundTint="@color/hijau"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
