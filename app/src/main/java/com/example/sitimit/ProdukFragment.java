@@ -47,7 +47,7 @@ public class ProdukFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-    public void btn(View view){
+    public void btntlp(View view){
         String url="https://wa.me/6281231313222";
         Intent bukawa = new Intent(Intent.ACTION_VIEW);
         bukawa.setData(Uri.parse(url));

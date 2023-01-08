@@ -323,7 +323,7 @@
                     android:layout_marginLeft="60dp"
                     android:layout_marginRight="60dp"
                     android:text="Hubungi Kami"
-                    android:onClick="btn"
+                    android:onClick="btntlp"
                     android:id="@+id/buttontelp"
                     android:fontFamily="@font/robotoslab_regular"
                     android:textSize="12dp"
