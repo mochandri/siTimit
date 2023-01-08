@@ -13,7 +13,8 @@
         android:theme="@style/Theme.SiTimit">
         <activity
             android:name=".CaraOrderPanel"
-            android:exported="false">
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
