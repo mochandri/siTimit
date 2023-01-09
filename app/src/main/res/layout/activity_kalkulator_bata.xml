@@ -7,6 +7,8 @@
     tools:context=".KalkulatorPanelLantai"
     android:background="@android:color/white"
     android:id="@+id/kalkulatorpanel">
+    android:id="@+id/kalkulatorpanel"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/atas"
@@ -232,25 +234,28 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="221dp"
-            android:layout_height="33dp"
+            android:layout_width="214dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="84dp"
+            android:background="@drawable/button_wa"
             android:backgroundTint="@color/hijau"
             android:gravity="center"
             android:orientation="vertical"
-            android:layout_marginLeft="123dp"
-            android:layout_marginTop="10dp"
             android:text="Butuh bantuan? Hubungi kami."
             android:textColor="#ffff"
             android:textSize="9dp" />
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+        <ImageButton
+            android:id="@+id/btnwaa"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="350dp"
-            android:src="@drawable/wa"/>
+            android:layout_marginLeft="320dp"
+            android:background="@drawable/wa"
+            android:onClick="buttonyt" />
+
 
     </RelativeLayout>
 </RelativeLayout>

@@ -2,7 +2,7 @@
 <rectangle_1 xmlns:android="http://schemas.android.com/apk/res/android">
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
-    android:width="84dp"
+    android:width="100dp"
     android:height="21dp"
     android:viewportWidth="84"
     android:viewportHeight="21">

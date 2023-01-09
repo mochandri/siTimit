@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ public class KalkulatorBata extends AppCompatActivity {
     Button hasil;
     TextView jumlah, luass;
     Button button1;
+    ImageButton btnwa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,7 @@ public class KalkulatorBata extends AppCompatActivity {
         hasil = (Button) findViewById(R.id.hasil);
         jumlah = (TextView)findViewById(R.id.jumlahbata);
         luass = (TextView)findViewById(R.id.jumlahkebutuhan);
+
 
         ArrayAdapter<String> adapter= new ArrayAdapter<String>(KalkulatorBata.this, R.layout.item_file,tebalbata);
         adapter.setDropDownViewResource(R.layout.item_file);
@@ -96,6 +99,16 @@ public class KalkulatorBata extends AppCompatActivity {
 
         button1=findViewById(R.id.button2);
         button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String wpurl="https://api.whatsapp.com/send?phone=6281231313222&text=Halo%20Bu%20Rida%20Tiga%20Mitra%20Surabaya..%20Ada%20Yang%20Ingin%20Saya%20Tanyakan..";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(wpurl));
+                startActivity(intent);
+            }
+        });
+        btnwa = (ImageButton)findViewById(R.id.btnwaa);
+        btnwa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String wpurl="https://api.whatsapp.com/send?phone=6281231313222&text=Halo%20Bu%20Rida%20Tiga%20Mitra%20Surabaya..%20Ada%20Yang%20Ingin%20Saya%20Tanyakan..";

@@ -7,6 +7,8 @@
     tools:context=".KalkulatorPanelLantai"
     android:background="@android:color/white"
     android:id="@+id/kalkulatorpanel">
+    android:id="@+id/kalkulatorpanel"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/atas"
