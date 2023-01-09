@@ -79,7 +79,6 @@
         android:layout_marginEnd="47dp"
         android:background="#EAFCEC">
 
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="117dp"
@@ -161,6 +160,38 @@
             android:textStyle="bold"
             android:text="Hitung"
          />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="391dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginRight="10dp">
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="221dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="84dp"
+            android:backgroundTint="@color/hijau"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginLeft="123dp"
+            android:layout_marginTop="10dp"
+            android:text="Butuh bantuan? Hubungi kami."
+            android:textColor="#ffff"
+            android:textSize="9dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="350dp"
+            android:src="@drawable/wa"/>
 
     </RelativeLayout>
 

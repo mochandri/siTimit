@@ -47,6 +47,7 @@ public class HomeFragment extends Fragment {
         ImageButton imgbtn1 = (ImageButton)view.findViewById(R.id.imgbtn1);
         ImageButton imgbtn2 = (ImageButton)view.findViewById(R.id.imgbtn2);
         ImageButton imgbtn3 = (ImageButton)view.findViewById(R.id.imgbtn3);
+
         ImageButton imgbtn_bata = (ImageButton)view.findViewById(R.id.imgbtn_bata);
         ImageButton imgbtn_dua = (ImageButton)view.findViewById(R.id.imgbtn_dua);
         ImageButton imgbtn_tiga = (ImageButton)view.findViewById(R.id.imgbtn_tiga);
@@ -217,7 +218,6 @@ public class HomeFragment extends Fragment {
 
 
         imageSlider = view.findViewById(R.id.image_slider);
-
 
         ArrayList<SlideModel> imageList = new ArrayList<>();
         imageList.add(new SlideModel(R.drawable.kantor, null));
