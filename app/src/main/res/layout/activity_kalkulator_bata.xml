@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".KalkulatorPanelLantai"
+    android:background="@android:color/white"
     android:id="@+id/kalkulatorpanel">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -88,8 +89,8 @@
             android:id="@+id/txt_lebar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="146dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginLeft="16dp"
             android:fontFamily="@font/robotoslab_regular"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="12dp"
@@ -99,8 +100,8 @@
             android:id="@+id/txt_tinggi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="276dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="16dp"
             android:fontFamily="@font/robotoslab_regular"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="12dp"
@@ -116,7 +117,7 @@
             android:fontFamily="@font/robotoslab_regular"
             android:textColor="@android:color/darker_gray"
             android:layout_marginTop="55dp"
-            android:layout_marginLeft="14dp"
+            android:layout_marginLeft="16dp"
             android:hint="Masukkan Panjang" />
 
         <EditText
@@ -128,16 +129,16 @@
             android:fontFamily="@font/robotoslab_regular"
             android:textSize="10dp"
             android:textColor="@android:color/darker_gray"
-            android:layout_marginTop="55dp"
-            android:layout_marginLeft="146dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="16dp"
             android:hint="Masukkan Lebar" />
 
         <EditText
             android:id="@+id/tinggi"
-            android:layout_width="104dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="275dp"
-            android:layout_marginTop="55dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="207dp"
             android:ems="10"
             android:hint="Masukkan Tinggi"
             android:fontFamily="@font/robotoslab_regular"
@@ -149,8 +150,8 @@
             android:id="@+id/txt_tebalbata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="130dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="105dp"
+            android:layout_marginLeft="200dp"
             android:fontFamily="@font/robotoslab_regular"
             android:textColor="@android:color/holo_blue_dark"
             android:textSize="12dp"
@@ -158,18 +159,18 @@
 
         <Spinner
             android:id="@+id/spinner"
-            android:layout_width="145dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
-            android:layout_marginTop="120dp"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="130dp"
             android:background="@android:drawable/btn_dropdown" />
 
         <Button
             android:id="@+id/hasil"
             android:layout_width="100dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="185dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="207dp"
             android:fontFamily="@font/futuraptbold"
             android:text="HITUNG"/>
 
@@ -201,7 +202,7 @@
             android:id="@+id/jumlahbata"
             android:layout_width="72dp"
             android:layout_height="41dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="315dp"
             android:layout_marginLeft="75dp"
             android:fontFamily="@font/futuraptbold"
             android:text=""
@@ -212,7 +213,7 @@
             android:id="@+id/jumlahkebutuhan"
             android:layout_width="75dp"
             android:layout_height="40dp"
-            android:layout_marginTop="310dp"
+            android:layout_marginTop="315dp"
             android:layout_marginLeft="235dp"
             android:text=""
             android:textColor="@android:color/holo_red_light"
