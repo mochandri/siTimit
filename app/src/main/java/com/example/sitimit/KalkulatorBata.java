@@ -78,7 +78,6 @@ public class KalkulatorBata extends AppCompatActivity {
                     jumlah.setText(hasilluas.toString());
                     luass.setText(hasilkebutuhan.toString());
 
-
                 }else if (spinner.getSelectedItem().toString().equals("10 cm")){
                     String isiLebar = lebar.getText().toString();
                     String isiPanjang = panjang.getText().toString();
@@ -91,11 +90,8 @@ public class KalkulatorBata extends AppCompatActivity {
                     Double hasilluas = hasilkebutuhan * 83  ;
                     jumlah.setText(hasilluas.toString());
                     luass.setText(hasilkebutuhan.toString());
-
-
                 }
                 }
-
             });
 
         button1=findViewById(R.id.button2);

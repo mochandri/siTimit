@@ -25,7 +25,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity {
-    
+
     ViewPager pager;
     BottomNavigationView bottomNavigation;
     @Override
