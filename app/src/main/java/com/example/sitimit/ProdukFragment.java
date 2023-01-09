@@ -65,6 +65,7 @@ public class ProdukFragment extends Fragment {
         Button btnPanel = (Button)view.findViewById(R.id.buttonPanelLantai);
         Button btnSemen = (Button) view.findViewById(R.id.buttonMortar);
         Button btnBata = (Button) view.findViewById(R.id.buttonBataRingan);
+
         Button btn = (Button)view.findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,11 +74,11 @@ public class ProdukFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         btnBata.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 btnBata();
-
             }
             public void btnBata(){
                 Intent intent = new Intent(getActivity(), BataRingan.class);
