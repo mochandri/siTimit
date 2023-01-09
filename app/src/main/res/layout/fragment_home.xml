@@ -200,8 +200,8 @@
 
                         <ImageButton
                             android:id="@+id/imgbtn_bata"
-                            android:layout_width="260dp"
-                            android:layout_height="160dp"
+                            android:layout_width="230dp"
+                            android:layout_height="130dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
