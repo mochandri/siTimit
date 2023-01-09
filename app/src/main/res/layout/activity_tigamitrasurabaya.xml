@@ -842,7 +842,7 @@ tools:context=".tigamitrasurabaya"
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="450dp"
+                android:layout_height="600dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="50dp"
@@ -908,6 +908,86 @@ tools:context=".tigamitrasurabaya"
                     android:text="@string/jamoperasi"
                     android:textColor="@color/black"
                     android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:onClick="buttonshop"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="430dp"
+                        android:background="@drawable/shopee"
+                        android:id="@+id/btnshop"
+                        android:layout_marginLeft="10dp"/>
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="430dp"
+                        android:onClick="buttonyt"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/youtube1"
+                        android:id="@+id/btnyt"
+                        android:layout_marginLeft="10dp"/>
+
+
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="430dp"
+                        android:onClick="buttontok"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/tokped"
+                        android:id="@+id/btntok"
+                        android:layout_marginLeft="13dp"/>
+
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="430dp"
+                        android:onClick="buttonig"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/instagram"
+                        android:id="@+id/btnig"
+                        android:layout_marginLeft="20dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="500dp"
+                        android:onClick="buttonfb"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/fb"
+                        android:id="@+id/btnfb"
+                        android:layout_marginLeft="20dp"/>
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="500dp"
+                        android:onClick="buttontiktok"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/tiktok"
+                        android:id="@+id/btntiktok"
+                        android:layout_marginLeft="20dp"/>
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="500dp"
+                        android:onClick="buttonweb"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:background="@drawable/web"
+                        android:id="@+id/btnweb"
+                        android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+
 
             </androidx.cardview.widget.CardView>
 

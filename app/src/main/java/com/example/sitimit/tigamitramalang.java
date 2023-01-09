@@ -21,4 +21,28 @@ public class tigamitramalang extends AppCompatActivity {
         startActivity(bukawa);
 
     }
+    public void buttonyt(View view) {
+        String url = "https://www.youtube.com/@tigamitramalang";
+        Intent yt = new Intent(Intent.ACTION_VIEW);
+        yt.setData(Uri.parse(url));
+        startActivity(yt);
+    }
+    public void buttonshop(View view) {
+        String url = "https://shopee.co.id/tigamitramalang";
+        Intent shop = new Intent(Intent.ACTION_VIEW);
+        shop.setData(Uri.parse(url));
+        startActivity(shop);
+    }
+    public void buttontok(View view) {
+        String url = "https://www.tokopedia.com/tigamitramalang";
+        Intent tok = new Intent(Intent.ACTION_VIEW);
+        tok.setData(Uri.parse(url));
+        startActivity(tok);
+    }
+    public void buttonig(View view) {
+        String url = "https://www.instagram.com/tigamitramalang/";
+        Intent ig = new Intent(Intent.ACTION_VIEW);
+        ig.setData(Uri.parse(url));
+        startActivity(ig);
+    }
 }
