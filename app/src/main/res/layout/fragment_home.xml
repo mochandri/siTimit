@@ -405,9 +405,208 @@
 
                     </LinearLayout>
                 </HorizontalScrollView>
-
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/csThumb"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardBackgroundColor="#EAFCEC">
+
+                <ImageView
+                    android:id="@+id/gmbryoutube"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/youtube"/>
+
+                <TextView
+                    android:id="@+id/textyoutube"
+                    android:layout_width="270dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:text="Youtube"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="223dp"
+                    android:layout_height="19dp"
+                    android:text="Tonton Video Terbaru dan Informasi Lainnya"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="@android:color/holo_blue_dark"/>
+                <HorizontalScrollView
+                    android:id="@+id/scrolvideo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                    android:id="@+id/imgbtn_video1"
+                    android:layout_width="230dp"
+                    android:layout_height="135dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="buttonimg1"
+                    android:src="@drawable/thumb_satu" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_vide02"
+                        android:layout_width="230dp"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="10dp"
+                        android:onClick="buttonimg2"
+                        android:src="@drawable/thumb_dua" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_video3"
+                        android:layout_width="230dp"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="10dp"
+                        android:onClick="buttonimg3"
+                        android:src="@drawable/thumb_tiga" />
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_video4"
+                        android:layout_width="230dp"
+                        android:layout_height="135dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="10dp"
+                        android:onClick="buttonimg4"
+                        android:src="@drawable/thumb_empat" />
+
+                </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/csMitra"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#EAFCEC">
+
+                <ImageView
+                    android:id="@+id/gmbrMitra"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="13dp"
+                    android:src="@drawable/mitra" />
+
+                <TextView
+                    android:id="@+id/textMitra"
+                    android:layout_width="270dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:text="Partner PT. Tiga Mitra Surabaya"
+                    android:textColor="@color/black"
+                    android:textSize="18dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="223dp"
+                    android:layout_height="19dp"
+                    android:text="Partner Resmi Tiga Mitra"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="60dp"
+                    android:textColor="@android:color/holo_blue_dark"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/scrol5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/img_M1"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/citicon"/>
+                        <ImageView
+                            android:id="@+id/img_M2"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/ge"/>
+                        <ImageView
+                            android:id="@+id/img_M3"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/falcon"/>
+
+                        <ImageView
+                            android:id="@+id/img_M4"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/bricon" />
+
+                        <ImageView
+                            android:id="@+id/img_M5"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/optima" />
+
+                        <ImageView
+                            android:id="@+id/img_M6"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/falcon" />
+
+                        <ImageView
+                            android:id="@+id/img_M7"
+                            android:layout_width="260dp"
+                            android:layout_height="170dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/montarutama" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

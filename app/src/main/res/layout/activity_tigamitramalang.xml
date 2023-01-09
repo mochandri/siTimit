@@ -429,7 +429,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="250dp"
                 app:cardCornerRadius="15dp"
                 android:layout_marginRight="50dp"
                 android:layout_marginTop="20dp"
@@ -477,6 +477,54 @@
                     android:layout_marginTop="115dp"
                     android:layout_marginLeft="25dp"/>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:onClick="buttonshop"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="170dp"
+                        android:background="@drawable/shopee"
+                        android:id="@+id/btnshop"
+                        android:layout_marginLeft="10dp"/>
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="170dp"
+                        android:onClick="buttonyt"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/youtube1"
+                        android:id="@+id/btnyt"
+                        android:layout_marginLeft="10dp"/>
+
+
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="170dp"
+                        android:onClick="buttontok"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/tokped"
+                        android:id="@+id/btntok"
+                        android:layout_marginLeft="13dp"/>
+
+                    <ImageButton
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="170dp"
+                        android:onClick="buttonig"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/instagram"
+                        android:id="@+id/btnig"
+                        android:layout_marginLeft="20dp"/>
+
+
+                </LinearLayout>
+
             </androidx.cardview.widget.CardView>
 
 
@@ -495,6 +543,8 @@
                 android:backgroundTint="@color/hijau"
                 android:textColor="@color/black"/>
         </LinearLayout>
+
+
 
 
 
