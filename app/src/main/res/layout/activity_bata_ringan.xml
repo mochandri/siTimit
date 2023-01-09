@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BataRingan">
+    tools:context=".BataRingan"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
@@ -51,6 +52,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
+        android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="662dp"
         android:layout_below="@+id/consAtas"
