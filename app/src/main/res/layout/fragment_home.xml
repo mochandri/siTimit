@@ -439,7 +439,7 @@
                     android:layout_height="19dp"
                     android:text="Tonton Video Terbaru dan Informasi Lainnya"
                     android:textSize="10dp"
-                    android:fontFamily="@font/robotoslab_regular"
+                    android:fontFamily="@font/futuraptbold"
                     android:layout_marginTop="28dp"
                     android:layout_marginLeft="60dp"
                     android:textColor="@android:color/holo_blue_dark"/>
