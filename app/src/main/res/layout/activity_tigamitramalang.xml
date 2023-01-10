@@ -488,15 +488,15 @@
                         android:layout_width="58dp"
                         android:layout_height="58dp"
                         android:layout_marginTop="170dp"
-                        android:background="@drawable/shopee"
+                        android:background="@drawable/shopee1"
                         android:id="@+id/btnshop"
                         android:layout_marginLeft="10dp"/>
                     <ImageButton
                         android:layout_marginBottom="20dp"
                         android:layout_marginTop="170dp"
                         android:onClick="buttonyt"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
                         android:background="@drawable/youtube1"
                         android:id="@+id/btnyt"
                         android:layout_marginLeft="10dp"/>
@@ -506,21 +506,21 @@
                         android:layout_marginBottom="20dp"
                         android:layout_marginTop="170dp"
                         android:onClick="buttontok"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:background="@drawable/tokped"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/tokoped"
                         android:id="@+id/btntok"
-                        android:layout_marginLeft="13dp"/>
+                        android:layout_marginLeft="10dp"/>
 
                     <ImageButton
                         android:layout_marginBottom="20dp"
                         android:layout_marginTop="170dp"
                         android:onClick="buttonig"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:background="@drawable/instagram"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:background="@drawable/instagram1"
                         android:id="@+id/btnig"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginLeft="10dp"/>
 
 
                 </LinearLayout>
