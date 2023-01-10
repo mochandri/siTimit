@@ -22,7 +22,7 @@
         android:layout_width="435dp"
         android:layout_height="309dp"
         android:layout_gravity="center"
-        android:layout_marginTop="-50dp"
+        android:layout_marginTop="-20dp"
         android:src="@drawable/splash2" />
 
 </LinearLayout>

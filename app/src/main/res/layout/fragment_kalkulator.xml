@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".KalkulatorFragment"
-    android:id="@+id/kalkulatorfragment">
+    android:id="@+id/kalkulatorfragment"
+    android:background="@color/white">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -79,7 +80,6 @@
         android:layout_marginEnd="47dp"
         android:background="#EAFCEC">
 
-
         <TextView
             android:id="@+id/textView2"
             android:layout_width="117dp"
@@ -101,7 +101,7 @@
             />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
@@ -161,6 +161,40 @@
             android:textStyle="bold"
             android:text="Hitung"
          />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="391dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginRight="10dp">
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="214dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="84dp"
+            android:background="@drawable/button_wa"
+            android:backgroundTint="@color/hijau"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:text="Butuh bantuan? Hubungi kami."
+            android:textColor="#ffff"
+            android:textSize="9dp" />
+
+        <ImageButton
+            android:id="@+id/btnwaa"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="320dp"
+            android:background="@drawable/wa"
+            android:onClick="buttonyt" />
 
     </RelativeLayout>
 
