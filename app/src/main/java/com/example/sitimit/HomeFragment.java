@@ -68,6 +68,17 @@ public class HomeFragment extends Fragment {
         ImageButton imgbtn_v3 = (ImageButton)view.findViewById(R.id.imgbtn_video3);
         ImageButton imgbtn_v4 = (ImageButton)view.findViewById(R.id.imgbtn_video4);
 
+        Button btnvm = (Button)view.findViewById(R.id.btnviewmore);
+        btnvm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url="https://www.youtube.com/@tigamitra";
+                Intent yt = new Intent(Intent.ACTION_VIEW);
+                yt.setData(Uri.parse(url));
+                startActivity(yt);
+            }
+        });
+
         // Youtube Pemasangan Panel Lantai
         imgbtn_v1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -263,7 +274,6 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
         imageSlider = view.findViewById(R.id.image_slider);
 
         ArrayList<SlideModel> imageList = new ArrayList<>();
@@ -278,13 +288,6 @@ public class HomeFragment extends Fragment {
 
 
     }
-    public void btnvm(View view){
-        String url="https://www.youtube.com/@tigamitra";
-        Intent yt = new Intent(Intent.ACTION_VIEW);
-        yt.setData(Uri.parse(url));
-        startActivity(yt);
-    }
-
     }
 
 
