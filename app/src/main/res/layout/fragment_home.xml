@@ -41,17 +41,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-    <com.denzcoskun.imageslider.ImageSlider
 
-        android:id="@+id/image_slider"
-        android:layout_width="wrap_content"
-        android:layout_height="256dp"
-        app:iss_auto_cycle="true"
-        app:iss_delay="0"
-        app:iss_period="2000"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"/>
+            <com.denzcoskun.imageslider.ImageSlider
+
+                android:id="@+id/image_slider"
+                android:layout_width="wrap_content"
+                android:layout_height="256dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="0"
+                app:iss_period="2000" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/csKategori"
@@ -445,6 +446,20 @@
                     android:layout_marginTop="28dp"
                     android:layout_marginLeft="60dp"
                     android:textColor="@android:color/holo_blue_dark"/>
+
+                <Button
+                    android:id="@+id/btnviewmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="310dp"
+                    android:layout_marginTop="184dp"
+                    android:backgroundTint="#EAFCEC"
+                    android:text="view more"
+                    android:textSize="10dp"
+                    android:onClick="btnvm"
+                    android:fontFamily="@font/futuraptbold"
+                    android:textColor="@android:color/holo_blue_dark"/>
+
                 <HorizontalScrollView
                     android:id="@+id/scrolvideo1"
                     android:layout_width="wrap_content"

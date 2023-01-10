@@ -278,6 +278,12 @@ public class HomeFragment extends Fragment {
 
 
     }
+    public void btnvm(View view){
+        String url="https://www.youtube.com/@tigamitra";
+        Intent yt = new Intent(Intent.ACTION_VIEW);
+        yt.setData(Uri.parse(url));
+        startActivity(yt);
+    }
 
     }
 
