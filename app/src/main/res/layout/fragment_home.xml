@@ -559,7 +559,7 @@
                     android:layout_marginLeft="310dp"
                     android:layout_marginTop="184dp"
                     android:backgroundTint="#EAFCEC"
-                    android:text="view more2"
+                    android:text="view more"
                     android:textSize="10dp"
                     android:onClick="btnvm2"
                     android:fontFamily="@font/futuraptbold"
@@ -620,15 +620,6 @@
 
                         <ImageView
                             android:id="@+id/img_M6"
-                            android:layout_width="230dp"
-                            android:layout_height="135dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/falcon" />
-
-                        <ImageView
-                            android:id="@+id/img_M7"
                             android:layout_width="230dp"
                             android:layout_height="135dp"
                             android:layout_marginLeft="0dp"
