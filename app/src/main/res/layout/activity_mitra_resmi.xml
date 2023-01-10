@@ -30,11 +30,11 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:layout_width="163dp"
+            android:layout_width="175dp"
             android:layout_height="26dp"
             android:layout_marginTop="72dp"
             android:fontFamily="@font/robotoslab_black"
-            android:text=""
+            android:text="Partner Resmi TIMIT"
             android:textColor="@color/white"
             android:textSize="16dp"
             android:textStyle="bold"
@@ -66,4 +66,28 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/khorida" />
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
