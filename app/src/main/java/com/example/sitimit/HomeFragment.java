@@ -69,6 +69,16 @@ public class HomeFragment extends Fragment {
         ImageButton imgbtn_v4 = (ImageButton)view.findViewById(R.id.imgbtn_video4);
 
         Button btnvm = (Button)view.findViewById(R.id.btnviewmore);
+        Button btnvm2 = (Button)view.findViewById(R.id.btnviewmore_2);
+        btnvm2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://www.tigamitra.co.id/";
+                Intent web = new Intent(Intent.ACTION_VIEW);
+                web.setData(Uri.parse(url));
+                startActivity(web);
+            }
+        });
         btnvm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
