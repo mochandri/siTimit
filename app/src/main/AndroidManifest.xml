@@ -59,6 +59,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".Produk"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".PanelLantai"
             android:exported="false" >
             <meta-data

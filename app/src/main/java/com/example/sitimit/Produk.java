@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.proto.ProtoOutputStream;
 import android.view.Menu;
 import android.view.MenuInflater;
 
@@ -27,14 +28,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Produk extends AppCompatActivity {
-    RecyclerView mRecyclerview, mRecyclervieww;
+    RecyclerView mRecyclerview, mRecyclervieww, mRecylerGovalum;
     AdapterProduk mAdapter;
+    AdapterGalvalum mAdapterGolvalum;
     AdapterPlafon mAdapterPlafon;
     RecyclerView.LayoutManager mManager;
     RequestQueue mRequest;
     List<ModelProduk> mListItem;
     List<ModelPlafon> mListPlafon;
+    List<ModelGalvalum> mListGalvalum;
 
+    private  final String urlGalvalum ="https://jualbahanbangunan.com/timit/json_galvalum.php";
     private final String urlPlafon = "https://jualbahanbangunan.com/timit/json_plafon.php";
     private final String url = "https://jualbahanbangunan.com/timit/json_produk.php";
 
@@ -54,7 +58,17 @@ public class Produk extends AppCompatActivity {
 
         mRecyclervieww = (RecyclerView) findViewById(R.id.recyclePlafon);
         mRequest = Volley.newRequestQueue(getApplicationContext());
-        mListItem = new ArrayList<>();
+        mListPlafon = new ArrayList<>();
+
+        mRecylerGovalum = (RecyclerView) findViewById(R.id.recycleGalvalum);
+        mRequest = Volley.newRequestQueue(getApplicationContext());
+        mListGalvalum = new ArrayList<>();
+
+        requesttt();
+        mManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
+        mRecylerGovalum.setLayoutManager(mManager);
+        mAdapterGolvalum = new AdapterGalvalum(mListGalvalum, Produk.this);
+        mRecylerGovalum.setAdapter(mAdapterGolvalum);
 
         request();
         mManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
@@ -146,7 +160,37 @@ public class Produk extends AppCompatActivity {
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
-                            mAdapter.notifyDataSetChanged();
+                            mAdapterPlafon.notifyDataSetChanged();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("ERRORRequest", "Error :" + error.getMessage());
+                    }
+                });
+        mRequest.add(jsonArrayRequest);
+    }
+    private void requesttt() {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.POST, urlGalvalum, null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        Log.d("JSONResponse", response.toString());
+                        for (int i = 0; i <= response.length(); i++) {
+                            try {
+                                JSONObject data = response.getJSONObject(i);
+                                ModelGalvalum model = new ModelGalvalum();
+                                model.setNama_galvalum(data.getString("nama_galvalum"));
+                                model.setHarga_galvalum(data.getString("harga_galvalum"));
+
+                                mListGalvalum.add(model);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            mAdapterGolvalum.notifyDataSetChanged();
                         }
                     }
                 },
