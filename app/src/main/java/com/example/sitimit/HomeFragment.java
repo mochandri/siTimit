@@ -70,6 +70,17 @@ public class HomeFragment extends Fragment {
 
         Button btnvm = (Button)view.findViewById(R.id.btnviewmore);
         Button btnvm2 = (Button)view.findViewById(R.id.btnviewmore_2);
+        Button btnvm3 = (Button)view.findViewById(R.id.btnviewmore_3);
+        btnvm3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btnvm3();
+            }
+            private void btnvm3(){
+                Intent intent = new Intent(getActivity(),Galeri.class);
+                startActivity(intent);
+            }
+        });
         btnvm2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
