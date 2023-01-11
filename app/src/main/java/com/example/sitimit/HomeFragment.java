@@ -73,12 +73,15 @@ public class HomeFragment extends Fragment {
         btnvm2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "https://www.tigamitra.co.id/";
-                Intent web = new Intent(Intent.ACTION_VIEW);
-                web.setData(Uri.parse(url));
-                startActivity(web);
+                btnvm2();
+            }
+
+            private void btnvm2() {
+                Intent intent = new Intent(getActivity(), MitraResmi.class);
+                startActivity(intent);
             }
         });
+
         btnvm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
