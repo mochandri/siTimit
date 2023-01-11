@@ -7,20 +7,18 @@
     android:backgroundTint="@color/black">
 
     <TextView
-        android:textAlignment="center"
         android:id="@+id/nama_produk"
         android:layout_width="300dp"
         android:layout_height="match_parent"
-        android:layout_marginTop="5dp"
         android:background="@color/white"
-        android:text="produk" />
+        android:text="produk"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/harga_produk"
         android:layout_width="119dp"
         android:layout_height="40dp"
         android:layout_marginLeft="300dp"
-        android:layout_marginTop="5dp"
         android:background="@color/white"
         android:text="harga" />
 

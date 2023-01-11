@@ -27,25 +27,6 @@
                 android:value="" />
         </activity>
         <activity
-
-            android:name=".Produk"
-
-            android:name=".GaleriBata"
-
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-
-            android:name=".GaleriPanel"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".Galeri"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
