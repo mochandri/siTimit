@@ -4,7 +4,7 @@ public class ModelGalvalum {
     int id;
     String nama_galvalum, harga_galvalum;
 
-    public ModelGalvalum(int id, String nama_galvalum, String harga_galvalum) {
+    public ModelGalvalum() {
         this.id = id;
         this.nama_galvalum = nama_galvalum;
         this.harga_galvalum = harga_galvalum;
