@@ -163,7 +163,7 @@
                     android:layout_marginTop="7dp" />
                 <TextView
                     android:id="@+id/textView4"
-                    android:layout_width="207dp"
+                    android:layout_width="150dp"
                     android:layout_height="24dp"
                     android:layout_marginStart="64dp"
                     android:layout_marginTop="4dp"
@@ -179,7 +179,7 @@
                 </TextView>
 
                 <TextView
-                    android:layout_width="257dp"
+                    android:layout_width="200dp"
                     android:layout_height="19dp"
                     android:text="Baca artikel terbaru dan berita lainnya"
                     android:layout_marginTop="28dp"
@@ -188,6 +188,15 @@
                     android:textSize="10dp"
                     android:layout_marginLeft="60dp"/>
 
+                <Button
+                    android:id="@+id/btn_artikelintent"
+                    android:layout_width="105dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="280dp"
+                    android:layout_marginTop="7dp"
+                    android:text="SELENGKAPNYA"
+                    android:textSize="8dp"
+                    android:textStyle="bold"/>
 
                 <HorizontalScrollView
                     android:id="@+id/scrolblog"
