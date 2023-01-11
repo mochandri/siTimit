@@ -1,9 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".artikel">
+    tools:context=".artikel"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/consAtas"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@color/hijau">
+
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:text="Baca Artikel dan Berita Lainnya!"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotoslab_black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/timit" />
+        <TextView
+            android:layout_width="53dp"
+            android:layout_height="13dp"
+            android:text="Hai Sobat !"
+            android:textColor="@color/white"
+            android:fontFamily="@font/futuraptbold"
+            android:textSize="10dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="335dp" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:cardBackgroundColor="#EAFCEC"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="234dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="@string/satuartikel"
+                android:textSize="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jual Bata Ringan"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/robotoslab_black"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08 Maret 2022"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textSize="10dp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/btn_satuartikel"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Selengkapnya"
+                android:textSize="10sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="115dp"
+                android:background="@color/hijau"/>
+            <ImageView
+                android:id="@+id/satuarikel"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:src="@drawable/satuartikel"
+                android:layout_marginLeft="230dp"
+                android:layout_marginTop="40dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:cardBackgroundColor="#EAFCEC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="237dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="@string/duaartikel"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tips dan Cara Menghitung Kebutuhan Panel Lantai"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/robotoslab_black"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="03 September 2022"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/btn_duaartikel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Selengkapnya"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="115dp"
+                    android:background="@color/hijau"/>
+                <ImageView
+                    android:id="@+id/duaartikel"
+                    android:layout_width="150dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/satuartikel"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="40dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

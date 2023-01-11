@@ -43,11 +43,12 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
+        //kategori produk
         ImageButton imgbtn1 = (ImageButton)view.findViewById(R.id.imgbtn1);
         ImageButton imgbtn2 = (ImageButton)view.findViewById(R.id.imgbtn2);
         ImageButton imgbtn3 = (ImageButton)view.findViewById(R.id.imgbtn3);
 
+        //artikel
         ImageButton imgbtn_bata = (ImageButton)view.findViewById(R.id.imgbtn_bata);
         ImageButton imgbtn_dua = (ImageButton)view.findViewById(R.id.imgbtn_dua);
         ImageButton imgbtn_tiga = (ImageButton)view.findViewById(R.id.imgbtn_tiga);
@@ -297,6 +298,21 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        //artikel selengkapnya Button
+        Button btnArtikel = (Button) view.findViewById(R.id.btn_artikelintent);
+
+        btnArtikel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btn_artikelintent();
+            }
+                public void btn_artikelintent(){
+                    Intent intent = new Intent(getActivity(), artikel.class);
+                    startActivity(intent);
+
+                }
+            });
 
         imageSlider = view.findViewById(R.id.image_slider);
 
