@@ -41,17 +41,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-    <com.denzcoskun.imageslider.ImageSlider
 
-        android:id="@+id/image_slider"
-        android:layout_width="wrap_content"
-        android:layout_height="256dp"
-        app:iss_auto_cycle="true"
-        app:iss_delay="0"
-        app:iss_period="2000"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"/>
+            <com.denzcoskun.imageslider.ImageSlider
+
+                android:id="@+id/image_slider"
+                android:layout_width="wrap_content"
+                android:layout_height="256dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                app:iss_auto_cycle="true"
+                app:iss_delay="0"
+                app:iss_period="2000" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/csKategori"
@@ -335,73 +336,90 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/csArtikel"
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
+                android:layout_height="220dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 app:cardBackgroundColor="#EAFCEC">
 
                 <ImageView
                     android:id="@+id/gmbrartikel"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:layout_marginTop="7dp"
                     android:layout_marginLeft="13dp"
+                    android:layout_marginTop="7dp"
                     android:src="@drawable/picture" />
 
                 <TextView
                     android:id="@+id/textartikel"
-                    android:layout_width="270dp"
+                    android:layout_width="173dp"
                     android:layout_height="24dp"
                     android:layout_marginStart="64dp"
                     android:layout_marginTop="4dp"
                     android:fontFamily="@font/futuraptbold"
                     android:text="Galeri Pemasangan"
-                    android:textStyle="bold"
                     android:textColor="@color/black"
-                    android:textSize="18dp">
-                </TextView>
+                    android:textSize="18dp"
+                    android:textStyle="bold"></TextView>
 
                 <TextView
-                    android:layout_width="223dp"
+                    android:layout_width="178dp"
                     android:layout_height="19dp"
-                    android:text="Testimoni pemasangan panel lantai"
-                    android:textSize="10dp"
-                    android:fontFamily="@font/robotoslab_regular"
-                    android:layout_marginTop="28dp"
                     android:layout_marginLeft="60dp"
-                    android:textColor="@android:color/holo_blue_dark"/>
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="Testimoni pemasangan panel lantai"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/btnviewmore_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#EAFCEC"
+                    android:fontFamily="@font/futuraptbold"
+                    android:onClick="btnvm3"
+                    android:text="view more"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="10dp" />
 
                 <HorizontalScrollView
                     android:id="@+id/scrol2"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_height="196dp">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <ImageView
                             android:id="@+id/img_1"
                             android:layout_width="260dp"
                             android:layout_height="170dp"
-                            android:layout_marginTop="50dp"
                             android:layout_marginLeft="13dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/a"/>
+                            android:src="@drawable/a" />
+
                         <ImageView
                             android:id="@+id/img_3"
                             android:layout_width="260dp"
                             android:layout_height="170dp"
-                            android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/c"/>
+                            android:src="@drawable/c" />
+
                         <ImageView
                             android:id="@+id/img_8"
                             android:layout_width="260dp"
                             android:layout_height="170dp"
-                            android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/h"/>
+                            android:src="@drawable/h" />
 
                         <ImageView
                             android:id="@+id/img_9"
@@ -454,6 +472,20 @@
                     android:layout_marginTop="28dp"
                     android:layout_marginLeft="60dp"
                     android:textColor="@android:color/holo_blue_dark"/>
+
+                <Button
+                    android:id="@+id/btnviewmore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="310dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTint="#EAFCEC"
+                    android:text="view more"
+                    android:textSize="10dp"
+                    android:onClick="btnvm"
+                    android:fontFamily="@font/futuraptbold"
+                    android:textColor="@android:color/holo_blue_dark"/>
+
                 <HorizontalScrollView
                     android:id="@+id/scrolvideo1"
                     android:layout_width="wrap_content"
@@ -546,6 +578,19 @@
                     android:layout_marginLeft="60dp"
                     android:textColor="@android:color/holo_blue_dark"/>
 
+                <Button
+                    android:id="@+id/btnviewmore_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="310dp"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTint="#EAFCEC"
+                    android:text="view more"
+                    android:textSize="10dp"
+                    android:onClick="btnvm2"
+                    android:fontFamily="@font/futuraptbold"
+                    android:textColor="@android:color/holo_blue_dark"/>
+
                 <HorizontalScrollView
                     android:id="@+id/scrol5"
                     android:layout_width="wrap_content"
@@ -554,26 +599,28 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
+
                         <ImageView
                             android:id="@+id/img_M1"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
-                            android:layout_marginTop="50dp"
+                            android:layout_width="230dp"
+                            android:layout_height="135dp"
                             android:layout_marginLeft="13dp"
+                            android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/citicon"/>
+                            android:src="@drawable/citicon" />
+
                         <ImageView
                             android:id="@+id/img_M2"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
+                            android:layout_width="230dp"
+                            android:layout_height="135dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginRight="10dp"
                             android:src="@drawable/ge"/>
                         <ImageView
                             android:id="@+id/img_M3"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
+                            android:layout_width="230dp"
+                            android:layout_height="135dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginRight="10dp"
@@ -581,8 +628,8 @@
 
                         <ImageView
                             android:id="@+id/img_M4"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
+                            android:layout_width="230dp"
+                            android:layout_height="135dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
@@ -590,8 +637,8 @@
 
                         <ImageView
                             android:id="@+id/img_M5"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
+                            android:layout_width="230dp"
+                            android:layout_height="135dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
@@ -599,21 +646,12 @@
 
                         <ImageView
                             android:id="@+id/img_M6"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
+                            android:layout_width="230dp"
+                            android:layout_height="135dp"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="50dp"
                             android:layout_marginRight="10dp"
-                            android:src="@drawable/falcon" />
-
-                        <ImageView
-                            android:id="@+id/img_M7"
-                            android:layout_width="260dp"
-                            android:layout_height="170dp"
-                            android:layout_marginLeft="0dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:src="@drawable/montarutama" />
+                            android:src="@drawable/mortarutama" />
 
                     </LinearLayout>
                 </HorizontalScrollView>

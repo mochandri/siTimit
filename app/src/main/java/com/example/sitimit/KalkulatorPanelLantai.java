@@ -38,14 +38,23 @@ public class KalkulatorPanelLantai extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if(p.length()==0 && l.length()==0){
-                    Toast.makeText(getApplication(),"Panjang dan Lebar tidak boleh kosong",Toast.LENGTH_LONG).show();
+                    p.setError("Harap Isi Angka");
+                    l.setError("Harap Isi Angka");
                 }
                 else if (p.length()==0){
-                    Toast.makeText(getApplication(),"Panjang Tidak Boleh Kosong",Toast.LENGTH_LONG).show();
+                    p.setError("Harap Isi Angka");
                 }
                 else if (l.length()==0){
-                    Toast.makeText(getApplication(),"Lebar Tidak Boleh Kosong",Toast.LENGTH_LONG).show();
+                    l.setError("Harap Isi Angka");
             }
+                else if(p.equals(0)){
+                    p.setError("Harap Tidak Mengisi Angka 0");
+
+                }
+                else if(l.equals(0 )){
+                    l.setError("Harap Tidak Mengisi Angka 0");
+
+                }
                 else{
                     String isiPanjang = p.getText().toString();
                     String isiLebar = l.getText().toString();

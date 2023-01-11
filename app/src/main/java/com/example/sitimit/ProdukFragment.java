@@ -65,6 +65,7 @@ public class ProdukFragment extends Fragment {
         Button btnPanel = (Button)view.findViewById(R.id.buttonPanelLantai);
         Button btnSemen = (Button) view.findViewById(R.id.buttonMortar);
         Button btnBata = (Button) view.findViewById(R.id.buttonBataRingan);
+        Button btnSelengkapnyya = (Button)view.findViewById(R.id.btnSelengkap);
 
         Button btn = (Button)view.findViewById(R.id.button);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -102,6 +103,16 @@ public class ProdukFragment extends Fragment {
             }
             public void btnPanel(){
                 Intent intent = new Intent(getActivity(), PanelLantai.class);
+                startActivity(intent);
+            }
+        });
+        btnSelengkapnyya.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnSelengkapnya();
+            }
+            public void btnSelengkapnya(){
+                Intent intent = new Intent(getActivity(),Produk.class);
                 startActivity(intent);
             }
         });
