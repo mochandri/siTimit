@@ -27,12 +27,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Produk extends AppCompatActivity {
-    RecyclerView mRecyclerview;
+    RecyclerView mRecyclerview, mRecyclervieww;
     AdapterProduk mAdapter;
+    AdapterPlafon mAdapterPlafon;
     RecyclerView.LayoutManager mManager;
     RequestQueue mRequest;
     List<ModelProduk> mListItem;
+    List<ModelPlafon> mListPlafon;
 
+    private final String urlPlafon = "https://jualbahanbangunan.com/timit/json_plafon.php";
     private final String url = "https://jualbahanbangunan.com/timit/json_produk.php";
 
     @Override
@@ -49,11 +52,22 @@ public class Produk extends AppCompatActivity {
         mRequest = Volley.newRequestQueue(getApplicationContext());
         mListItem = new ArrayList<>();
 
+        mRecyclervieww = (RecyclerView) findViewById(R.id.recyclePlafon);
+        mRequest = Volley.newRequestQueue(getApplicationContext());
+        mListItem = new ArrayList<>();
+
         request();
         mManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
         mRecyclerview.setLayoutManager(mManager);
         mAdapter = new AdapterProduk(mListItem, Produk.this);
         mRecyclerview.setAdapter(mAdapter);
+
+        requestt();
+
+        mManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        mRecyclervieww.setLayoutManager(mManager);
+        mAdapterPlafon = new AdapterPlafon(mListPlafon, Produk.this);
+        mRecyclervieww.setAdapter(mAdapterPlafon);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -98,6 +112,36 @@ public class Produk extends AppCompatActivity {
                                 model.setHarga_produk(data.getString("harga_produk"));
 
                                 mListItem.add(model);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            mAdapter.notifyDataSetChanged();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("ERRORRequest", "Error :" + error.getMessage());
+                    }
+                });
+        mRequest.add(jsonArrayRequest);
+    }
+    private void requestt() {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.POST, urlPlafon, null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        Log.d("JSONResponse", response.toString());
+                        for (int i = 0; i <= response.length(); i++) {
+                            try {
+                                JSONObject data = response.getJSONObject(i);
+                                ModelPlafon model = new ModelPlafon();
+                                model.setNama_plafon(data.getString("nama_plafon"));
+                                model.setHarga_plafon(data.getString("harga_plafon"));
+
+                                mListPlafon.add(model);
 
                             } catch (JSONException e) {
                                 e.printStackTrace();
