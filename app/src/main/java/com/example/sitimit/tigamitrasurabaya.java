@@ -45,12 +45,7 @@ public class tigamitrasurabaya extends AppCompatActivity {
         tok.setData(Uri.parse(url));
         startActivity(tok);
     }
-    public void buttonig(View view) {
-        String url = "https://www.instagram.com/tigamitrapt/?hl=id";
-        Intent ig = new Intent(Intent.ACTION_VIEW);
-        ig.setData(Uri.parse(url));
-        startActivity(ig);
-    }
+
     public void buttonfb(View view) {
         String url = "https://web.facebook.com/3mitrasurabayapt";
         Intent fb = new Intent(Intent.ACTION_VIEW);
