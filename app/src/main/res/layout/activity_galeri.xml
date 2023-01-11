@@ -108,7 +108,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
+                android:layout_height="521dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="10dp"
@@ -116,6 +116,17 @@
                 app:cardBackgroundColor="#EAFCEC"
                 app:cardCornerRadius="15dp">
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/futuraptbold"
+                    android:gravity="left"
+                    android:text="Pemasangan Panel Lantai"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -133,28 +144,9 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/material" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/robotoslab_regular"
-                            android:text="1.756 +"
-                            android:textColor="@color/black"
-                            android:textSize="25dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/robotoslab_regular"
-                            android:text="Pembelian Material Panel"
-                            android:textColor="@android:color/holo_blue_dark"
-                            android:textSize="10dp"
-                            android:textStyle="bold" />
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/a" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -165,28 +157,9 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/survey" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/robotoslab_regular"
-                            android:text="2.473 +"
-                            android:textColor="@color/black"
-                            android:textSize="25dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/robotoslab_regular"
-                            android:text="Survey Panel"
-                            android:textColor="@android:color/holo_blue_dark"
-                            android:textSize="10dp"
-                            android:textStyle="bold" />
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -197,149 +170,159 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:src="@drawable/terpasang" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/robotoslab_regular"
-                            android:text="2.408 +"
-                            android:textColor="@color/black"
-                            android:textSize="25dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/txt_viewimg"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/robotoslab_regular"
-                            android:text="Panel Terpasang"
-                            android:textColor="@android:color/holo_blue_dark"
-                            android:textSize="10dp"
-                            android:textStyle="bold" />
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
                     </LinearLayout>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="40dp"
-                android:layout_marginBottom="20dp"
-                app:cardBackgroundColor="#EAFCEC"
-                app:cardCornerRadius="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="130dp"
                     android:layout_marginRight="15dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="63dp"
-                            android:layout_height="59dp"
-                            android:src="@drawable/rating" />
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
+                    </LinearLayout>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/robotoslab_regular"
-                            android:text="34.274 +"
-                            android:textColor="@color/black"
-                            android:textSize="25dp"
-                            android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/txt_viewimgbata"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/robotoslab_regular"
-                            android:text="Pengiriman"
-                            android:textColor="@android:color/holo_blue_dark"
-                            android:textSize="10dp"
-                            android:textStyle="bold" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
+                    </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
                     </LinearLayout>
                 </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginLeft="-5dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp"
-                app:cardBackgroundColor="#EAFCEC"
-                app:cardCornerRadius="15dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="235dp"
                     android:layout_marginRight="15dp"
                     android:gravity="center_horizontal"
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:fontFamily="@font/robotoslab_regular"
-                            android:text="4.9"
-                            android:textColor="@color/black"
-                            android:textSize="25dp"
-                            android:textStyle="bold" />
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
+                    </LinearLayout>
 
-                        <Button
-                            android:id="@+id/btnulasan"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:backgroundTint="#EAFCEC"
-                            android:fontFamily="@font/futuraptbold"
-                            android:onClick="btnulasan"
-                            android:text="Ulasan Google"
-                            android:textColor="@android:color/holo_blue_dark"
-                            android:textSize="10dp" />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="63dp"
-                            android:layout_height="59dp"
-                            android:src="@drawable/rating" />
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
+                    </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="340dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-        </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>
