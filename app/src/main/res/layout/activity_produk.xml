@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Produk">
+
+    <RelativeLayout
+        android:id="@+id/consAtas"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/hijau">
+
+
+        <TextView
+            android:id="@+id/txtt"
+            android:layout_width="252dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/robotoslab_black"
+            android:text="Pilih Produk dan Dapatkan Harga Terbaik!"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="330dp"
+            android:src="@drawable/timit" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Note:* harga per 05 Januari 2023 || Harga Dibawah untuk pengiriman area Surabaya, Gresik dan Sidoarjo. ( Untuk Kota lainnya silahkan hubungi CS kami ) "
+            android:textSize="10dp" />
+
+        <TextView
+            android:layout_width="53dp"
+            android:layout_height="13dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="335dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/futuraptbold"
+            android:text="Hai Sobat !"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylcerproduk"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:layout_below="@+id/consAtas"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:listitem="@layout/activity_layout_produk_list" />
+
+</RelativeLayout>
