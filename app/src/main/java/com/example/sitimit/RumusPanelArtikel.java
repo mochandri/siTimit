@@ -20,7 +20,7 @@ import android.widget.Toast;
 public class RumusPanelArtikel extends AppCompatActivity {
     EditText p,l;
     TextView volume, luas;
-    Button hasil;
+    Button hasildua;
     Button button3;
 
     @Override
@@ -32,9 +32,9 @@ public class RumusPanelArtikel extends AppCompatActivity {
         l = (EditText) findViewById(R.id.lebar);
         volume = (TextView) findViewById(R.id.twvolume);
         luas = (TextView) findViewById(R.id.twluas);
-        hasil = (Button) findViewById(R.id.hasil);
+        hasildua = (Button) findViewById(R.id.hasildua);
 
-        hasil.setOnClickListener(new View.OnClickListener() {
+        hasildua.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (p.length() == 0 && l.length() == 0) {

@@ -96,14 +96,14 @@
                 android:src="@drawable/ic_jam" />
 
             <TextView
-                android:id="@+id/clicksatu"
+                android:id="@+id/clickdua"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="190dp"
                 android:layout_marginTop="-19dp"
                 android:fontFamily="@font/robotoslab_regular"
                 android:text="Tips dan Cara Menghitung Kebutuhan Panel Lantai"
-                android:onClick="clicksatu"
+                android:onClick="clickdua"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="8dp" />
 
@@ -201,7 +201,7 @@
                     android:hint="Masukkan Lebar" />
 
                 <Button
-                    android:id="@+id/hasil"
+                    android:id="@+id/hasildua"
                     android:layout_width="100dp"
                     android:layout_height="38dp"
                     android:textSize="12dp"
@@ -260,6 +260,29 @@
                     android:textStyle="bold"/>
 
             </RelativeLayout>
+
+            <TextView
+                android:id="@+id/clickhubungi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masih Bingung? Hubungi CS Kami"
+                android:textSize="12dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textColor="@android:color/holo_green_dark"
+                android:onClick="clickhubungi"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/isiartikeldualanjutann"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textColor="@color/black"/>
+
+
 
         </LinearLayout>
 
