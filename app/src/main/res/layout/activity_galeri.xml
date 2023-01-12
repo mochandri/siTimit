@@ -68,7 +68,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PERTANYAAN YANG BIASA DIAJUKAN"
+        android:text="Galeri Testimoni Proyek!."
         android:textColor="@color/black"
         android:fontFamily="@font/robotoslab_regular"
         android:textStyle="bold"
@@ -305,14 +305,14 @@
                 </LinearLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/robotoslab_regular"
-                    android:text="Pengiriman Semen"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="Pengiriman Semen"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -421,6 +421,30 @@
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/renov_ngagel" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/a" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/a" />
+                </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
