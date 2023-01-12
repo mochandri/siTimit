@@ -114,7 +114,7 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/a"/>
 
                     <ImageView
                         android:layout_width="165dp"
@@ -152,13 +152,13 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_panel_1" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_panel_2" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -170,13 +170,13 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_panel_3" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_panel_4" />
 
                 </LinearLayout>
 
@@ -186,7 +186,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/robotoslab_regular"
-                    android:text="Pengiriman Bata Ringan"
+                    android:text="Bata Ringan"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -200,13 +200,13 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_1" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_2" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -218,13 +218,13 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_3" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_4" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -236,13 +236,13 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_5" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_6" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -457,16 +457,16 @@
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="181dp"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
                         android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
                         android:fontFamily="@font/robotoslab_regular"
+                        android:gravity="center_horizontal"
                         android:text="@string/copywriting"
-                        android:textSize="15dp"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:gravity="center_horizontal"/>
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
                 <Button
