@@ -43,11 +43,12 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
+        //kategori produk
         ImageButton imgbtn1 = (ImageButton)view.findViewById(R.id.imgbtn1);
         ImageButton imgbtn2 = (ImageButton)view.findViewById(R.id.imgbtn2);
         ImageButton imgbtn3 = (ImageButton)view.findViewById(R.id.imgbtn3);
 
+        //artikel
         ImageButton imgbtn_bata = (ImageButton)view.findViewById(R.id.imgbtn_bata);
         ImageButton imgbtn_dua = (ImageButton)view.findViewById(R.id.imgbtn_dua);
         ImageButton imgbtn_tiga = (ImageButton)view.findViewById(R.id.imgbtn_tiga);
@@ -67,6 +68,41 @@ public class HomeFragment extends Fragment {
         ImageButton imgbtn_v2 = (ImageButton)view.findViewById(R.id.imgbtn_vide02);
         ImageButton imgbtn_v3 = (ImageButton)view.findViewById(R.id.imgbtn_video3);
         ImageButton imgbtn_v4 = (ImageButton)view.findViewById(R.id.imgbtn_video4);
+
+        Button btnvm = (Button)view.findViewById(R.id.btnviewmore);
+        Button btnvm2 = (Button)view.findViewById(R.id.btnviewmore_2);
+        Button btnvm3 = (Button)view.findViewById(R.id.btnviewmore_3);
+        btnvm3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btnvm3();
+            }
+            private void btnvm3(){
+                Intent intent = new Intent(getActivity(),Galeri.class);
+                startActivity(intent);
+            }
+        });
+        btnvm2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btnvm2();
+            }
+
+            private void btnvm2() {
+                Intent intent = new Intent(getActivity(), MitraResmi.class);
+                startActivity(intent);
+            }
+        });
+
+        btnvm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url="https://www.youtube.com/@tigamitra";
+                Intent yt = new Intent(Intent.ACTION_VIEW);
+                yt.setData(Uri.parse(url));
+                startActivity(yt);
+            }
+        });
 
         // Youtube Pemasangan Panel Lantai
         imgbtn_v1.setOnClickListener(new View.OnClickListener() {
@@ -263,6 +299,20 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        //artikel selengkapnya Button
+        Button btnArtikel = (Button) view.findViewById(R.id.btn_artikelintent);
+
+        btnArtikel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                btn_artikelintent();
+            }
+                public void btn_artikelintent(){
+                    Intent intent = new Intent(getActivity(), artikel.class);
+                    startActivity(intent);
+
+                }
+            });
 
         imageSlider = view.findViewById(R.id.image_slider);
 
@@ -278,7 +328,6 @@ public class HomeFragment extends Fragment {
 
 
     }
-
     }
 
 

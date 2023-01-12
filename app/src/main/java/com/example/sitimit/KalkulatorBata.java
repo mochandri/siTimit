@@ -54,6 +54,7 @@ public class KalkulatorBata extends AppCompatActivity {
         });
 
         hasil.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 if(panjang.length()==0 && lebar.length()==0 && tinggi.length()==0){
@@ -68,31 +69,35 @@ public class KalkulatorBata extends AppCompatActivity {
                 else if (tinggi.length()==0){
                     Toast.makeText(getApplication(),"Tinggi Tidak Boleh Kosong",Toast.LENGTH_LONG).show();
                 }
-                else if (spinner.getSelectedItem().toString().equals("7,5 cm")){
-                    String isiLebar = lebar.getText().toString();
-                    String isiPanjang = panjang.getText().toString();
-                    String isiTinggi = tinggi.getText().toString();
+                else if(panjang.getText().toString()== null){
+                    Toast.makeText(getApplication(),"TTidak Boleh 0",Toast.LENGTH_LONG).show();
 
-                    Double panjang = Double.parseDouble(isiPanjang);
-                    Double lebar = Double.parseDouble(isiLebar);
-                    Double tinggi = Double.parseDouble(isiTinggi);
-                    Double hasilkebutuhan = (2* panjang + 2*lebar )*tinggi / 7.5;
-                    Double hasilluas = hasilkebutuhan * 111  ;
-                    jumlah.setText(hasilluas.toString());
-                    luass.setText(hasilkebutuhan.toString());
+                }
+                else if (spinner.getSelectedItem().toString().equals("7,5 cm")){
+                    int isiLebar = Integer.valueOf(lebar.getText().toString());
+                    int isiPanjang = Integer.valueOf(panjang.getText().toString());
+                    int isiTinggi = Integer.valueOf(tinggi.getText().toString());
+
+                    int panjang = Integer.parseInt(String.valueOf(isiPanjang));
+                    int lebar = Integer.parseInt(String.valueOf(isiLebar));
+                    int tinggi = Integer.parseInt(String.valueOf(isiTinggi));
+                    double hasilkebutuhan =(int) ((2* panjang + 2*lebar )*tinggi / 7.5);
+                    double hasilluas = hasilkebutuhan * 111  ;
+                    jumlah.setText(String.valueOf(hasilluas));
+                    luass.setText(String.valueOf(hasilkebutuhan));
 
                 }else if (spinner.getSelectedItem().toString().equals("10 cm")){
-                    String isiLebar = lebar.getText().toString();
-                    String isiPanjang = panjang.getText().toString();
-                    String isiTinggi = tinggi.getText().toString();
+                    int isiLebar = Integer.valueOf(lebar.getText().toString());
+                    int isiPanjang = Integer.valueOf(panjang.getText().toString());
+                    int isiTinggi = Integer.valueOf(tinggi.getText().toString());
 
-                    Double panjang = Double.parseDouble(isiPanjang);
-                    Double lebar = Double.parseDouble(isiLebar);
-                    Double tinggi = Double.parseDouble(isiTinggi);
-                    Double hasilkebutuhan = (2* panjang + 2*lebar )*tinggi / 10;
-                    Double hasilluas = hasilkebutuhan * 83  ;
-                    jumlah.setText(hasilluas.toString());
-                    luass.setText(hasilkebutuhan.toString());
+                    int panjang = Integer.parseInt(String.valueOf(isiPanjang));
+                    int lebar = Integer.parseInt(String.valueOf(isiLebar));
+                    int tinggi = Integer.parseInt(String.valueOf(isiTinggi));
+                    double hasilkebutuhan =(int) (2* panjang + 2*lebar )*tinggi / 10;
+                    double hasilluas = hasilkebutuhan * 83  ;
+                    jumlah.setText(String.valueOf(hasilluas));
+                    luass.setText(String.valueOf(hasilkebutuhan));
                 }
                 }
             });
