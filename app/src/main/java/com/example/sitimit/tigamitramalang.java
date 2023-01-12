@@ -45,4 +45,28 @@ public class tigamitramalang extends AppCompatActivity {
         ig.setData(Uri.parse(url));
         startActivity(ig);
     }
+    public void buttonfb(View view) {
+        String url = "https://www.facebook.com/3mitramalang";
+        Intent fb = new Intent(Intent.ACTION_VIEW);
+        fb.setData(Uri.parse(url));
+        startActivity(fb);
+    }
+    public void buttontiktok(View view) {
+        String url = "https://www.tiktok.com/@tigamitramalang?lang=id-ID";
+        Intent tiktok = new Intent(Intent.ACTION_VIEW);
+        tiktok.setData(Uri.parse(url));
+        startActivity(tiktok);
+    }
+    public void buttonweb(View view) {
+        String url = "https://www.tigamitramalang.co.id/";
+        Intent web = new Intent(Intent.ACTION_VIEW);
+        web.setData(Uri.parse(url));
+        startActivity(web);
+    }
+    public void buttonmaps(View view) {
+        String url = "https://www.google.com/maps/place/Tiga+Mitra+Malang+%7C+jual+bata+ringan,+panel+lantai,+semen+mortar/@-7.9543315,112.6325587,12z/data=!4m18!1m12!4m11!1m3!2m2!1d112.7022532!2d-7.9541615!1m6!1m2!1s0x2dd628f45768cc31:0xd4eb19156308d076!2sJl.+Raya+Pakis,+RT.01%2FRW.06,+Krajan,+Bunut+Wetan,+Kec.+Pakis,+Kabupaten+Malang,+Jawa+Timur+65154!2m2!1d112.7025993!2d-7.9543374!3m4!1s0x2dd628f45768cc31:0xd4eb19156308d076!8m2!3d-7.9543374!4d112.7025993";
+        Intent web = new Intent(Intent.ACTION_VIEW);
+        web.setData(Uri.parse(url));
+        startActivity(web);
+    }
 }
