@@ -3,27 +3,44 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@android:color/white"
     tools:context=".MainActivity">
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        />
 
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_marginTop="130dp"
-        android:layout_gravity="center"
         android:layout_width="450dp"
-        android:layout_height="400dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+
         android:src="@drawable/splash" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="435dp"
-        android:layout_height="309dp"
+        android:layout_width="558dp"
+        android:layout_height="344dp"
         android:layout_gravity="center"
-        android:layout_marginTop="-20dp"
         android:src="@drawable/splash2" />
+
 
 </LinearLayout>
 

@@ -14,19 +14,34 @@
     <string name="article_text">
         Perusahaan kami (PT. Tiga Mitra Surabaya Cab Malang) bergerak dalam bidang Distributor Bahan Bangunan, Supplier serta Agen Material Bahan Bangunan Modern seperti jual Bata ringan, Panel lantai, Semen mortar, Panel sandwich, Pintu PVC, Plavon PVC, Keramik lantai, Galvalum, Besi, Alumunium, Gypsum, Granit Tile, Tandon Air, Wallpaper Dinding, dll. Kami melayani pengiriman ke seluruh Indonesia.
 
-        Dan selama 8 tahun selalu berkomitmen untuk memberikan pelayanan yang terbaik dan kepuasan pelanggan adalah prioritas utama perusahaan bermotto “Pilihan Cerdas dan Berkualitas untuk bangunan Anda.”\n\nAlamat Kami \nJl.Raya Pakis RT/RW 01/06 Bunut Wetan-Pakis-Kabupaten Malang
-
-
+        Dan selama 8 tahun selalu berkomitmen untuk memberikan pelayanan yang terbaik dan kepuasan pelanggan adalah prioritas utama perusahaan.Kami manjalani bisnis dengan dukungan sumber daya yang berkualitas dan berbekal keahlian dan profesionalisme tenaga kerja yang terlatih dibidangnya. \n\n
+    </string>
+    <string name="motto">"Pilihan Cerdas dan Berkualitas untuk bangunan Anda"\n</string>
+    <string name="alamatmalang">
+        Jl.Raya Pakis RT/RW 01/06 Bunut Wetan, Pakis-Kabupaten Malang
     </string>
     <string name="article_text1">
         Perusahaan kami bergerak dalam bidang Distributor Bahan Bangunan, Supplier serta Agen Material Bahan Bangunan Modern seperti jual Bata ringan, Panel lantai, Semen mortar, Panel sandwich, Pintu PVC, Plavon PVC, Keramik lantai, Galvalum, Besi, Alumunium, Gypsum, Granit Tile, Tandon Air, Wallpaper Dinding, dll. Kami melayani pengiriman ke seluruh Indonesia.
 
-        Dan selama 8 tahun selalu berkomitmen untuk memberikan pelayanan yang terbaik dan kepuasan pelanggan adalah prioritas utama perusahaan bermotto “Pilihan Cerdas dan Berkualitas untuk bangunan Anda.”\n\nAlamat Kami \nRuko TCBD-TR1/11, Jl. Raya Klakah Rejo, Klakahrejo, Kec. Benowo, Kota SBY, Jawa Timur 60198
-
+        Dan selama 8 tahun selalu berkomitmen untuk memberikan pelayanan yang terbaik dan kepuasan pelanggan adalah prioritas utama perusahaan.Kami manjalani bisnis dengan dukungan sumber daya yang berkualitas dan berbekal keahlian dan profesionalisme tenaga kerja yang terlatih dibidangnya.\n
     </string>
-    <string name="isi_faq">1. Saya tidak tahu cara menghitung estimasi kebutuhannya. Apakah Tiga Mitra bisa menghitungkan?\n JAWAB : Tentu saja CS kami akan membantu anda untuk menghitungkan estimasi kebutuhan serta merekomendasikan produk terbaik\n\n2. Apakah produk yang dijual Tiga Mitra dijamin Asli dari pabrik?\n JAWAB : Kami menjamin semua produk yang kami jual adalah produk asli karena pengiriman kami langsung dari pabrik.\n\n3. Kalau kirim ke luar Pulau Jawa apakah gratis ongkir juga?\n JAWAB : Untuk pengiriman keluar pulau jawa harga yang kami berikan untuk pengiriman sampai ke depo di Surabaya.\n\n4. Berapa lama Pengiriman barang ke tempat tujuan?\n JAWAB : Untuk pengiriman barang, kami akan proses setelah pembeli melakukan pembayaran dan waktu sekitar 1 jam setelah pembayaran (tergantung seberapa jauh lokasi)\n\n5. Bagaimana cara order material bangunan di Tiga Mitra secara online?\n JAWAB : Anda hanya perlu menghubungi CS kami melalui telfon atau chat whatsapp di nomor yang sudah tertera pada hotline kami.\n\n6. Bisakah saya menjadi reseller dari PT. Tiga Mitra Surabaya?\n JAWAB : Sangat bisa. Dengan melakukan pembelian bata ringan minimal 10,8m3 setelahnya anda bisa mendaftarkan diri untuk menjadi reseller kami. Tentunya akan ada bonus khusus bagi anda yang menjadi reseller kami.\n\n7. Dimana kami dapat membeli produk tigamitrasurabaya?\n JAWAB : Anda dapat membeli produk kami secara online / datang ketempat kami di Ruko TCBD-TR1/11, Jl. Raya Klakah Rejo, Klakahrejo, Kec. Benowo, Kota SBY, Jawa Timur 60198 atau membuka aplikasi onlineshop dan memesan secara online 🙂\n\n
+    <string name="visi">Visi\nMenjadi perusahaan perdagangan, penyedia jasa dan pelaksana konstruksi terpilih dan terpercaya di Indonesia.\n\nMisi\nMembangun bisnis yang terintegrasi melalui mutu pelayanan tinggi dan memberikan jaminan kepuasana pelanggan dengan mengedepankan integritas demi menjaga kepercayaan pelanggan dan kelangsungan bisnis yang berlanjut.\n</string>
+    <string name="alamatsurabaya">Ruko TCBD-TR1/11, Jl. Raya Klakah Rejo, Klakahrejo, Kec. Benowo, Kota SBY, Jawa Timur 60198</string>
 
-    </string>
+    <string name="isi_faq1">1. Saya tidak tahu cara menghitung estimasi kebutuhannya. Apakah Tiga Mitra bisa menghitungkan?</string>
+    <string name="jawab1">JAWAB : Tentu saja CS kami akan membantu anda untuk menghitungkan estimasi kebutuhan serta merekomendasikan produk terbaik</string>
+    <string name="isi_faq2">2. Apakah produk yang dijual Tiga Mitra dijamin Asli dari pabrik?</string>
+    <string name="jawab2">JAWAB : Kami menjamin semua produk yang kami jual adalah produk asli karena pengiriman kami langsung dari pabrik.</string>
+    <string name="isi_faq3">3. Kalau kirim ke luar Pulau Jawa apakah gratis ongkir juga?</string>
+    <string name="jawab3"> JAWAB : Untuk pengiriman keluar pulau jawa harga yang kami berikan untuk pengiriman sampai ke depo di Surabaya.</string>
+    <string name="isi_faq4">4. Berapa lama Pengiriman barang ke tempat tujuan?</string>
+    <string name="jawab4">JAWAB : Untuk pengiriman barang, kami akan proses setelah pembeli melakukan pembayaran dan waktu sekitar 1 jam setelah pembayaran (tergantung seberapa jauh lokasi)</string>
+    <string name="isi_faq5">5. Bagaimana cara order material bangunan di Tiga Mitra secara online?</string>
+    <string name="jawab5">JAWAB : Anda hanya perlu menghubungi CS kami melalui telfon atau chat whatsapp di nomor yang sudah tertera pada hotline kami.</string>
+    <string name="isi_faq6">6. Bisakah saya menjadi reseller dari PT. Tiga Mitra Surabaya?</string>
+    <string name="jawab6">JAWAB : Sangat bisa. Dengan melakukan pembelian bata ringan minimal 10,8m3 setelahnya anda bisa mendaftarkan diri untuk menjadi reseller kami. Tentunya akan ada bonus khusus bagi anda yang menjadi reseller kami.</string>
+    <string name="isi_faq7">7. Dimana kami dapat membeli produk tigamitrasurabaya?</string>
+    <string name="jawab7">JAWAB : Anda dapat membeli produk kami secara online / datang ketempat kami di Ruko TCBD-TR1/11, Jl. Raya Klakah Rejo, Klakahrejo, Kec. Benowo, Kota SBY, Jawa Timur 60198 atau membuka aplikasi onlineshop dan memesan secara online 🙂</string>
 
     <string name="news_a">Panel Lantai</string>
     <string name="news_b">Semen Mortar</string>
@@ -39,7 +54,7 @@
     <!--        <string name ="head_1">panel lantai kokoh dan kuat</string>-->
     <!--        <string name ="head_2">semen mortar gampang di apklikasin</string>-->
     <!--        <string name ="head_3">bata ringan  presisi</string>-->
-
+<string name="kenapamalang">Kenapa Harus PT. Tiga Mitra Surabaya Cabang Malang ?</string>
 
     <string name="head_1">panel lantai kokoh dan kuat</string>
     <string name="head_2">semen mortar gampang di apklikasin</string>
@@ -198,6 +213,10 @@ Dengan menggunakan panel lantai, sobat timit juga tidak perlu menyiapkan banyak 
         Ukuran : 17,5 cm Isi : 47 pcs Luas Dinding : 5,71 pcs
         Ukuran : 20 cm Isi : 41 pcs Luas Dinding : 5m2.
     </style>
+
+    <string name="copywriting">
+        Jangan sampai bimbang sesaat menghalangi kamu untuk mendapat harga dan kualitas terbaik dari kami. Coba anda bayangkan, dengan harga saat ini, setara dengan menginvestasikan bangunananda untuk 1 tahun sampai ribuan tahun bahkan ratusan tahun kedepannya. Jadi, kesimpulannya AYO ambil penawaran ini dan jadilah pembeli beruntung sebelum menyesal!..\n\n\n
+    </string>
 
 </resources>
 

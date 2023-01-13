@@ -68,7 +68,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PERTANYAAN YANG BIASA DIAJUKAN"
+        android:text="Galeri Testimoni Proyek!."
         android:textColor="@color/black"
         android:fontFamily="@font/robotoslab_regular"
         android:textStyle="bold"
@@ -111,22 +111,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/a"/>
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/c" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/h" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -135,22 +130,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/ip" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/h" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -159,22 +149,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_panel_1" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_panel_2" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -182,22 +167,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_panel_3" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_panel_4" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
 
                 <TextView
@@ -206,7 +186,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/robotoslab_regular"
-                    android:text="Pengiriman Bata Ringan"
+                    android:text="Bata Ringan"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -217,22 +197,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_1" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_2" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -240,22 +215,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_3" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_4" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -263,22 +233,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_5" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_6" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -286,33 +251,28 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/pemasangan_bataringan_7" />
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/a" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:fontFamily="@font/robotoslab_regular"
-                    android:text="Pengiriman Semen"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="Pengiriman Semen"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -321,22 +281,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_1" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_2" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -345,22 +300,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_3" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_4" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -369,22 +319,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/test_semen5" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_6" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -393,22 +338,17 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/a" />
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/a" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
 
                 <TextView
@@ -428,23 +368,121 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/renov_ngagel" />
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
                         android:src="@drawable/a" />
 
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
-
-                    <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/a" />
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/a" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/a" />
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/a" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/a" />
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/a" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="YAKIN TIDAK BELI DISINI?"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="181dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:gravity="center_horizontal"
+                        android:text="@string/copywriting"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <Button
+                    android:id="@+id/buttonwaaa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="btnwa2"
+                    android:text="Hubungi Kami"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:backgroundTint="@color/hijau"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"/>
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
     </androidx.cardview.widget.CardView>
