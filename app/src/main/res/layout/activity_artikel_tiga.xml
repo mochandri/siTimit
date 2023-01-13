@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArtikelTiga"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/consAtas"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@color/hijau">
+
+        <TextView
+            android:layout_width="241dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"
+            android:text="Baca Artikel dan Berita Lainnya!"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotoslab_black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.094"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="52dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/timit" />
+        <TextView
+            android:layout_width="53dp"
+            android:layout_height="13dp"
+            android:text="Hai Sobat !"
+            android:textColor="@color/white"
+            android:fontFamily="@font/futuraptbold"
+            android:textSize="10dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="-1dp"
+            android:layout_marginLeft="335dp" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:fontFamily="@font/futuraptbold"
+                android:text="SEMEN MORTAR HANYA UNTUK BATA RINGAN ?"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/tigaartikel"
+                android:layout_width="380dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="-10dp"
+                android:src="@drawable/tigaartikel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="15 Desember 2021"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/jam"
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="-19dp"
+                android:src="@drawable/ic_jam" />
+
+            <TextView
+                android:id="@+id/clicktiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="Artikel"
+                android:onClick="clicktiga"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/library"
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="-19dp"
+                android:src="@drawable/ic_folder" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textStyle="bold"
+                android:text="Kenal Lebih Dekat Dengan Semen Mortar"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="@string/isiartikeltiga1"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textStyle="bold"
+                android:text="Semen Mortar Tidak Hanya Untuk Bata Ringan"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="@string/isiartikeltiga2"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textStyle="bold"
+                android:text="Penggunaan semen mortar untuk bata ringan"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="@string/isiartikeltiga3"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textStyle="bold"
+                android:text="Jenis dan Fungsi semen mortar"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="@string/isiartikeltiga4"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/artikeltiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-20dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="Pilihan Merk Semen Mortar"
+                android:onClick="artikeltiga"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="12dp" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

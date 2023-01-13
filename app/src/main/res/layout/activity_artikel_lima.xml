@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ArtikelSatu"
+    tools:context=".ArtikelLima"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -64,25 +64,28 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
+                android:gravity="center"
                 android:fontFamily="@font/futuraptbold"
-                android:text="JUAL BATA RINGAN"
+                android:text="Tips Memilih Material Bangunan"
                 android:textColor="@color/black" />
 
             <ImageView
-                android:id="@+id/satuartikel"
-                android:layout_width="350dp"
+                android:id="@+id/limaartikel"
+                android:layout_width="380dp"
                 android:layout_height="300dp"
                 android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="-10dp"
-                android:src="@drawable/satuartikel" />
+                android:src="@drawable/limaartikel" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="55dp"
-                android:layout_marginTop="1dp"
+                android:layout_marginTop="-10dp"
                 android:fontFamily="@font/robotoslab_regular"
-                android:text="03 Februari 2022"
+                android:text="13 Juli 2021"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="10dp" />
 
@@ -95,14 +98,14 @@
                 android:src="@drawable/ic_jam" />
 
             <TextView
-                android:id="@+id/clicksatu"
+                android:id="@+id/clicklima"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="200dp"
                 android:layout_marginTop="-20dp"
                 android:fontFamily="@font/robotoslab_regular"
                 android:text="Artikel"
-                android:onClick="clicksatu"
+                android:onClick="lima"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="10dp" />
 
@@ -113,22 +116,34 @@
                 android:layout_marginLeft="180dp"
                 android:layout_marginTop="-19dp"
                 android:src="@drawable/ic_folder" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/isiartikelsatu"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
-                android:textSize="12dp"
                 android:fontFamily="@font/robotoslab_regular"
+                android:text="@string/isiartikellima"
                 android:textColor="@color/black"
+                android:textSize="12dp"
                 android:justificationMode="inter_word"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/robotoslab_regular"
+                android:textStyle="bold"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="12dp" />
 
         </LinearLayout>
-
     </androidx.core.widget.NestedScrollView>
+
 
 
 </LinearLayout>

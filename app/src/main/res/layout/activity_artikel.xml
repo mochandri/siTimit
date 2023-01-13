@@ -81,6 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Jual Bata Ringan"
+                android:layout_marginTop="5dp"
                 android:textSize="14dp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -90,7 +91,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="08 Maret 2022"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="25dp"
                 android:fontFamily="@font/robotoslab_regular"
                 android:textSize="10dp"
                 android:textColor="@android:color/holo_green_dark"
@@ -103,7 +104,7 @@
                 android:text="Selengkapnya"
                 android:textSize="10sp"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="115dp"
+                android:layout_marginTop="120dp"
                 android:background="@color/hijau"/>
             <ImageView
                 android:id="@+id/satuarikel"
@@ -139,6 +140,7 @@
                     android:layout_height="wrap_content"
                     android:text="Tips dan Cara Menghitung Kebutuhan Panel Lantai"
                     android:textSize="12dp"
+                    android:layout_marginTop="5dp"
                     android:textStyle="bold"
                     android:textColor="@color/black"
                     android:fontFamily="@font/robotoslab_black"
@@ -148,7 +150,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="25dp"
                     android:fontFamily="@font/robotoslab_regular"
                     android:text="03 September 2022"
                     android:textColor="@android:color/holo_green_dark"
@@ -165,18 +167,191 @@
                     android:background="@color/hijau"/>
                 <ImageView
                     android:id="@+id/duaartikel"
-                    android:layout_width="150dp"
+                    android:layout_width="120dp"
                     android:layout_height="90dp"
-                    android:src="@drawable/satuartikel"
-                    android:layout_marginLeft="230dp"
+                    android:src="@drawable/duaartikel"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="40dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:cardBackgroundColor="#EAFCEC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="237dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="@string/tigaartikel"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semen Mortar Hanya Untuk Bata Ringan ?"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/robotoslab_black"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="15 Desember 2021"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/btn_tigaartikel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Selengkapnya"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="115dp"
+                    android:background="@color/hijau"/>
+                <ImageView
+                    android:id="@+id/tigaartikel"
+                    android:layout_width="120dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/tigaartikel"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="40dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:cardBackgroundColor="#EAFCEC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="234dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="@string/empatartikel"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 Aspek Penting Sebelum Membangun Rumah"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/robotoslab_black"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="09 Desember 2021"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/btn_empatartikel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Selengkapnya"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="115dp"
+                    android:background="@color/hijau"/>
+                <ImageView
+                    android:id="@+id/empatartikel"
+                    android:layout_width="118dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/empatartikel"
+                    android:layout_marginLeft="245dp"
+                    android:layout_marginTop="40dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:cardBackgroundColor="#EAFCEC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp">
+
+                <TextView
+                    android:layout_width="234dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="@string/limaartikel"
+                    android:textSize="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tips Memilih Material Bangunan"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/robotoslab_black"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="13 Juli 2021"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/btn_limaartikel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Selengkapnya"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="115dp"
+                    android:background="@color/hijau"/>
+                <ImageView
+                    android:id="@+id/limaartikel"
+                    android:layout_width="118dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/limaartikel"
+                    android:layout_marginLeft="245dp"
                     android:layout_marginTop="40dp"/>
 
             </androidx.cardview.widget.CardView>
 
 
+
         </LinearLayout>
-
-
 
     </androidx.core.widget.NestedScrollView>
 

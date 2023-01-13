@@ -32,8 +32,29 @@ public class artikel extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-
+        button = (Button) findViewById(R.id.btn_tigaartikel);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(artikel.this, ArtikelTiga.class);
+                startActivity(intent);
+            }
+        });
+        button = (Button) findViewById(R.id.btn_empatartikel);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(artikel.this, ArtikelEmpat.class);
+                startActivity(intent);
+            }
+        });
+        button = (Button) findViewById(R.id.btn_limaartikel);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(artikel.this, ArtikelLima.class);
+                startActivity(intent);
+            }
+        });
     }
 }
