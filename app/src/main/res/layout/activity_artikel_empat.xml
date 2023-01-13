@@ -144,7 +144,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="-35dp"
+                android:layout_marginTop="-25dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/robotoslab_regular"
                 android:textStyle="bold"
@@ -167,7 +167,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="-35dp"
+                android:layout_marginTop="-25dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/robotoslab_regular"
                 android:textStyle="bold"
@@ -216,7 +216,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="-35dp"
+                android:layout_marginTop="-25dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/robotoslab_regular"
                 android:textStyle="bold"
@@ -231,7 +231,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/robotoslab_regular"
-                android:text="@string/isiartikelempat3"
+                android:text="@string/isiartikelempat4"
                 android:textColor="@color/black"
                 android:textSize="12dp"
                 android:justificationMode="inter_word"/>
@@ -255,7 +255,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="10dp"
                 android:fontFamily="@font/robotoslab_regular"
-                android:text="@string/isiartikelempat4"
+                android:text="@string/isiartikelempat5"
                 android:textSize="12dp"
                 android:textColor="@color/black"
                 android:justificationMode="inter_word"/>
@@ -272,20 +272,6 @@
                 android:onClick="clickbacajuga"
                 android:textColor="@android:color/holo_green_dark"
                 android:textSize="10dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="10dp"
-                android:fontFamily="@font/robotoslab_regular"
-                android:text="@string/isiartikelempat5"
-                android:textSize="12dp"
-                android:textColor="@color/black"
-                android:justificationMode="inter_word"/>
-
-
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
