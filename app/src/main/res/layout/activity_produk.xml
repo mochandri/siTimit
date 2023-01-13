@@ -58,61 +58,93 @@
             android:textSize="10dp" />
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/tv_semenBoard"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="@color/hijau"
-        android:layout_below="@+id/consAtas"
-        android:gravity="center"
-        android:text="Semen Board" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recylcerproduk"
-        android:layout_width="match_parent"
-        android:layout_height="161dp"
-        android:layout_below="@+id/tv_semenBoard"
-        android:background="@color/hijau"
-        android:orientation="vertical"
-        tools:listitem="@layout/activity_layout_produk_list" />
 
-    <TextView
-        android:id="@+id/tv_plavon"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="@color/hijau"
-        android:text="Plafon"
-        android:gravity="center"
-        android:layout_below="@+id/recylcerproduk" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/consAtas"
+            android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclePlafon"
-        android:layout_width="match_parent"
-        android:layout_height="77dp"
-        android:layout_below="@+id/tv_plavon"
-        android:orientation="vertical"
-        tools:listitem="@layout/activity_layout_produk_list" />
-    <TextView
-        android:id="@+id/tv_galvalum"
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="@color/hijau"
-        android:text="Galvalum"
-        android:gravity="center"
-        android:layout_below="@+id/recyclePlafon"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleGalvalum"
-        android:layout_width="match_parent"
-        android:layout_height="82dp"
-        android:layout_below="@+id/tv_galvalum"
-        android:orientation="vertical"
-        tools:listitem="@layout/activity_layout_produk_list" />
+            <TextView
+                android:id="@+id/tv_semenBoard"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@+id/consAtas"
+                android:gravity="center"
+                android:text="Semen Board"
+                android:textColor="@color/hijau"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylcerproduk"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_below="@+id/tv_semenBoard"
+                android:background="@color/hijau"
+                android:orientation="vertical"
+                tools:listitem="@layout/activity_layout_produk_list" />
+
+            <TextView
+                android:id="@+id/tv_plavon"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@+id/recylcerproduk"
+                android:gravity="center"
+                android:text="Plafon"
+                android:textColor="@color/hijau"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclePlafon"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_below="@+id/tv_plavon"
+                android:orientation="vertical"
+                tools:listitem="@layout/activity_layout_produk_list" />
+
+            <TextView
+                android:id="@+id/tv_galvalum"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@+id/recyclePlafon"
+                android:gravity="center"
+                android:text="Galvalum"
+                android:textColor="@color/hijau"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleGalvalum"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_below="@+id/tv_galvalum"
+                android:orientation="vertical"
+                tools:listitem="@layout/activity_layout_produk_list" />
+            <TextView
+                android:id="@+id/tv_board"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_below="@+id/recycleGalvalum"
+                android:gravity="center"
+                android:text="Semen Board"
+                android:textColor="@color/hijau"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleBoard"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_below="@+id/tv_board"
+                android:orientation="vertical"
+                tools:listitem="@layout/activity_layout_produk_list" />
+
+
+        </LinearLayout>
 
 </RelativeLayout>

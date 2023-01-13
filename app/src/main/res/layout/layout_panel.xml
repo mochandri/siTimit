@@ -61,7 +61,7 @@
                 android:id="@+id/btnBeli"
                 android:layout_width="66dp"
                 android:layout_height="38dp"
-                android:layout_gravity="right"
+                android:layout_gravity="center"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:text="BELI "

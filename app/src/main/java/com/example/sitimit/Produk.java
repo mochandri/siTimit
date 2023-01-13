@@ -28,16 +28,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Produk extends AppCompatActivity {
-    RecyclerView mRecyclerview, mRecyclervieww, mRecylerGovalum;
+    RecyclerView mRecyclerview, mRecyclervieww, mRecylerGovalum, mRecyclerBoard;
+
+
     AdapterProduk mAdapter;
     AdapterGalvalum mAdapterGolvalum;
     AdapterPlafon mAdapterPlafon;
+    AdapterBoard mAdapterBoard;
+
     RecyclerView.LayoutManager mManager;
     RequestQueue mRequest;
+
+
+
     List<ModelProduk> mListItem;
     List<ModelPlafon> mListPlafon;
     List<ModelGalvalum> mListGalvalum;
+    List<ModelBoard> mListBoard;
 
+    private final String urlBoard = "https://jualbahanbangunan.com/timit/json_semenboard.php";
     private  final String urlGalvalum ="https://jualbahanbangunan.com/timit/json_galvalum.php";
     private final String urlPlafon = "https://jualbahanbangunan.com/timit/json_plafon.php";
     private final String url = "https://jualbahanbangunan.com/timit/json_produk.php";
@@ -64,6 +73,10 @@ public class Produk extends AppCompatActivity {
         mRequest = Volley.newRequestQueue(getApplicationContext());
         mListGalvalum = new ArrayList<>();
 
+        mRecyclerBoard = (RecyclerView) findViewById(R.id.recycleBoard);
+        mRequest = Volley.newRequestQueue(getApplicationContext());
+        mListBoard = new ArrayList<>();
+
         requesttt();
         mManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
         mRecylerGovalum.setLayoutManager(mManager);
@@ -82,6 +95,12 @@ public class Produk extends AppCompatActivity {
         mRecyclervieww.setLayoutManager(mManager);
         mAdapterPlafon = new AdapterPlafon(mListPlafon, Produk.this);
         mRecyclervieww.setAdapter(mAdapterPlafon);
+
+        requestBoard();
+        mManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false);
+        mRecyclerBoard.setLayoutManager(mManager);
+        mAdapterBoard = new AdapterBoard(mListBoard, Produk.this);
+        mRecyclerBoard.setAdapter(mAdapterBoard);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -191,6 +210,36 @@ public class Produk extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                             mAdapterGolvalum.notifyDataSetChanged();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("ERRORRequest", "Error :" + error.getMessage());
+                    }
+                });
+        mRequest.add(jsonArrayRequest);
+    }
+    private void requestBoard() {
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.POST, urlBoard, null,
+                new Response.Listener<JSONArray>() {
+                    @Override
+                    public void onResponse(JSONArray response) {
+                        Log.d("JSONResponse", response.toString());
+                        for (int i = 0; i <= response.length(); i++) {
+                            try {
+                                JSONObject data = response.getJSONObject(i);
+                                ModelBoard model = new ModelBoard();
+                                model.setNama_board(data.getString("nama_board"));
+                                model.setHarga_board(data.getString("harga_board"));
+
+                                mListBoard.add(model);
+
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                            mAdapterBoard.notifyDataSetChanged();
                         }
                     }
                 },
