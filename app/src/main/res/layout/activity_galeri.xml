@@ -303,13 +303,13 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_3" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_4" />
 
                 </LinearLayout>
                 <LinearLayout
@@ -322,13 +322,13 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/test_semen5" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_6" />
 
                 </LinearLayout>
                 <LinearLayout
