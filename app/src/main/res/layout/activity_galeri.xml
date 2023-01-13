@@ -254,7 +254,7 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/pemasangan_bataringan_7" />
 
                     <ImageView
                         android:layout_width="165dp"
@@ -284,13 +284,13 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_1" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
+                        android:src="@drawable/testi_semen_2" />
 
                 </LinearLayout>
                 <LinearLayout
