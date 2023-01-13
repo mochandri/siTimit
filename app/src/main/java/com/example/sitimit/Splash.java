@@ -11,6 +11,19 @@ public class Splash extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                finish();
+            }
+        },5000L);
+    }
+}
 //
 //        final int welcomeScreenDisplay = 3000;
 //        Thread welcomeThread = new Thread(){
@@ -33,16 +46,3 @@ public class Splash extends AppCompatActivity {
 //            }
 //        };
 //        welcomeThread.start();
-
-        AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
-
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                finish();
-            }
-        },5000L);
-    }
-}
