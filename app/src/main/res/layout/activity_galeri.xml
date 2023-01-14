@@ -114,12 +114,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/a"/>
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/c" />
 
                 </LinearLayout>
@@ -133,12 +135,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/ip" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/h" />
 
                 </LinearLayout>
@@ -152,12 +156,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_panel_1" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_panel_2" />
 
                 </LinearLayout>
@@ -170,12 +176,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_panel_3" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_panel_4" />
 
                 </LinearLayout>
@@ -200,12 +208,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_bataringan_1" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_bataringan_2" />
 
                 </LinearLayout>
@@ -218,12 +228,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_bataringan_3" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_bataringan_4" />
 
                 </LinearLayout>
@@ -236,12 +248,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_bataringan_5" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_bataringan_6" />
 
                 </LinearLayout>
@@ -254,12 +268,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/pemasangan_bataringan_7" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/a" />
 
                 </LinearLayout>
@@ -284,12 +300,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/testi_semen_1" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/testi_semen_2" />
 
                 </LinearLayout>
@@ -303,12 +321,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/testi_semen_3" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/testi_semen_4" />
 
                 </LinearLayout>
@@ -322,12 +342,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/test_semen5" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/testi_semen_6" />
 
                 </LinearLayout>
@@ -341,12 +363,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/a" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/a" />
 
                 </LinearLayout>
@@ -371,12 +395,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/renov_ngagel" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/a" />
 
                 </LinearLayout>
@@ -390,31 +416,14 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/a" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="165dp"
-                        android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
-                        android:src="@drawable/a" />
-
-                    <ImageView
-                        android:layout_width="165dp"
-                        android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/a" />
 
                 </LinearLayout>
@@ -428,12 +437,35 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/a" />
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/a" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
                         android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/a" />
+
+                    <ImageView
+                        android:layout_width="165dp"
+                        android:layout_height="165dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp"
                         android:src="@drawable/a" />
 
                 </LinearLayout>
@@ -461,6 +493,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="20dp"
                         android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
                         android:fontFamily="@font/robotoslab_regular"
                         android:gravity="center_horizontal"
                         android:text="@string/copywriting"
