@@ -200,7 +200,8 @@
                 android:layout_gravity="right"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/button_wa"
-                android:text="Selengkapnya" />
+                android:text="Selengkapnya"
+                android:backgroundTint="@color/hijau"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

@@ -6,12 +6,16 @@ import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.proto.ProtoOutputStream;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.View;
+import android.widget.Button;
 
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -28,6 +32,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Produk extends AppCompatActivity {
+
+    Button btnBeliProduk;
+
     RecyclerView mRecyclerview, mRecyclervieww, mRecylerGovalum, mRecyclerBoard;
 
 
@@ -55,6 +62,8 @@ public class Produk extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_produk);
+
+        btnBeliProduk = (Button) findViewById(R.id.btnBeliProduk);
 
 
         getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
@@ -101,7 +110,20 @@ public class Produk extends AppCompatActivity {
         mRecyclerBoard.setLayoutManager(mManager);
         mAdapterBoard = new AdapterBoard(mListBoard, Produk.this);
         mRecyclerBoard.setAdapter(mAdapterBoard);
+
+        btnBeliProduk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String wpurl="https://api.whatsapp.com/send?phone=6281231313222&text=Halo%20Bu%20Rida%20Tiga%20Mitra%20Surabaya..%20Saya%20Ingin%20Membeli%20Produk%20..";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(wpurl));
+                startActivity(intent);
+            }
+        });
+
+
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -251,4 +273,6 @@ public class Produk extends AppCompatActivity {
                 });
         mRequest.add(jsonArrayRequest);
     }
+
+
 }

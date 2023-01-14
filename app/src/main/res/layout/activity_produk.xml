@@ -81,7 +81,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recylcerproduk"
                 android:layout_width="match_parent"
-                android:layout_height="76dp"
+                android:layout_height="90dp"
                 android:layout_below="@+id/tv_semenBoard"
                 android:background="@color/hijau"
                 android:orientation="vertical"
@@ -101,7 +101,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclePlafon"
                 android:layout_width="match_parent"
-                android:layout_height="43dp"
+                android:layout_height="90dp"
                 android:layout_below="@+id/tv_plavon"
                 android:orientation="vertical"
                 tools:listitem="@layout/activity_layout_produk_list" />
@@ -120,7 +120,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycleGalvalum"
                 android:layout_width="match_parent"
-                android:layout_height="53dp"
+                android:layout_height="90dp"
                 android:layout_below="@+id/tv_galvalum"
                 android:orientation="vertical"
                 tools:listitem="@layout/activity_layout_produk_list" />
@@ -139,12 +139,27 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycleBoard"
                 android:layout_width="match_parent"
-                android:layout_height="82dp"
+                android:layout_height="90dp"
                 android:layout_below="@+id/tv_board"
                 android:orientation="vertical"
                 tools:listitem="@layout/activity_layout_produk_list" />
 
 
+            <Button
+                android:id="@+id/btnBeliProduk"
+                android:layout_width="97dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/recycleBoard"
+                android:layout_gravity="right"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="60dp"
+                android:text="BELI SEKARANG "
+                android:textSize="10dp"
+                android:background="@drawable/button_wa"
+                android:backgroundTint="@color/hijau"/>
         </LinearLayout>
+
+
 
 </RelativeLayout>
