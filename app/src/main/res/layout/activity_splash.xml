@@ -19,12 +19,14 @@
     <ProgressBar
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="558dp"
         android:layout_height="344dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:src="@drawable/splash2" />
 
