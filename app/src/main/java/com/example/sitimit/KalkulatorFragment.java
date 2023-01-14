@@ -1,6 +1,7 @@
 package com.example.sitimit;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -18,7 +19,7 @@ import android.widget.ImageButton;
  */
 public class KalkulatorFragment extends Fragment {
 
-
+    Button button2;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -77,6 +78,17 @@ public class KalkulatorFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        Button button2 = (Button)view.findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String wpurl="https://api.whatsapp.com/send?phone=6281231313222&text=Halo%20Bu%20Rida%20Tiga%20Mitra%20Surabaya..%20Ada%20Yang%20Ingin%20Saya%20Tanyakan..";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(wpurl));
+                startActivity(intent);
+            }
+        });
+
         return view;
 
     }
