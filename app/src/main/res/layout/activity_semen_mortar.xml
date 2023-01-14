@@ -12,11 +12,12 @@
     <RelativeLayout
         android:id="@+id/consAtas"
         android:layout_width="match_parent"
-        android:layout_height="69dp"
+        android:layout_height="100dp"
         android:background="@color/hijau">
 
 
         <TextView
+            android:id="@+id/txtttttt"
             android:layout_width="241dp"
             android:layout_height="55dp"
             android:layout_marginTop="16dp"
@@ -49,6 +50,15 @@
             android:layout_below="@+id/imageView"
             android:layout_marginTop="-1dp"
             android:layout_marginLeft="335dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtttttt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Note:* harga per 05 Januari 2023 || Harga Dibawah untuk pengiriman area Surabaya, Gresik dan Sidoarjo. ( Untuk Kota lainnya silahkan hubungi CS kami ) "
+            android:textSize="10dp" />
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
