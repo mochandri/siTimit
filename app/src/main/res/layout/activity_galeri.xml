@@ -121,7 +121,7 @@
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginRight="13dp"
+                        android:layout_marginRight="12dp"
                         android:src="@drawable/c" />
 
                 </LinearLayout>
