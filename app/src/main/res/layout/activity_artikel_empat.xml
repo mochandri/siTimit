@@ -260,18 +260,18 @@
                 android:textColor="@color/black"
                 android:justificationMode="inter_word"/>
 
-            <TextView
-                android:id="@+id/clickbaca"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="-20dp"
-                android:layout_gravity="center"
-                android:fontFamily="@font/robotoslab_regular"
-                android:text=" Baca Juga : Tips Membangun Rumah Low Budget"
-                android:onClick="clickbacajuga"
-                android:textColor="@android:color/holo_green_dark"
-                android:textSize="10dp" />
+<!--            <TextView-->
+<!--                android:id="@+id/clickbaca"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="-20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:fontFamily="@font/robotoslab_regular"-->
+<!--                android:text=" Baca Juga : Tips Membangun Rumah Low Budget"-->
+<!--                android:onClick="clickbacajuga"-->
+<!--                android:textColor="@android:color/holo_green_dark"-->
+<!--                android:textSize="10dp" />-->
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

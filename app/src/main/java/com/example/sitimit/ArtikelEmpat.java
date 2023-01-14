@@ -33,14 +33,14 @@ public class ArtikelEmpat extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        textView2 = (TextView) findViewById(R.id.clickbaca);
-        textView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ArtikelEmpat.this, ArtikelTujuh.class);
-                startActivity(intent);
-            }
-        });
+//        textView2 = (TextView) findViewById(R.id.clickbaca);
+//        textView2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(ArtikelEmpat.this, ArtikelTujuh.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
 

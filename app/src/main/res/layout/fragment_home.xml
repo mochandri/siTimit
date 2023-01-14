@@ -255,78 +255,78 @@
                             android:layout_marginRight="10dp"
                             android:onClick="buttonimg3"
                             android:src="@drawable/artikel_lima" />
-                        <ImageButton
-                            android:id="@+id/imgbtn_enam"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:onClick="buttonimg3"
-                            android:src="@drawable/artikel_enam" />
-                        <ImageButton
-                            android:id="@+id/imgbtn_tujuh"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:onClick="buttonimg3"
-                            android:src="@drawable/artikel_tujuh" />
-                        <ImageButton
-                            android:id="@+id/imgbtn_delapan"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:onClick="buttonimg3"
-                            android:src="@drawable/art6ikel_delapan" />
-                        <ImageButton
-                            android:id="@+id/imgbtn_sembilan"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:onClick="buttonimg3"
-                            android:src="@drawable/artikel_sembilan" />
-                        <ImageButton
-                            android:id="@+id/imgbtn_sepuluh"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:onClick="buttonimg3"
-                            android:src="@drawable/artikel_sepuluh" />
-                        <ImageButton
-                            android:id="@+id/imgbtn_sebelas"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:onClick="buttonimg3"
-                            android:src="@drawable/artikel_sebelas" />
-                        <ImageButton
-                            android:id="@+id/imgbtn_duabelas"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:onClick="buttonimg3"
-                            android:src="@drawable/artikel_duabelas" />
-                        <ImageButton
-                            android:id="@+id/imgbtn_tigabelas"
-                            android:layout_width="230dp"
-                            android:layout_height="130dp"
-                            android:layout_marginLeft="5dp"
-                            android:layout_marginTop="50dp"
-                            android:layout_marginRight="10dp"
-                            android:onClick="buttonimg3"
-                            android:src="@drawable/artikel_tigabelas" />
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/imgbtn_enam"-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="50dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:onClick="buttonimg3"-->
+<!--                            android:src="@drawable/artikel_enam" />-->
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/imgbtn_tujuh"-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="50dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:onClick="buttonimg3"-->
+<!--                            android:src="@drawable/artikel_tujuh" />-->
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/imgbtn_delapan"-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="50dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:onClick="buttonimg3"-->
+<!--                            android:src="@drawable/art6ikel_delapan" />-->
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/imgbtn_sembilan"-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="50dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:onClick="buttonimg3"-->
+<!--                            android:src="@drawable/artikel_sembilan" />-->
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/imgbtn_sepuluh"-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="50dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:onClick="buttonimg3"-->
+<!--                            android:src="@drawable/artikel_sepuluh" />-->
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/imgbtn_sebelas"-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="50dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:onClick="buttonimg3"-->
+<!--                            android:src="@drawable/artikel_sebelas" />-->
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/imgbtn_duabelas"-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="50dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:onClick="buttonimg3"-->
+<!--                            android:src="@drawable/artikel_duabelas" />-->
+<!--                        <ImageButton-->
+<!--                            android:id="@+id/imgbtn_tigabelas"-->
+<!--                            android:layout_width="230dp"-->
+<!--                            android:layout_height="130dp"-->
+<!--                            android:layout_marginLeft="5dp"-->
+<!--                            android:layout_marginTop="50dp"-->
+<!--                            android:layout_marginRight="10dp"-->
+<!--                            android:onClick="buttonimg3"-->
+<!--                            android:src="@drawable/artikel_tigabelas" />-->
 
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -359,7 +359,7 @@
                     android:text="Galeri Pemasangan"
                     android:textColor="@color/black"
                     android:textSize="18dp"
-                    android:textStyle="bold"></TextView>
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:layout_width="178dp"
