@@ -113,15 +113,15 @@
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="3dp"
                         android:src="@drawable/a"/>
 
                     <ImageView
                         android:layout_width="165dp"
                         android:layout_height="165dp"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginRight="10dp"
+                        android:layout_marginRight="13dp"
                         android:src="@drawable/c" />
 
                 </LinearLayout>
